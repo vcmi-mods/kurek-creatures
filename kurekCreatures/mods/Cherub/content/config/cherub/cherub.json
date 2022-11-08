@@ -1,0 +1,105 @@
+{
+	"kurekCherub":
+	{
+		"name" :
+		{
+			"plural" : "Cherubim",
+			"singular" : "Cherub"
+		},
+		"advMapAmount" :
+		{
+			"max" : 5,
+			"min" : 2
+		},
+		"hasDoubleWeek": true,
+		"faction": "castle",
+		"aiValue" : 12000,
+		"attack" : 30,
+		"cost" :
+		{
+			"gold" : 7500,
+			"gems" : 3
+		},
+		"damage" :
+		{
+			"max" : 50,
+			"min" : 50
+		},
+		"defense" : 35,
+		"fightValue" : 12000,
+		"graphics" :
+		{
+			"animation" : "battle/cherub.def",
+			"map" : "map/cherub_on_map.def",
+			"iconSmall" : "iconsSmall/avatar_small.png",
+			"iconLarge" : "iconsBig/avatar_big.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			}
+		},
+		"growth" : 1,
+		"doubleWide" : true,
+		"hitPoints" : 300,
+		"level" : 7,
+		"sound" :
+		{
+			"attack": "AAGLATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "AAGLKILL.wav",
+			"move": "AAGLMOVE.wav",
+			"wince": "AAGLWNCE.wav"
+		},
+		"speed" : 21,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"resurrection100hp" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.resurrection",
+				"val" : 100
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.resurrection",
+				"val" : 3
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"hateDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.devil",
+				"val" : 50
+			},
+			"hateArchDevils" :
+			{
+				"type" : "HATE",
+				"subtype" : "creature.archDevil",
+				"val" : 50
+			},
+			"HolyMorale" :
+			{
+				"type" : "SELF_MORALE"
+			}
+		},
+		"stackExperience" :
+		[
+		
+		]
+	}
+}
+
+

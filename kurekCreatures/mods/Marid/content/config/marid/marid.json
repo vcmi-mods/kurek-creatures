@@ -1,0 +1,103 @@
+{
+	"kurekMarid":
+	{
+		"name" :
+		{
+			"plural" : "Marids",
+			"singular" : "Marid"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"hasDoubleWeek": true,
+		"faction": "neutral",
+		"aiValue" : 1992,
+		"attack" : 15,
+		"cost" :
+		{
+			"gold" : 1100,
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 14
+		},
+		"defense" : 15,
+		"fightValue" : 1692,
+		"graphics" :
+		{
+			"animation" : "battle/marid.def",
+			"map" : "map/marid_on_map.def",
+			"iconSmall" : "iconsSmall/marid_avatar_small.png",
+			"iconLarge" : "iconsBig/marid_avatar_big.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			}
+		},
+		"growth" : 2,
+		"doubleWide" : false,
+		"hitPoints" : 105,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "hota/nymph/attack.wav",
+			"defend": "EFRTDFND.wav",
+			"killed": "EFRTKILL.wav",
+			"move" : "hota/nymph/move.wav",
+			"wince": "EFRTWNCE.wav"
+		},
+		"speed" : 13,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"immuneToWater" :
+			{
+				"type" : "WATER_IMMUNITY",
+				"subtype" : 1
+			},
+			"hateGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.genie",
+				"val" : 25
+			},
+			"hateMasterGenies" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.masterGenie",
+				"val" : 25
+			},
+			"hateAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreet",
+				"val" : 50
+			},
+			"hateArchAngels" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.efreetSultan",
+				"val" : 50
+			},
+			"dispellHelpful" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.dispelHelpful",
+				"val" : 33
+			}
+		},
+		"stackExperience" : [ { "bonus" : { "type" : "STACKS_SPEED" }, "values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 3 ] } ]
+	}
+}
+
+
