@@ -3,6 +3,15 @@
 	"description" : "New neutral units with dwellings.",
 	"author": "Graphics and mod: Kurek",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
-	"version" : "1.00",
-	"modType" : "Creatures"
+	"version" : "1.01",
+	"modType" : "Creatures",
+	"changelog" :
+    {
+		"1.00" : ["Initial release"],
+		"1.01" : ["small update for vcmi-1.2"]
+    },
+	"compatibility" :
+	{
+		"min" : "1.0.0"
+	}
 }
