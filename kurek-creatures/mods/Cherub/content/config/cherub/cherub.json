@@ -38,7 +38,8 @@
 			{
 				"walk" : 1.30,
 				"attack" : 1,
-				"idle" : 10
+				"idle" : 10,
+				"flight" : 1
 			}
 		},
 		"growth" : 1,
@@ -91,7 +92,7 @@
 			},
 			"HolyMorale" :
 			{
-				"type" : "MORALE", "val" : 1, "valueType" : "INDEPENDENT_MAX"
+				"type" : "SELF_MORALE"
 			}
 		},
 		"stackExperience" :
