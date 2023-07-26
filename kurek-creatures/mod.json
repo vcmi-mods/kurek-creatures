@@ -3,15 +3,18 @@
 	"description" : "New neutral units with dwellings.",
 	"author": "Graphics and mod: Kurek",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
-	"version" : "1.01",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"version" : "1.02",
 	"modType" : "Creatures",
 	"changelog" :
     {
 		"1.00" : ["Initial release"],
-		"1.01" : ["small update for vcmi-1.2"]
+		"1.01" : ["small update for vcmi-1.2"],
+		"1.02" : ["small fix for bonus morale"]
     },
 	"compatibility" :
 	{
-		"min" : "1.0.0"
+		"min" : "1.2.0"
 	}
 }
