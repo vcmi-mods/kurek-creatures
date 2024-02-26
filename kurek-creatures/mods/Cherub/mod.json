@@ -9,6 +9,10 @@
 	[
 		"config/cherub/cherub.json"
 	],
+	"chinese" : {
+		"name" : "基路伯",
+		"description" : "新单位 - 基路伯。在天使等级体系中，基路伯是仅次于炽天使的第二高等级。在传统的讨论天使的学说中，基路伯被视为九级天界等级中第二高等级的天使。"
+	},
 	"objects" : 
 	[  "config/cherub/dwellings"   ] 
 }

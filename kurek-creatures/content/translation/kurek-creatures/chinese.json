@@ -1,0 +1,8 @@
+{
+    "creatures.kurek-creatures.cherub.kurekCherub.name.plural" : "基路伯",
+    "creatures.kurek-creatures.cherub.kurekCherub.name.singular" : "基路伯",
+    "creatures.kurek-creatures.marid.kurekMarid.name.plural" : "水精灵",
+    "creatures.kurek-creatures.marid.kurekMarid.name.singular" : "水精灵",
+    "mapObject.kurek-creatures.cherub.creatureGeneratorCommon.kurekAltarOfProphecies.name" : "预言祭坛",
+    "mapObject.kurek-creatures.marid.creatureGeneratorCommon.kurekMarineSerail.name" : "海洋宫殿",
+}
