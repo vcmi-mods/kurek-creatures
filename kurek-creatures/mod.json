@@ -15,8 +15,8 @@
 		"1.03" : ["small update for vcmi-1.4"]
     },
 	"chinese" : {
-		"name" : "库雷克生物",
-		"description" : "新中立生物和巢穴",
+		"name" : "生物模组包（Kurek）",
+		"description" : "Kurek的生物模组包，包括了新的中立生物和巢穴。",
 		"translations" : [
 			"translation/kurek-creatures/chinese.json"
 		]
