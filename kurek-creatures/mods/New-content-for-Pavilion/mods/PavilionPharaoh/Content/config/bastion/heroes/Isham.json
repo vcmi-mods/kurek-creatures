@@ -1,0 +1,75 @@
+{
+	"isham" :
+	{
+		"class" : "vizier",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Isham",
+			"biography" : "As everyone knows, Sekhmets do not like to hurry; they do everything gracefully and calmly. But Isham is different; when riding her horse, she can overtake other riders with the speed of a sandstorm.",
+			"specialty" :
+			{
+				"description" : "{Logistics}\r\n\r\nReceives a 5% per level bonus to Logistics skill.",
+				"tooltip" : "Secondary Skill Bonus: Logistics",
+				"name" : "Logistics"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/isham/un32logi.bmp",
+			"specialtyLarge" : "bastion/heroes/isham/un44logi.bmp",
+			"large" : "bastion/heroes/isham/Isham.bmp",
+			"small" : "bastion/heroes/isham/IshamSmall.bmp"
+		},
+        	"spellbook" :
+		[
+			"haste"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		"specialty" : 
+		{
+			"bonuses" : {
+				"logistics" : {
+					"subtype" : "heroMovementLand",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MOVEMENT",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

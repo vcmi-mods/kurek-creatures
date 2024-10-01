@@ -1,0 +1,22 @@
+{
+	"name" : "Purple Dragon",
+	"description" : "New unit - Purple Dragon. In the shadowed depths of Enroth's mysterious and forbidding Dark Mountains, where the veil between reality and the arcane grows thin, there resides a creature of unparalleled power and majesty—the Purple Dragon. With scales as deep and rich as amethyst, this magnificent beast commands the very essence of magic itself. Its form is a testament to both grace and strength, with sinewy muscles coiled beneath its iridescent hide, each movement a symphony of controlled might. But it is not merely the physical prowess of the Purple Dragon that sets it apart from its brethren. No, it is the arcane aura that surrounds it, a shield woven from the purest magic, rendering it impervious to all but the mightiest of incantations. Low and medium spells alike falter against its resilient scales, their feeble energies dissipating harmlessly into the ether. And then there is the dragon's most fearsome weapon—the searing blaze of its azure breath. Born not of mere flame but of raw, untamed magic, this inferno consumes all in its path, leaving naught but ash in its wake. But the true terror lies in its lingering effects, for where the flames touch, they leave behind a residue of enchantment, a burning curse that gnaws at the very soul of its victim long after the initial conflagration has faded. In the skies above Enroth, the Purple Dragon reigns supreme, a sovereign of the heavens whose dominion knows no bounds. Even the mightiest of armies quail before its wrath, for none can stand against the fury of its magical onslaught. Yet, there are those who seek to bend the will of these majestic creatures to their own ends. Dark warlocks, their hearts as black as the mountains themselves, have tamed the Purple Dragons, bending them to their dark designs. In towering spires of obsidian and onyx, these sorcerers dwell, their cruel laughter echoing through the halls as their draconic minions circle overhead, a constant reminder of their unyielding power. In the land of Enroth, where magic and mystery intertwine, the Purple Dragon stands as both guardian and scourge, a symbol of the untamed forces that dwell within the heart of every spellcaster's dreams..",
+	"author": "Kurek",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"modType" : "Creatures",
+	"version" : "1.00",
+	"creatures" :
+	[
+	"config/purpledragon/purpledragon"
+	],
+	"objects" : 
+	[  "config/purpledragon/dwellings"], 
+	"spells" : 
+	[  "config/purpledragon/bluefire.json", "config/purpledragon/bluefiredamageeffect.json"],
+	"bonuses" : 
+	[  "config/purpledragon/bluefiere1"],
+	"battlefields" :
+	[
+		"config/purpledragon/purpletowerbattlefield.json"
+	]
+}

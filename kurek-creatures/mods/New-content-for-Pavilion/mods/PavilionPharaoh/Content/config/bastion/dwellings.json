@@ -1,0 +1,69 @@
+{
+    "core:creatureGeneratorCommon": 
+    {
+        "types": 
+        {
+            "desertguardhouse": {
+                "name": "Desert Guardhouse",
+                "creatures": [["desertguard"]],
+                "sounds": {
+                    "ambient": ["objectsPavilion/desertGarrison"]
+                },
+                "templates": {
+                    "default": {
+                        "animation": "bastion/map/dwellings/DGvillage.def",
+                        "mask": ["VVV", "VBB", "VAB"]
+                    }
+                }
+            },
+            "ancientcenotaph": {
+                "battleground": "kurek-creatures.new-content-for-pavilion.pavilionpharaoh:ancientcenotaphbattlefield",
+                "name": "Ancient Cenotaph",
+                "creatures": [["anubissabrewarrior"]],
+                "sounds": {
+                    "ambient": ["objectsPavilion/maplvl7"], 
+                    "visit": ["objectsPavilion/jackal"]
+                },
+                "guards": true,
+                "templates": {
+                    "default": {
+                        "animation": "bastion/map/dwellings/ACtomb.def",
+                        "mask": ["VVV", "VBB", "VAB"]
+                    }
+                }
+            },
+            "sphinxTemple": {
+                "battleground": "kurek-creatures.new-content-for-pavilion.pavilionpharaoh:sphinxtemplebattlefield",
+                "name": "Sphinx Temple",
+                "creatures": [["guardiansphinx"]],
+                "sounds": {
+                    "ambient": ["objectsPavilion/lion"], 
+                    "visit": ["objectsPavilion/roar"]
+                },
+                "guards": true,
+                "templates": {
+                    "default": {
+                        "animation": "bastion/map/dwellings/sphinxtemple.def",
+                        "mask": ["VVV", "VVV", "VBA"]
+                    }
+                }
+            },
+            "shrineoffalcons": {
+                "battleground": "kurek-creatures.new-content-for-pavilion.pavilionpharaoh:shrineoffalconsbattlefield",
+                "name": "Shrine of Falcons",
+                "creatures": [["horus"]],
+                "sounds": {
+                    "visit": ["objectsPavilion/falcon"], 
+                    "ambient": ["objectsPavilion/ambientfalcon"]
+                },
+                "guards": true,
+                "templates": {
+                    "default": {
+                        "animation": "bastion/map/dwellings/ShrineofFalcons.def",
+                        "mask": ["VVV", "VVV", "VBA"]
+                    }
+                }
+            }
+        }
+    }
+}

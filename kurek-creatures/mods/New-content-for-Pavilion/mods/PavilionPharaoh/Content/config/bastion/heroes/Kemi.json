@@ -1,0 +1,73 @@
+{
+	"kemi" :
+	{
+		"class" : "pharaoh",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Kemi",
+			"biography" : "Kemi hails from Tatalia. She was an apprentice blacksmith who learned everything from her master before moving south. The swampy areas never suited her, so she settled within the protective walls of Shazad, where she served as a blacksmith for the army. After becoming very popular, she overthrew a local pharaoh and took his place on the throne.",
+			"specialty" :
+			{
+				"description" : "{Armorer}\r\n\r\nReceives a 5% per level bonus to Armorer skill.",
+				"tooltip" : "Secondary Skill Bonus: Armorer",
+				"name" : "Armorer"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Kemi/Un32Defe.bmp",
+			"specialtyLarge" : "bastion/heroes/Kemi/Un44Defe.bmp",
+			"large" : "bastion/heroes/Kemi/Kemi.bmp",
+			"small" : "bastion/heroes/Kemi/KemiSmall.bmp",
+		},
+
+		"army" :
+		[
+	{
+				"creature" : "whipper",
+				"max" : 20,
+				"min" : 12
+			},
+            {
+				"creature" : "wadjet",
+				"max" : 12,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		], 		
+ "specialty": 		
+		{
+			"bonuses" : {
+				"armorer" : {
+					"subtype" : "damageTypeAll",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+

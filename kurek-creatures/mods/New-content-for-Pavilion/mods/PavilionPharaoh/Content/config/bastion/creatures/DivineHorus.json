@@ -1,0 +1,157 @@
+{
+	"divinehorus":
+	{
+		"name" :
+		{
+			"plural" : "Divine Horuses",
+			"singular" : "Divine Horus"
+		},
+		"advMapAmount" :
+		{
+			"max" : 16,
+			"min" : 8
+		},
+		"faction" : "pavilion",
+		"aiValue" : 1101,
+		"attack" : 15,
+		"spellPoints" : 1,
+		"hasDoubleWeek": false,
+		"cost" :
+		{
+			"gold" : 750
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 14
+		},
+		"defense" : 8,
+		"fightValue" : 851,
+		"graphics" :
+		{
+			"animation" : "bastion/battle/creatures/divinehorus.def",
+			"map" : "bastion/map/creatures/DivinehorusMap.def",
+			"iconSmall" : "bastion/iconsSmall/creatures/DivinehorusSmall.bmp",
+			"iconLarge" : "bastion/iconsBig/creatures/DivineHorus.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			}
+           
+		},
+	    "doubleWide" : true,
+        "growth" : 3,
+		"hitPoints" : 60,
+		"level" : 5,
+        "upgrades":
+		[
+		],
+		"sound" :
+		{
+			"attack" : "bastion/Horus_attack.wav",
+			"defend": "bastion/Horus_defend.wav",
+			"killed": "bastion/Horus_killed.wav",
+			"move": "bastion/Horus_move.wav",
+			"wince": "bastion/Horus_wince.wav"
+ 		},
+		"speed" : 12,
+		"abilities" :
+		{
+			"magicResistance": 
+			
+			{
+        "type": "SPELL_DAMAGE_REDUCTION",
+        "subtype": "spellSchool.any",
+        "val": 100
+			},
+			
+			"deathStare" : 
+			{ 
+				"subtype" : "deathStareGorgon", 
+				"type" : "DEATH_STARE", 
+				"val" : 20 
+			},
+			"RANDOMSPELLCASTER" : 
+			{ 
+				"type" : "RANDOM_SPELLCASTER", 
+				"val" : 1 
+			},
+			"ADDITIONALATTACK" : 
+			{ 
+				"type" : "ADDITIONAL_ATTACK", 
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellsLength" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+		
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defense",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		
+		]	
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"jabak": {
+		"class": "pharaoh",
+		"female": false,
+		"texts": {
+			"name": "Ja'Bak",
+			"biography": "The Supreme Pharaoh, the greatest lord of the Bracada desert, charismatic Anubian hungry for power. During his reign, the great Golden City became the largest trade center in the south Antagarich.",
+			"specialty": {
+				"description": "{Anubises and Anubises Warriors}\r\n\r\nIncreases the Attack and Defence of any Anubian Warriors or Anubian Blademasters for each level attained after 7th level. Hero can also change Anubises and Divine Anubises into unique Anubis Sabre Warriors",
+				"tooltip": "Creature Bonus: Anubian Warriors",
+				"name": "Anubian Warriors"
+			}
+		},
+		"images": {
+			"specialtySmall": "bastion/heroes/Ja'Bak/un32Anub.bmp",
+			"specialtyLarge": "bastion/heroes/Ja'Bak/un44Anub.bmp",
+			"large": "bastion/heroes/Ja'Bak/Ja'Bak.bmp",
+			"small": "bastion/heroes/Ja'Bak/Ja'BakSmall.bmp"
+		},
+		"army": [
+			{
+				"creature": "whipper",
+				"max": 30,
+				"min": 20
+			},
+			{
+				"creature": "wadjet",
+				"max": 10,
+				"min": 8
+			},
+			{
+				"creature": "camelRider",
+				"max": 3,
+				"min": 1
+			}
+		],
+		"skills": [
+			{
+				"level": "basic",
+				"skill": "logistics"
+			},
+			{
+				"level": "basic",
+				"skill": "offence"
+			}
+		],
+		
+		"specialty": 
+        {
+                "base": {
+                "addInfo": "creature.anubissabrewarrior",
+                "type": "SPECIAL_UPGRADE"
+            },
+            "bonuses": {
+                "anubis2anubiswarrior" : { "subtype" : "new-pavilion:anubis" },
+				"anubisupg2anubiswarrior" : { "subtype" : "new-pavilion:anubiswarrior" },
+                }
+        }
+    }
+}
+

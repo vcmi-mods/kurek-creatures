@@ -1,0 +1,6 @@
+{
+	"cyclopspyramidbattlefield": {
+		"graphics": "battle/cyclopspyramidbattlefield.png",
+		"isSpecial" : true
+	}
+}	

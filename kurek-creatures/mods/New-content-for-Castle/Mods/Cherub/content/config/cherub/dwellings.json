@@ -1,0 +1,22 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"kurekAltarOfProphecies" : {
+				"battleground": "kurek-creatures.new-content-for-castle.cherub:altarofpropheciesbattlefield",
+				"name" : "Altar of Prophecies",
+				"guards" : true,
+				"creatures" : [[ "kurekCherub" ]],
+				  "sounds": {
+                    "ambient": ["battle1/cherubloop"],
+					"visit": ["battle1/cherubvisit"]
+                },
+				"templates" : {
+					"default" : {
+						"animation" : "dwelling/Altar_of_Prophecies.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}	

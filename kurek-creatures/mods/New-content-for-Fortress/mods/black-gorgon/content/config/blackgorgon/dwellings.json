@@ -1,0 +1,24 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : 
+		{
+			"blackLair" : 
+			{
+				"battleground": "kurek-creatures.new-content-for-fortress.black-gorgon:blacklairbattlefield",
+				"name" : "Black Lair",
+				"guards" : true,
+				"creatures" : [[ "blackgorgon" ]],
+				"sounds": {	"ambient": ["LOOPBEHE"],
+				"visit": ["battlegorgon/blackgorgonvisit"]},
+	"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "dwelling/BlackGorgonLair.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			}
+		}		
+	}
+}	

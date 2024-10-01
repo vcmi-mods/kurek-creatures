@@ -1,0 +1,108 @@
+{
+    "sacredscarab": {
+        "name": {
+            "plural": "Sacred Scarabs",
+            "singular": "Sacred Scarab"
+        },
+        "advMapAmount": {
+            "max": 50,
+            "min": 20
+        },
+        "faction": "neutral",
+        "aiValue": 70,
+        "attack": 3,
+        "cost": {
+            "gold": 50
+        },
+        "damage": {
+            "max": 4,
+            "min": 1
+        },
+        "defense": 6,
+        "fightValue": 70,
+        "graphics": {
+            "animation": "bastion/battle/creatures/sacredscarab.def",
+            "map": "bastion/map/creatures/sacredscarab.def",
+            "iconSmall": "bastion/iconsSmall/creatures/sacredscarab.png",
+            "iconLarge": "bastion/iconsBig/creatures/sacredscarab.bmp",
+            "timeBetweenFidgets": 1,
+            "animationTime": {
+                "walk": 1.00,
+                "idle": 10.00,
+                "attack": 1.00
+            }
+        },
+        "growth": 20,
+        "hitPoints": 5,
+        "level": 1,
+        "sound": {
+            "attack": "Pavilion/scarAtt.wav",
+            "defend": "Pavilion/scarDef.wav",
+            "killed": "Pavilion/scarDie.wav",
+            "move": "Pavilion/scarWalk.wav",
+            "wince": "Pavilion/scarHit.wav"
+        },
+        "speed": 8,
+        "abilities": {
+            "canFly": {
+                "type": "FLYING"
+            },
+            "increaseLuck": {
+                "type": "LUCK",
+                "val": 1
+            }
+        },
+        "stackExperience": [
+            {
+                "bonus": {
+                    "subtype": "primarySkill.attack",
+                    "type": "PRIMARY_SKILL"
+                },
+                "values": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+            },
+            {
+                "bonus": {
+                    "subtype": "primarySkill.defense",
+                    "type": "PRIMARY_SKILL"
+                },
+                "values": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+            },
+            {
+                "bonus": {
+                    "subtype": "creatureDamageBoth",
+                    "type": "CREATURE_DAMAGE"
+                },
+                "values": [0, 1, 1, 2, 2, 3, 3, 4, 4, 5]
+            },
+            {
+                "bonus": {
+                    "valueType": "PERCENT_TO_BASE",
+                    "type": "STACK_HEALTH"
+                },
+                "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            },
+            {
+                "bonus": {
+                    "type": "STACKS_SPEED"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+            },
+            {
+                "bonus": {
+                    "type": "GENERAL_DAMAGE_REDUCTION",
+                    "subtype": "damageTypeAll"
+                },
+                "values": [2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+            },
+            {
+                "bonus": {
+                    "type": "DOUBLE_DAMAGE_CHANCE"
+                },
+                "values": [0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+            }
+        ]
+    },
+    "new-pavilion:scarab": {
+        "upgrades": ["sacredscarab"]
+    }
+}

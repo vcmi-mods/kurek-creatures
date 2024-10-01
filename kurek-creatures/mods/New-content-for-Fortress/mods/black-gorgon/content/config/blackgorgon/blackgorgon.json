@@ -1,0 +1,82 @@
+{
+	"blackgorgon":
+	{
+		"name" :
+		{
+			"plural" : "Black Gorgons",
+			"singular" : "Black Gorgon"
+		},
+		"advMapAmount" :
+		{
+			"min" : 5,
+			"max" : 10
+		},
+		"faction" : "fortress",
+		"aiValue" : 3000,
+		"fightValue" : 2500,
+		"attack" : 13,
+		"defense" : 18,
+		"growth" : 3,
+		"level" : 6,
+		"cost" :
+		{
+			"gold" : 1550
+		},
+		"damage" :
+		{
+			"min" : 12,
+			"max" : 17
+		},
+		"speed" : 7,
+		"graphics" :
+		{
+			"animation" : "battle/blackgorgon.def",
+			"map" : "map/blackgorgononmap.def",
+			"iconSmall" : "iconsSmall/smallblackgorgonavatar.bmp",
+			"iconLarge" : "iconsBig/avatarblackgorgon.bmp",
+			"timeBetweenFidgets" : 3,
+			"animationTime" :
+			{
+				"walk" : 2.5,
+				"attack" : 2.5,
+				"idle" : 2,
+			}
+		},
+		"hitPoints" : 75,
+		"doubleWide" : true,
+		"abilities":
+		{
+			"deathStare" : 
+			{
+				"type" : "DEATH_STARE",
+				"subtype" : "deathStareGorgon",
+				"val" : 10
+			},
+			"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 10
+			},
+			"acidVulnerablity" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype" : "spell.acidBreathDamage",
+				"val" : 100
+			},
+			"poisonImmunity" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.poison"
+			}
+		},
+		"sound" :
+		{
+			"attack": "BGORATTK.wav",
+			"defend": "BGORDFND.wav",
+			"killed": "BGORKILL.wav",
+			"move": "BGORMOVE.wav",
+			"wince": "BGORWNCE.wav"
+		},	
+	}
+}		

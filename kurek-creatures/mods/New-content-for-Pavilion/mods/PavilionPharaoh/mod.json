@@ -1,0 +1,55 @@
+{
+	"description" : "Adds new Pavilion hero class: Pharaoh. 8 additional units for Pavilion. Based on Bastion from Bastion New Town Group, Pavilion. This mod also adds a few Vizier heroes. Special thanks to: Nephretes, J. M. Sower, Hobbit, Kuririn, Witchking, Trith, Mitlandy, and all Acid Cave community",
+	"name" : "New Heroes for Pavilion",
+	"author" : "Kurek, edeksumo, Bastion New Town Group, Maestro",
+	"version" : "1.0",
+	"contact" : "Kurek",
+	"modType" : "Compatibility",
+	"depends" :
+    [
+	"Axolotl-Creatures-Pack",
+	"Undead-Sphinxes",
+	"new-pavilion"
+	],
+    	"heroClasses" :
+	[
+		"config/bastion/classes/Pharaoh.json"
+	],
+    	"heroes" :
+	[
+		"config/bastion/heroes/Ama'ka.json",
+		"config/bastion/heroes/Ankh-Amon.json",
+		"config/bastion/heroes/Basha.json",
+        "config/bastion/heroes/Mentuhotep.json",
+        "config/bastion/heroes/Kemi.json",
+        "config/bastion/heroes/Inpu.json",
+		"config/bastion/heroes/Isham.json",
+        "config/bastion/heroes/TaKem.json",
+        "config/bastion/heroes/Bianor.json",
+        "config/bastion/heroes/Honsuneb.json",
+		"config/bastion/heroes/Ja'Bak.json",
+		"config/bastion/heroes/Uzziah.json",
+		"config/bastion/heroes/Netsutset.json",
+		"config/bastion/heroes/Nutt.json",
+		"config/bastion/heroes/MexNefer.json",
+		"config/bastion/heroes/Mantis.json",
+		"config/bastion/heroes/Amshah.json"
+	],
+	"creatures" :
+	[ 
+        "config/bastion/creatures/Overseer.json",
+        "config/bastion/creatures/Anubis.json", 
+        "config/bastion/creatures/AnubisWarrior.json",
+		"config/bastion/creatures/SacredScarab.json",
+		"config/bastion/creatures/Horus.json",
+		"config/bastion/creatures/DivineHorus.json",
+		"config/bastion/creatures/GuardianSphinx.json",
+		"config/bastion/creatures/Greatersphinx.json"
+	],
+    "objects" :
+    [   "config/bastion/dwellings.json" ],
+	"battlefields" :
+	[
+		"config/bastion/ancientcenotaphbattlefield.json", "config/bastion/sphinxtemplebattlefield.json", "config/bastion/shrineoffalconsbattlefield.json" 
+	]
+}

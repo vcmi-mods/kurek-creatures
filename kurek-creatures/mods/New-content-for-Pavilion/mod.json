@@ -1,0 +1,12 @@
+{
+	"author" : "Kurek",
+	"contact" : "-",
+	"description" : "Adds new Pavilion creatures and a new hero class- Pharaoh",
+	"modType" : "Compatibility",
+	"name" : "New Content for Pavilion",
+	"version" : "1.0",
+	"depends" :
+	[
+		"new-pavilion"
+	]
+}

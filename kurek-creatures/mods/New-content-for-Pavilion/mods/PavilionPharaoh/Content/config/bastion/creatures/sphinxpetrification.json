@@ -1,0 +1,199 @@
+{
+    "sphinxpetrification": {
+        "index": 70,
+        "type": "ability",
+        "name": "Sphinx Petrification",
+        "school": {
+            "air": false,
+            "earth": true,
+            "fire": false,
+            "water": false
+        },
+        "level": 4,
+        "power": 0,
+        "gainChance": {
+            "basic": 5,
+            "advanced": 10,
+            "expert": 15
+        },
+        "targetType": "NO_TARGET",
+        "animation": {
+            "affect": [
+                {
+                    "effectName": "petrification"
+                }
+            ]
+        },
+        "sounds": {
+            "cast": "PARALYZE"
+        },
+        "levels": {
+            "none": {
+                "description": "No special skills at this level.",
+                "cost": 0,
+                "power": 0,
+                "aiValue": 0,
+                "range": "0",
+                "targetModifier": {
+                    "smart": true
+                },
+                "effects": {
+                    "notActive": {
+                        "val": 0,
+                        "type": "NOT_ACTIVE",
+                        "subtype": "spell.stoneGaze",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "noRetaliation": {
+                        "val": 0,
+                        "type": "NO_RETALIATION",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "generalDamageReduction": {
+                        "type": "GENERAL_DAMAGE_REDUCTION",
+                        "val": 50,
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    }
+                }
+            },
+            "basic": {
+                "description": "Basic level of Sphinx Petrification ability.",
+                "cost": 0,
+                "power": 5,
+                "aiValue": 10,
+                "range": "0",
+                "targetModifier": {
+                    "smart": true
+                },
+                "effects": {
+                    "notActive": {
+                        "val": 0,
+                        "type": "NOT_ACTIVE",
+                        "subtype": "spell.stoneGaze",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "noRetaliation": {
+                        "val": 0,
+                        "type": "NO_RETALIATION",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "generalDamageReduction": {
+                        "type": "GENERAL_DAMAGE_REDUCTION",
+                        "val": 50,
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    }
+                }
+            },
+            "advanced": {
+                "description": "Advanced level of Sphinx Petrification ability.",
+                "cost": 0,
+                "power": 10,
+                "aiValue": 20,
+                "range": "0",
+                "targetModifier": {
+                    "smart": true
+                },
+                "effects": {
+                    "notActive": {
+                        "val": 0,
+                        "type": "NOT_ACTIVE",
+                        "subtype": "spell.stoneGaze",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "noRetaliation": {
+                        "val": 0,
+                        "type": "NO_RETALIATION",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "generalDamageReduction": {
+                        "type": "GENERAL_DAMAGE_REDUCTION",
+                        "val": 50,
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    }
+                }
+            },
+            "expert": {
+                "description": "Expert level of Sphinx Petrification ability.",
+                "cost": 0,
+                "power": 15,
+                "aiValue": 30,
+                "range": "0",
+                "targetModifier": {
+                    "smart": true
+                },
+                "effects": {
+                    "notActive": {
+                        "val": 0,
+                        "type": "NOT_ACTIVE",
+                        "subtype": "spell.stoneGaze",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "noRetaliation": {
+                        "val": 0,
+                        "type": "NO_RETALIATION",
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    },
+                    "generalDamageReduction": {
+                        "type": "GENERAL_DAMAGE_REDUCTION",
+                        "val": 50,
+                        "duration": [
+                            "UNTIL_BEING_ATTACKED",
+                            "N_TURNS"
+                        ]
+                    }
+                }
+            }
+        },
+        "flags": {
+            "indifferent": true
+        },
+        "targetCondition": {
+            "anyOf": {
+                "new-pavilion:sphinx": "absolute",
+                "new-pavilion:elderSphinx": "absolute",
+                "creature.guardiansphinx": "absolute",
+                "creature.greatersphinx": "absolute",
+                "axolotl-creatures-pack:creature.sphinx": "absolute",
+                "creature.ashenSphinx": "absolute",
+                "creature.entombedSphinx": "absolute"
+            },
+            "noneOf": {
+                "bonus.SIEGE_WEAPON": "absolute"
+            }
+        },
+        "canCastOnSelf": true
+    }
+}

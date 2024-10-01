@@ -1,0 +1,73 @@
+{
+	"basha" :
+	{
+		"class" : "vizier",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Basha",
+			"biography" : "Basha loves trinkets, in particular affection has for crystals. She can find even the smallest crystal hidden in desert sands, which makes her one of the most respected nobles of the desert.",
+			"specialty" :
+			{
+				"description" : "{Crystal + 1}\r\n\r\nIncreases kingdom's income by 1 crystal per day",
+				"tooltip" : "+1 Crystal each day",
+				"name" : "+1 Crystals"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Basha/un32crys.bmp",
+			"specialtyLarge" : "bastion/heroes/Basha/un44crys.bmp",
+			"large" : "bastion/heroes/Basha/Basha.bmp",
+			"small" : "bastion/heroes/Basha/BashaSmall.bmp"
+		},
+
+		"spellbook" :
+		[
+			"viewAir" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+   "specialty": {
+        "bonuses": {
+            "bonus1": {
+                "type": "GENERATE_RESOURCE",
+                "subtype": "resource.crystal",
+                "val": 1
+            }
+        }
+    }
+	}
+}

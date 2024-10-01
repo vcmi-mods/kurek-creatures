@@ -1,0 +1,20 @@
+{
+	"name" : "cyclop_warrior",
+	"description" : "New unit - Cyclop Warrior. These cyclopes carry a huge club and are so strong and tough, that even the castle walls are afraid of them.",
+	"author": "Graphics and mod: Kurek",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"version" : "1.00",
+	"modType" : "Creatures",
+	"creatures" :
+	[
+	"config/cyclop_warrior/cyclop_warrior.json"
+	],
+	"objects" : 
+	[  "config/cyclop_warrior/dwellings"   ],
+	"spells" : 
+	[  "config/cyclop_warrior/crushingblow.json"],
+	"battlefields" :
+	[
+	"config/cyclop_warrior/cyclopslarderbattlefield.json"
+	]  		
+}

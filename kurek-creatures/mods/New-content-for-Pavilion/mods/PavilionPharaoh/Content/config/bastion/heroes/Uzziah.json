@@ -1,0 +1,62 @@
+{
+	"uzziah" :
+	{
+		"class" : "pharaoh",
+		"female" : false,
+		
+		"texts" :
+		{
+			"name" : "Uzziah",
+			"biography" : "Uzziah, the right-handed knopesh master, found his best camel alone in the depths of the dunes. It soon turned out, that it is the fastest camel known to everyone across the desert, so Uzziah named him Me'nzzen, which means 'Leader of the party'. He didn't have to wait a long time until many other camel riders came to him to ride under his banner. Now, together they roam the desert spreading terror among the enemies of the Grand Pharaoh.",
+			"specialty" :
+			{
+				"description" : "{Camel Riders and Desert Warriors}\r\n\r\nIncreases the Attack and Defence of any Camel Riders or Desert Warriors for each level attained after 3rd level.",
+				"tooltip" : "Creature Bonus: Camel Riders",
+				"name" : "Camel Riders"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Uzziah/un32Came.bmp",
+			"specialtyLarge" : "bastion/heroes/Uzziah/un44Came.bmp",
+			"large" : "bastion/heroes/Uzziah/Uzziah.bmp",
+			"small" : "bastion/heroes/Uzziah/UzziahSmall.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "camelRider",
+				"max" : 7,
+				"min" : 4
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 5,
+				"min" : 2
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 6,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "camelRider"
+		}
+	}
+}

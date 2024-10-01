@@ -1,0 +1,131 @@
+{
+	"core:creatureBank": {
+		"types": {
+			"marineSerail": {
+				"battleground": "kurek-creatures.new-content-for-haven.marine-serail:marineserailbattlefield",
+				"name": "Marine Serail",
+				"templates": {
+					"default": {
+						"allowedTerrains": ["sand", "subterra"],
+						"animation": "dwelling/marine_serail.def",
+						"mask": ["000V00", "0VVVV0", "VVVBV0", "VVBBBV", "VBBBBB", "VVBBAV"],
+						"visitableFrom": [
+							"---",
+							"-++",
+							"+++"
+						]
+					},
+					"onWater": {
+						"allowedTerrains": ["water"],
+						"animation": "dwelling/marine_serail_on_water.def",
+						"mask": ["000000", "00VVVV", "0VVVBV", "0VVBBB", "0VVBBB", "00VVBA"],
+						"visitableFrom": [
+							"--+",
+							"-++",
+							"+++"
+						]
+					}
+				},
+				"sounds": {
+					"ambient": ["banks/harem"],
+					"visit": ["banks/jingle"]
+				},
+				"rmg": {
+					"value": 3500,
+					"rarity": 40,
+					"zoneLimit": 2
+				},
+				"coastVisitable": true,
+				"levels": [
+					{
+						"chance": 30,
+						"guards": [
+							{"amount": 7, "type": "efreet"},
+							{"amount": 5, "type": "efreetSultan"},
+							{"amount": 9, "type": "havC10"},
+							{"amount": 12, "type": "havC09"},
+							{"amount": 12, "type": "havC09"},
+							{"amount": 12, "type": "genie"},
+							{"amount": 9, "type": "masterGenie"}
+						],
+						"combat_value": 3000,
+						"reward": {
+							"value": 5000,
+							"resources": {
+								"gold": 7000
+							}
+						}
+					},
+					{
+						"chance": 30,
+						"guards": [
+							{"amount": 20, "type": "efreet"},
+							{"amount": 10, "type": "efreetSultan"},
+							{"amount": 15, "type": "havC10"},
+							{"amount": 20, "type": "havC09"},
+							{"amount": 20, "type": "havC09"},
+							{"amount": 20, "type": "genie"},
+							{"amount": 15, "type": "masterGenie"}
+						],
+						"combat_value": 3500,
+						"reward": {
+							"value": 7000,
+							"resources": {
+								"gold": 6500
+							},
+							"creatures": [{"amount": 1, "type": "havC13"}]
+						}
+					},
+					{
+						"chance": 30,
+						"guards": [
+							{"amount": 20, "type": "efreet"},
+							{"amount": 15, "type": "efreetSultan"},
+							{"amount": 25, "type": "havC10"},
+							{"amount": 30, "type": "havC09"},
+							{"amount": 30, "type": "havC09"},
+							{"amount": 30, "type": "genie"},
+							{"amount": 25, "type": "masterGenie"}
+						],
+						"combat_value": 4200,
+						"reward": {
+							"value": 10000,
+							"resources": {
+								"gold": 8000
+							},
+							"creatures": [{"amount": 2, "type": "havC13"}]
+						}
+					},
+					{
+						"chance": 10,
+						"guards": [
+							{"amount": 30, "type": "efreet"},
+							{"amount": 20, "type": "efreetSultan"},
+							{"amount": 35, "type": "havC10"},
+							{"amount": 40, "type": "havC09"},
+							{"amount": 40, "type": "havC09"},
+							{"amount": 40, "type": "genie"},
+							{"amount": 35, "type": "masterGenie"}
+						],
+						"combat_value": 5000,
+						"reward": {
+							"value": 16000,
+							"resources": {
+								"gold": 10000
+							},
+							"creatures": [{"amount": 3, "type": "havC13"}]
+						}
+					}
+				],
+				"conditions": {
+					"land": {
+						"allowedTerrain": ["sand", "subterra"]
+					},
+					"water": {
+						"allowedTerrain": ["water"]
+					}
+				}
+			}
+		}
+	}
+}

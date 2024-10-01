@@ -1,0 +1,26 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"kurekCyclopsPyramid" : 
+			{
+				"battleground": "kurek-creatures.new-content-for-stronghold.bloodeyed_cyclops:cyclopspyramidbattlefield",
+				"name" : "Cyclops Pyramid",
+				"guards" : true,
+				"creatures" : [[ "kurekBloodeyedCyclops" ]],
+				"sounds": 
+				{	
+				"ambient": ["LOOPCAVE"],
+				"visit": ["cyclops/visit"]
+				},
+				"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "dwelling/Cyclops_Pyramid.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}	

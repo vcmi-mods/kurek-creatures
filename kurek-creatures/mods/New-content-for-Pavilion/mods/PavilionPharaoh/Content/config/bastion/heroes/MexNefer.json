@@ -1,0 +1,74 @@
+{
+	"mexnefer" :
+	{
+		"class" : "embalmer",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Mex-Nefer",
+			"biography" : "Mex-Nefer began to serve in the temple of the Four Winds since childhood. Through years she was known for her great wisdom and cruelty. For her cruelty was banished from the city. But after spending a long time in the desert, she learned to predict the behavior of the wind, and use it for their own purposes and recall at the appropriate time.",
+			"specialty" :
+			{
+				"description" : "{Haste}\r\n\r\nCasts Haste with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"tooltip" : "Spell Bonus: Haste",
+				"name" : "Haste"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/MexNefer/un32Tail.bmp",
+			"specialtyLarge" : "bastion/heroes/MexNefer/un44Hast.bmp",
+			"large" : "bastion/heroes/MexNefer/MexNefer.bmp",
+			"small" : "bastion/heroes/MexNefer/MexNeferSmall.bmp",
+		},
+
+		"spellbook" :
+		[
+			"haste"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		
+"specialty": {
+			"bonuses" : {
+				"haste" : {
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 7
+				}
+			}
+		}
+	}
+}

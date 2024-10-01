@@ -1,0 +1,6 @@
+{
+	"blacklairbattlefield": {
+		"graphics": "battle/blacklairbattlefield1.png",
+		"isSpecial": true
+	}
+}

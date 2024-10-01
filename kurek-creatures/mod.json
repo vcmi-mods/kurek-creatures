@@ -1,28 +1,29 @@
 {
 	"name" : "Kurek Creatures",
-	"description" : "New neutral units with dwellings.",
+	"description" : "New units with dwellings.",
 	"author": "Graphics and mod: Kurek",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
-	"version" : "1.03",
+	"version" : "2.00",
 	"modType" : "Creatures",
 	"changelog" :
     {
 		"1.00" : ["Initial release"],
 		"1.01" : ["small update for vcmi-1.2"],
 		"1.02" : ["small fix for bonus morale"],
-		"1.03" : ["small update for vcmi-1.4"]
+		"1.03" : ["small update for vcmi-1.4"],
+		"2.00" : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"]
     },
 	"chinese" : {
-		"name" : "生物模组包（Kurek）",
-		"description" : "Kurek的生物模组包，包括了新的中立生物和巢穴。",
+		"name" : "?????(Kurek)",
+		"description" : "Kurek??????,?????????????",
 		"translations" : [
 			"translation/kurek-creatures/chinese.json"
 		]
 	},
 	"compatibility" :
 	{
-		"min" : "1.4.0"
+		"min" : "1.5.0"
 	}
 }

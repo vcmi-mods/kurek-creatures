@@ -1,0 +1,127 @@
+{
+	"desertguard":
+	{
+		"name" :
+		{
+			"plural" : "Desert Guards",
+			"singular" : "Desert Guard"
+		},
+		"advMapAmount" :
+		{
+			"max" : 30,
+			"min" : 20
+		},
+		"faction" : "pavilion",
+		"aiValue" : 101,
+		"hasDoubleWeek": true,
+		"attack" : 7,
+		"cost" :
+		{
+			"gold" : 80
+		},
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 1
+		},
+		"defense" : 7,
+		"fightValue" : 111,
+		"graphics" :
+		{
+			"animation" : "bastion/battle/creatures/Overseer.def",
+			"map" : "bastion/map/creatures/OverseerMap.def",
+			"iconSmall" : "bastion/iconsSmall/creatures/OverseerSmall.bmp",
+			"iconLarge" : "bastion/iconsBig/creatures/Overseer.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.10,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			}
+
+		},
+		"growth" : 15,
+		"hitPoints" : 8,
+		"level" : 1,
+		"horde" : 4,
+		"sound" :
+		{
+			"attack" : "bastion/overAtt.wav",
+			"defend": "bastion/wippDef.wav",
+			"killed": "bastion/wippDie.wav",
+			"move": "bastion/wippWalk.wav",
+			"wince": "bastion/wippHit.wav"
+ 		},
+		"speed" : 7,
+		"abilities" :
+		{
+            "ImmuneToCharge" :
+			{
+				"type" : "CHARGE_IMMUNITY"
+			},
+            "noRetaliate" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		
+		]		
+	}
+}

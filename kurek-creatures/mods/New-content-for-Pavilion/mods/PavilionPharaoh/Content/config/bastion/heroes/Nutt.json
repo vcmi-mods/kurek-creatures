@@ -1,0 +1,66 @@
+{
+	"keknutt" :
+	{
+		"class" : "pharaoh",
+		"female" : true,
+		
+		"texts" :
+		{
+			"name" : "Keknutt",
+			"biography" : "Some Sekhmets do not believe in their own resurrection, but legends do not lie. Keknutt is a good example; she died and rose from the dead with a new appearance. Now, instead of being half lion and half human, she looks like a humanoid frog. She tells her sister that she believed in the resurrection and was not afraid of death. Inspired by her story and transformation, all Sekhmets now go into battle without fear, confident in the promise of resurrection and emboldened by Keknutt's miraculous return.",
+			"specialty" :
+			{
+				"description" : "{Sekhmets and Sekhmet Priestiess}\r\n\r\nIncreases the Attack and Defence of any Sekhmet or Sekhmet Priestiess for each level attained after 4th level.",
+				"tooltip" : "Creature Bonus: Sekhmets",
+				"name" : "Sekhmets"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/nutt/un32Sekh.bmp",
+			"specialtyLarge" : "bastion/heroes/nutt/un44Sekh.bmp",
+			"large" : "bastion/heroes/nutt/Nutt.bmp",
+			"small" : "bastion/heroes/nutt/NuttSmall.bmp"
+		},
+        "spellbook" :
+		[
+			"curse"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "sekhmet",
+				"max" : 3,
+				"min" : 1
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+		],
+		
+		"specialty": {
+		"creature" : "sekhmet"  
+	}
+}
+}

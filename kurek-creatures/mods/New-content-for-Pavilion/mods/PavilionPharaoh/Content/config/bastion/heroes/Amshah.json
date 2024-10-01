@@ -1,0 +1,71 @@
+{
+	"amshah" :
+	{
+		"class" : "vizier",
+		"female" : false,
+		
+		"texts" :
+		{
+			"name" : "Amshah",
+			"biography" : "Amshah was one of the flagellants freed from captivity by Ja'Bak. After his liberation, he decided to stay in Tilafa, where he found a new life and mission. Today, he is responsible for other escapees from cities occupied by knights, providing them with shelter and assistance in adapting to their new reality. With his experience and knowledge, he has become a mentor and leader, helping former prisoners find their way in freedom and build new, stable lives in Tilafa. His courage and determination are an inspiration to many who have endured similar traumas.",
+			"specialty" :
+			{
+				"description" : "{Desert Guards}\r\n\r\nUpgrades Overseers to Desert Guards",
+				"tooltip" : "Creature Bonus: Whippers",
+				"name" : "Whippers"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Amshah/un32Whip.bmp",
+			"specialtyLarge" : "bastion/heroes/Amshah/un44Whip.bmp",
+			"large" : "bastion/heroes/Amshah/amshah.png",
+			"small" : "bastion/heroes/Amshah/amshahSmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 15
+			},
+            {
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 15
+			},
+			{
+				"creature" : "whipper",
+				"max" : 25,
+				"min" : 15
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		
+		"specialty": 
+    {
+        "base": {
+            "addInfo": "creature.desertguard",
+            "type": "SPECIAL_UPGRADE"
+        },
+        "bonuses": {
+            "overseer2desertguard": {
+                "subtype": "creature.overseer"
+            }
+        }
+    }
+	}
+}

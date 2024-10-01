@@ -1,0 +1,63 @@
+{
+	"bianor" :
+	{
+		"class" : "pharaoh",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Bianor",
+			"biography" : "Anubians are known for their magical nature, but Bianor have always been fascinated with engineering. He brought a few ballistas to his palace basement, where he got them upgraded. During battles his war mashines could kill up to 20 people with a single shot.",
+			"specialty" :
+			{
+				"description" : "{Ballista}\r\n\r\nIncreases the Attack and Defense skill of any Ballista for each level attained after 4th level.",
+				"tooltip" : "Artillery Bonus: Ballista",
+				"name" : "Ballista"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Bianor/un32ball.bmp",
+			"specialtyLarge" : "bastion/heroes/Bianor/un44ball.bmp",
+			"large" : "bastion/heroes/Bianor/Bianor.bmp",
+			"small" : "bastion/heroes/Bianor/Bianorsmall.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 20,
+				"min" : 12
+			},
+			{ 
+				"creature" : "ballista", 
+				"max" : 1, 
+				"min" : 1 
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "archery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty" : 
+		{
+			"creature" : "ballista"
+		}
+	}
+}

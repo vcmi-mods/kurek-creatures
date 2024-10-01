@@ -1,0 +1,22 @@
+{
+	"name" : "Cherub",
+	"description" : "New unit - Cherub. The cherubim are the second highest rank in the angelic hierarchy, following the Seraphim. Cherubim are regarded in traditional angelology as angels of the second highest order of the ninefold celestial hierarchy.",
+	"author": "Kurek",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"version" : "1.03",
+	"modType" : "Creatures",
+	"creatures" :
+	[
+		"config/cherub/cherub.json"
+	],
+	"objects" : 
+	[  "config/cherub/dwellings" ],
+	"spells" : 
+	[
+		"config/cherub/cherubpowerbondspells.json"
+	],
+	"battlefields" :
+	[
+		"config/cherub/altarofpropheciesbattlefield.json"
+	]
+}

@@ -1,0 +1,151 @@
+{
+	"greatersphinx":
+	{
+		"name" :
+		{
+			"plural" : "Greater Sphinxes",
+			"singular" : "Greater Sphinx"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 5
+		},
+		"faction" : "pavilion",
+		"aiValue" : 1610,
+		"attack" : 15,
+		"hasDoubleWeek": true,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			"max" : 22,
+			"min" : 18
+		},
+		"defense" : 17,
+		"fightValue" : 1400,
+		"graphics" :
+		{
+			"animation" : "bastion/battle/creatures/ElderSphinx.def",
+			"map" : "bastion/map/creatures/ElderSphinxMap.def",
+			"iconSmall" : "bastion/iconsSmall/creatures/ElderSphinxSmall.bmp",
+			"iconLarge" : "bastion/iconsBig/creatures/ElderSphinx.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			}
+	
+		},
+	    "doubleWide" : true,
+        "growth" : 2,
+		"hitPoints" : 110,
+		"level" : 6,
+        "horde" : 1,
+   
+		"sound" :
+		{
+			"attack" : "bastion/sphxAtt.wav",
+			"defend": "bastion/sphxDef.wav",
+			"killed": "bastion/sphxDie.wav",
+			"move": "bastion/sphxWalk.wav",
+			"wince": "bastion/sphxHit.wav"
+ 		},
+		"speed" : 7,
+		"abilities" :
+		{
+            "magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.earth",
+				"val" : 40
+			},
+            "spellsLength" : 
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 10
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"castpetify" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.stoneGaze",
+				"val" : 1
+			},
+			"deathStare" : 
+			{ 
+				"subtype" : "deathStareGorgon", 
+				"type" : "DEATH_STARE", 
+				"val" : 40 
+			}
+
+
+		},
+		"stackExperience" :
+		[
+		
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		]	
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"mantis" :
+	{
+		"class" : "embalmer",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Mantis",
+			"biography" : "He hails from Bracada and graduated from the prestigious Academy of Mages, where he specialized in the intricate and ancient desert aspects of earth magic. Driven by an insatiable thirst for knowledge and power, he left his hometown after a few years to seek out more potent and elusive forms of magic. The mystical allure of the desert cities captivated him, and he chose to settle there. Immersed in the enigmatic and harsh landscapes, he honed his magical abilities to new heights, delving deep into the secrets of the sands and the earth. His journey through the deserts not only enhanced his powers but also transformed him into a mage of formidable skill and wisdom.",
+			"specialty" :
+			{
+				"description" : "{Quicksand}\r\n\r\nCasts quicksand with strengthened effect.",
+				"tooltip" : "Spell Bonus: Quicksand",
+				"name" : "Quicksand Master"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Mantis/32quicksand.bmp",
+			"specialtyLarge" : "bastion/heroes/Mantis/44quicksand.bmp",
+			"large" : "bastion/heroes/Mantis/Mantis.bmp",
+			"small" : "bastion/heroes/Mantis/MantisSmall.bmp",
+		},
+        "spellbook" :
+		[
+			"quicksand" 
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "advanced" ,
+				"skill" : "wisdom"
+			}
+		],
+		"specialty" : 
+		{
+			"bonuses": 
+			{
+				"patchCountBonus": 
+				{
+					"subtype": "spell.quicksand",
+					"type": "SPECIAL_SPELL_LEV",
+					"updater": 
+						{
+						"type": "GROWS_WITH_LEVEL",
+						"parameters": [20, 3] // Increase by 1 for every 3 levels
+						},
+					"val": 1
+				}
+			}
+		}		
+	}
+}
+
+

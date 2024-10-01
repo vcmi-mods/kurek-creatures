@@ -1,0 +1,93 @@
+{
+  "abilities": {
+    "bluefiredamage": {
+      "type": "damageOverTime",
+      "name": "Blue Fire Damage",
+      "school": {
+        "air": false,
+        "earth": false,
+        "fire": true,
+        "water": false
+      },
+      "level": 0,
+      "power": 15,
+      "gainChance": {
+        "none": 0,
+        "basic": 0.1,
+        "advanced": 0.2,
+        "expert": 0.3
+      },
+      "flags": {
+        "offensive": true,
+        "damage": true,
+        "negative": true
+      },
+      "animation": {
+        "hit": [
+          {
+            "defName": "spells/bluefire.def",
+            "verticalPosition": "bottom"
+          }
+        ]
+      },
+      "levels": {
+        "none": {
+          "description": "Inflicts blue fire damage over time.",
+          "cost": 0,
+          "range": "MELEE",
+          "power": 40,
+          "aiValue": 70,
+          "effects": {
+            "directDamage": {
+              "type": "damage",
+              "val": 10,
+              "valueType": "PERCENT"
+            }
+          }
+        },
+        "basic": {
+          "description": "Inflicts blue fire damage over time.",
+          "cost": 0,
+          "range": "MELEE",
+          "power": 45,
+          "aiValue": 70,
+          "effects": {
+            "directDamage": {
+              "type": "damage",
+              "val": 15,
+              "valueType": "PERCENT"
+            }
+          }
+        },
+        "advanced": {
+          "description": "Inflicts blue fire damage over time.",
+          "cost": 0,
+          "range": "MELEE",
+          "power": 50,
+          "aiValue": 70,
+          "effects": {
+            "directDamage": {
+              "type": "damage",
+              "val": 20,
+              "valueType": "PERCENT"
+            }
+          }
+        },
+        "expert": {
+          "description": "Inflicts blue fire damage over time.",
+          "cost": 0,
+          "range": "MELEE",
+          "power": 55,
+          "aiValue": 70,
+          "effects": {
+            "directDamage": {
+              "type": "damage",
+              "val": 25,
+              "valueType": "PERCENT"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+	"takem" :
+	{
+		"class" : "pharaoh",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Ta-Kem",
+			"biography" : "Ta-Kem spent her whole life studying various scrolls about geology. When times have changed and he was sent to war, she learned to use the acquired knowledge in practice, so she can always find firmer ground to move quickly.",
+			"specialty" :
+			{
+				"description" : "{Pathfinding}\r\n\r\nReceives a 5% per level bonus to Pathfinding skill.",
+				"tooltip" : "Secondary Skill Bonus: Pathfinding",
+				"name" : "Pathfinding"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Takem/un32Path.bmp",
+			"specialtyLarge" : "bastion/heroes/Takem/un44Path.bmp",
+			"large" : "bastion/heroes/Takem/Takem.bmp",
+			"small" : "bastion/heroes/Takem/TakemSmall.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 8
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+	"specialty": 
+	{
+        "bonuses": 
+            {
+                "type": "ROUGH_TERRAIN_DISCOUNT",
+				"valueType" : "BASE_NUMBER",
+                "val": 25
+            }
+    }
+	}
+}

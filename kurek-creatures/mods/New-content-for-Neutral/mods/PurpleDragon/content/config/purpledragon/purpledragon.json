@@ -1,0 +1,129 @@
+{
+	"purpledragon": {
+		"name": {
+			"plural": "Purple Dragons",
+			"singular": "Purple Dragon"
+		},
+		"advMapAmount": {
+			"max": 2,
+			"min": 1
+		},
+		"hasDoubleWeek": false,
+		"faction": "neutral",
+		"aiValue": 6525,
+		"attack": 18,
+		"cost": {
+			"gold": 3400,
+			"mercury": 1,
+			"sulfur": 1
+		},
+		"damage": {
+			"max": 50,
+			"min": 35
+		},
+		"defense": 18,
+		"fightValue": 5108,
+		"graphics": {
+			"animation": "battle/purpledragon.def",
+			"map": "map/purpledragononmap.def",
+			"iconSmall": "iconsSmall/purpledragonavatarsmall.png",
+			"iconLarge": "iconsBig/purpledragonavatarbig.bmp",
+			"timeBetweenFidgets": 1,
+			"animationTime": {
+				"walk": 1.00,
+				"attack": 0.7,
+				"idle": 10
+			}
+		},
+		"growth": 1,
+		"doubleWide": true,
+		"hitPoints": 300,
+		"level": 7,
+		"sound": {
+			"attack": "PurpleDragon/breath.wav",
+			"defend": "PurpleDragon/defend.wav",
+			"killed": "PurpleDragon/dragondie.wav",
+			"move": "PurpleDragon/move.wav",
+			"wince": "PurpleDragon/gethit.wav"
+		},
+		"speed": 10,
+		"abilities": {
+			"dragon": {
+				"type": "DRAGON_NATURE"
+			},
+			"canFly": {
+				"type": "FLYING",
+				"subtype": "movementFlying"
+			},
+			"spellImmunity": {
+				"type": "LEVEL_SPELL_IMMUNITY",
+				"val": 4
+			},
+			"FireBreath": {
+				"type": "TWO_HEX_ATTACK_BREATH"
+			},
+			"BlueFireBreath": {
+                "type": "SPELL_AFTER_ATTACK",
+                "subtype": "spell.bluefire",
+                "val": 100
+            },
+		},
+"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			}
+		]
+	}
+}

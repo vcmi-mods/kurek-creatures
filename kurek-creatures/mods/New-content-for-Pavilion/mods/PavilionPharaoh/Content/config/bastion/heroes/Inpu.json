@@ -1,0 +1,75 @@
+{
+	"inpu" :
+	{
+		"class" : "pharaoh",
+		"female" : false,
+	
+		"texts" :
+		{
+			"name" : "Inpu",
+			"biography" : "Pharaoh Inpu is a legendary ruler known for his extraordinary magical abilities. Through mysterious rituals, he can transform sphinxes of various subspecies, including living and undead sphinxes, lamias, manticores, and scorpicores, into powerful guardian sphinxes. His reign is a time of great protection and stability, as the guardian sphinxes guard the borders of his kingdom against all threats.",
+			"specialty" :
+			{
+				"description" : "{Guardian Sphinxes}\r\n\r\nUpgrades various creatures into sphinxes. These creatures are: Sphinxes, Sphinx Oracles, Lamias, Ashen Sphinxes, Entombed Sphinxes, Manticores and Scorpicores.",
+				"tooltip" : "Creature Bonus: Can change various Hybrids into Guardian Sphinxes",
+				"name" : "Guardian of Sphinxes"
+			}
+		},
+	
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Inpu/Un32Sphi.bmp",
+			"specialtyLarge" : "bastion/heroes/Inpu/Un44Sphi.bmp",
+			"large" : "bastion/heroes/Inpu/Inpu.bmp",
+			"small" : "bastion/heroes/Inpu/InpuSmall.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 20,
+				"min" : 12
+			},
+            {
+				"creature" : "wadjet",
+				"max" : 12,
+				"min" : 7
+			},
+			{
+				"creature" : "camelRider",
+				"max" : 3,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty" : {
+			"base" : {
+				"addInfo" : "creature.guardiansphinx",
+				"type" : "SPECIAL_UPGRADE"
+			},
+			"bonuses" : {
+				"sphinx2guardiansphinx" : { "subtype" : "new-pavilion:sphinx" },
+				"sphinxoracles2guardiansphinx" : { "subtype" : "new-pavilion:elderSphinx" },
+				"Lamia2guardiansphinx" : { "subtype" : "axolotl-creatures-pack:sphinx" },
+				"ashensphinx2guardiansphinx" : { "subtype" : "creature.ashenSphinx" },
+				"entombedsphinx2guardiansphinx" : { "subtype" : "creature.entombedSphinx" },
+				"manticore2guardiansphinx" : { "subtype" : "creature.manticore" },
+				"scorpicore2guardiansphinx" : { "subtype" : "creature.scorpicore" }
+			}
+		}
+	}
+}
+

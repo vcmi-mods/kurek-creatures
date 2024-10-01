@@ -1,0 +1,114 @@
+{
+	"horus": {
+		"name": {
+			"plural": "Horuses",
+			"singular": "Horus"
+		},
+		"advMapAmount": {
+			"max": 16,
+			"min": 8
+		},
+		"faction": "pavilion",
+		"aiValue": 942,
+		"attack": 12,
+		"hasDoubleWeek": false,
+		"cost": {
+			"gold": 550
+		},
+		"spellPoints": 0,
+		"damage": {
+			"max": 16,
+			"min": 12
+		},
+		"defense": 6,
+		"fightValue": 780,
+		"graphics": {
+			"animation": "bastion/battle/creatures/horus.def",
+			"map": "bastion/map/creatures/horusMap.def",
+			"iconSmall": "bastion/iconsSmall/creatures/horusSmall.bmp",
+			"iconLarge": "bastion/iconsBig/creatures/Horus.bmp",
+			"timeBetweenFidgets": 1,
+			"animationTime": {
+				"walk": 1.20,
+				"idle": 10.00,
+				"attack": 1.00
+			}
+		},
+		"doubleWide": true,
+		"growth": 3,
+		"hitPoints": 60,
+		"level": 5,
+		"upgrades": [
+			"divinehorus"
+		],
+		"sound": {
+			"attack": "bastion/Horus_attack.wav",
+			"defend": "bastion/Horus_defend.wav",
+			"killed": "bastion/Horus_killed.wav",
+			"move": "bastion/Horus_move.wav",
+			"wince": "bastion/Horus_wince.wav"
+		},
+		"speed": 12,
+		"abilities": {
+			"magicResistance": {
+				"type": "SPELL_DAMAGE_REDUCTION",
+				"subtype": "spellSchool.any",
+				"val": 100
+			},
+			"deathStare": {
+				"subtype": "deathStareGorgon",
+				"type": "DEATH_STARE",
+				"val": 20
+			}
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"subtype": "primarySkill.attack",
+					"type": "PRIMARY_SKILL"
+				},
+				"values": [1, 1, 2, 3, 4, 5, 5, 6, 7, 8]
+			},
+			{
+				"bonus": {
+					"subtype": "primarySkill.defense",
+					"type": "PRIMARY_SKILL"
+				},
+				"values": [1, 2, 3, 3, 4, 4, 6, 6, 7, 8]
+			},
+			{
+				"bonus": {
+					"subtype": "creatureDamageMax",
+					"type": "CREATURE_DAMAGE"
+				},
+				"values": [1, 2, 2, 3, 4, 4, 5, 6, 7, 7]
+			},
+			{
+				"bonus": {
+					"subtype": "creatureDamageMin",
+					"type": "CREATURE_DAMAGE"
+				},
+				"values": [0, 1, 2, 3, 3, 4, 5, 6, 6, 7]
+			},
+			{
+				"bonus": {
+					"valueType": "PERCENT_TO_BASE",
+					"type": "STACK_HEALTH"
+				},
+				"values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION"
+				},
+				"values": [9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		]
+	}
+}

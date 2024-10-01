@@ -1,0 +1,85 @@
+{
+    "pharaoh": {
+        "name": "Pharaoh",
+        "animation": {
+            "battle": {
+                "female": "bastion/battle/heroes/battleHeroPharaohfemale",
+                "male": "bastion/battle/heroes/battleHeroPharaohmale"
+            }
+        },
+        "mapObject": {
+            "templates": {
+                "male": {
+                    "animation": "bastion/map/heroes/mapHeroPharaoh"
+                },
+                "female": {
+                    "animation": "bastion/map/heroes/mapHeroVizier"
+                }
+            }
+        },
+        "affinity": "might",
+        "commander": "preacher",
+        "faction": "pavilion",
+        "primarySkills": {
+            "attack": 3,
+            "defence": 0,
+            "spellpower": 2,
+            "knowledge": 1
+        },
+        "lowLevelChance": {
+            "attack": 50,
+            "defence": 10,
+            "spellpower": 30,
+            "knowledge": 10
+        },
+        "highLevelChance": {
+            "attack": 50,
+            "defence": 10,
+            "spellpower": 30,
+            "knowledge": 20
+        },
+        "secondarySkills": {
+            "pathfinding": 8,
+            "archery": 7,
+            "logistics": 8,
+            "scouting": 7,
+            "diplomacy": 1,
+            "navigation": 2,
+            "leadership": 5,
+            "wisdom": 2,
+            "mysticism": 2,
+            "luck": 2,
+            "ballistics": 7,
+            "eagleEye": 1,
+            "necromancy": 0,
+            "estates": 1,
+            "fireMagic": 2,
+            "airMagic": 1,
+            "waterMagic": 0,
+            "earthMagic": 3,
+            "scholar": 1,
+            "tactics": 6,
+            "artillery": 8,
+            "learning": 4,
+            "offence": 10,
+            "armorer": 5,
+            "intelligence": 4,
+            "sorcery": 4,
+            "resistance": 5,
+            "firstAid": 6
+        },
+        "defaultTavern": 5,
+        "tavern": {
+            "castle": 6,
+            "rampart": 6,
+            "tower": 6,
+            "inferno": 6,
+            "necropolis": 6,
+            "dungeon": 6,
+            "stronghold": 6,
+            "fortress": 6,
+            "conflux": 6,
+            "pavilion": 6
+        }
+    }
+}

@@ -1,0 +1,133 @@
+{
+	"kurekCyclopsWarrior":
+	{
+		"name" :
+		{
+			"plural" : "Cyclops Warriors",
+			"singular" : "Cyclops Warrior"
+		},
+		"advMapAmount" :
+		{
+			"max" : 7,
+			"min" : 3
+		},
+		"hasDoubleWeek": true,
+		"faction": "stronghold",
+		"aiValue" : 1400,
+		"attack" : 18,
+		"cost" :
+		{
+			"gold" : 1000,
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 17
+		},
+		"defense" : 16,
+		"shots" :  0,
+		"fightValue" : 	1400,
+		"spellPoints" : 2,
+		"graphics" :
+		{
+			"animation" : "battle/cyclop_warrior.def",
+			"map" : "map/cyclop_warrior_on_map.def",
+			"iconSmall" : "iconsSmall/cyclopswarrior_avatar_small.png",
+			"iconLarge" : "iconsBig/cyclopswarrior_avatar_big.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"attack" : 2,
+				"idle" : 4
+			}
+		},
+		"growth" : 2,
+		"doubleWide" : false,
+		"hitPoints" : 70,
+		"level" : 6,
+		"sound" :
+		{
+			"attack": "cyclopswarrior/cyclopswarrior_attack_sound.wav",
+			"defend": "CYCLDFND.wav",
+			"killed": "CYCLKILL.wav",
+			"move": "CYCLMOVE.wav",
+			"wince": "CYCLWNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+			"Crushing Blow" : {
+				"subtype" : "spell.crushingblow",
+				"type" : "SPELL_AFTER_ATTACK",
+				"val": 50
+				//"range" : "ONLY_MELEE_FIGHT"
+			}
+			//"Crushing Blow2" :
+			//{
+			//	"type" : "SPELLCASTER",
+			//	"subtype" : "spell.crushingblow",
+			//	"val" : 1
+			//},
+
+		},
+		"stackExperience" :
+		[
+
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		]
+	}
+}

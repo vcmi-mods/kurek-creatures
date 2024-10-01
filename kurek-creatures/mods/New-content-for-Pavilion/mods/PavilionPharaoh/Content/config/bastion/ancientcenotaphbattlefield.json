@@ -1,0 +1,7 @@
+{
+	"ancientcenotaphbattlefield": {
+		"graphics":  "bastion/battle/ancientcenotaphbattlefield.png",
+		"impassableHexes" : [ 76, 92, 93, 94, 95, 109, 110, 111 ],
+		"isSpecial" : true
+		}
+}

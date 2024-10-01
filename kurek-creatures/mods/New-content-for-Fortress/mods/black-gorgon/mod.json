@@ -1,0 +1,17 @@
+{
+	"name": "Black Gorgon",
+	"description": "New unit - Black Gorgon",
+	"author": "Graphics and mod: Drwal",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=1361",
+	"version": "2.0",
+	"modType": "Creatures",
+	"creatures": [
+		"config/blackgorgon/blackgorgon.json"
+	],
+	"battlefields": [
+		"config/blackgorgon/blacklairbattlefield.json"
+	],
+	"objects": [
+		"config/blackgorgon/dwellings.json"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : 
+		{
+			"kurekCyclopsLarder" : 
+			{
+				"battleground": "kurek-creatures.new-content-for-stronghold.cyclops_warrior:cyclopslarderbattlefield",
+				"name" : "Cyclops Larder",
+				"guards" : true,
+				"creatures" : [[ "kurekCyclopsWarrior" ]],
+				"sounds": {	"ambient": ["LOOPCAVE"],
+				"visit": ["cyclopswarrior/visit"]},
+	"templates" : 
+				{
+					"default" : 
+					{
+						"animation" : "dwelling/Cyclop_Larder.def",
+						"mask" : [ "VVV", "BBB", "BAB" ]
+					}
+				}
+			}
+		}		
+	}
+}	

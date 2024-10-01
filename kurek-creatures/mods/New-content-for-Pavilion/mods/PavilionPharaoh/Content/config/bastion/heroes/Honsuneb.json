@@ -1,0 +1,62 @@
+{
+	"honsuneb" :
+	{
+		"class" : "pharaoh",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Honsuneb",
+			"biography" : " Pharaoh Honsuneb is a legendary ruler who can command powerful desert winged serpents. His ability to control these mythical creatures brings him great strength and respect among his subjects. With his power, Honsuneb maintains order and security in his kingdom.",
+			"specialty" :
+			{
+				"description" : "{Wadjets and Venomous Wadjets}\r\n\r\nIncreases the Attack and Defence of any Wadjets or Venomous Wadjets for each level attained after 2nd level.",
+				"tooltip" : "Creature Bonus: Wadjets",
+				"name" : "Wadjets"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "bastion/heroes/Honsuneb/UN32Wadj.bmp",
+			"specialtyLarge" : "bastion/heroes/Honsuneb/UN44Wadj.bmp",
+			"large" : "bastion/heroes/Honsuneb/Honsuneb.bmp",
+			"small" : "bastion/heroes/Honsuneb/HonsunebSmall.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "whipper",
+				"max" : 20,
+				"min" : 12
+			},
+            {
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "wadjet",
+				"max" : 10,
+				"min" : 5
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "ballistics"
+			}
+		],
+ "specialty": 
+ {
+ "creature" : "wadjet",
+	}
+}
+}

@@ -1,0 +1,171 @@
+{
+    "kurekBloodeyedCyclops": {
+        "name": {
+            "plural": "Bloodeyed Cyclopes",
+            "singular": "Bloodeyed Cyclop"
+        },
+        "advMapAmount": {
+            "max": 9,
+            "min": 3
+        },
+        "hasDoubleWeek": true,
+        "faction": "stronghold",
+        "aiValue": 1500,
+        "attack": 18,
+        "cost": {
+            "gold": 1100,
+            "crystal": 1
+        },
+        "damage": {
+            "max": 24,
+            "min": 12
+        },
+        "defense": 12,
+        "shots": 7,
+        "fightValue": 1450,
+        "spellPoints": 4,
+        "graphics": {
+            "animation": "battle/bloodeyed_cyclops.def",
+            "map": "map/bloodeyed_cyclops_on_map.def",
+            "iconSmall": "iconsSmall/bcyclops_small.png",
+            "iconLarge": "iconsBig/bcyclops_big.bmp",
+            "timeBetweenFidgets": 1,
+            "missile": {
+                "ray": [
+                    { "start": [255, 0, 0, 255], "end": [255, 36, 36, 150] },
+                    { "start": [255, 237, 197, 255], "end": [255, 36, 36, 128] },
+                    { "start": [255, 24, 6, 255], "end": [255, 0, 63, 255] },
+                    { "start": [255, 95, 197, 255], "end": [255, 95, 63, 255] },
+                    { "start": [255, 24, 6, 255], "end": [255, 0, 63, 255] },
+                    { "start": [255, 237, 197, 255], "end": [255, 36, 36, 128] },
+                    { "start": [255, 0, 0, 255], "end": [255, 36, 36, 150] }
+                ],
+                "attackClimaxFrame": 6,
+                "offset": {
+                    "upperX": 16,
+                    "upperY": -84,
+                    "middleX": 12,
+                    "middleY": -86,
+                    "lowerX": 6,
+                    "lowerY": -77
+                },
+                "frameAngles": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            "animationTime": {
+                "walk": 1,
+                "attack": 5,
+                "idle": 4
+            }
+        },
+        "growth": 2,
+        "doubleWide": false,
+        "hitPoints": 70,
+        "level": 6,
+        "sound": {
+            "attack": "cyclops/Bloodeyed_cyclops_beam.wav",
+            "defend": "CYCLDFND.wav",
+            "killed": "CYCLKILL.wav",
+            "move": "CYCLMOVE.wav",
+            "shoot": "cyclops/Bloodeyed_cyclops_beam.wav",
+            "wince": "CYCLWNCE.wav"
+        },
+        "speed": 8,
+        "abilities": {
+            "canShoot": {
+                "type": "SHOOTER"
+            },
+            "noMeleePenalty": {
+                "type": "NO_MELEE_PENALTY"
+            },
+            "redparalyze": {
+                "type": "SPELL_AFTER_ATTACK",
+                "subtype": "spell.redparalyze",
+                "val": 20
+            },
+            "Fiery Eye": {
+                "type": "SPELL_LIKE_ATTACK",
+                "subtype": "spell.fieryeye"
+            },
+            "twohexattackcyclopseye": 
+			{
+				"type": "TWO_HEX_ATTACK_BREATH",
+				//"graphics":
+				//	{
+				//"icon": "spell/laserikona.bmp"
+				//	},
+				//"name": "Fire ray",
+				"description": "This bonus allows the creature to attack two hexes in a line.",
+				//"flags": 
+				//	{
+				//"displayOnly": false
+				//	}
+			},
+            "Casts misfortune": {
+                "type": "SPELLCASTER",
+                "subtype": "spell.misfortune",
+                "val": 3
+            },
+            "spellpoints": {
+                "type": "CASTS",
+                "val": 1
+            }
+        },
+"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			}
+		]
+    }
+}

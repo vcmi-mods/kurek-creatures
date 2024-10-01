@@ -1,0 +1,6 @@
+{
+	"purpletowerbattlefield": {
+		"graphics":  "battle/purpletowerbattlefield.png",
+		"isSpecial" : true
+		}
+}

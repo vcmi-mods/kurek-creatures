@@ -1,0 +1,169 @@
+{
+	"anubisblademaster":
+	{
+		"name" :
+		{
+			"plural" : "Anubian Blademasters",
+			"singular" : "Anubian Blademaster"
+		},
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 3
+		},
+		"faction" : "pavilion",
+		"aiValue" : 4050,
+		"attack" : 30,
+		"cost" :
+		{
+			"gold" : 4000,
+            "gems" : 2
+		},
+		"damage" :
+		{
+			"max" : 45,
+			"min" : 40
+		},
+		"defense" : 20,
+		"fightValue" : 3850,
+		"hasDoubleWeek": false,
+		"graphics" :
+		{
+			"animation" : "bastion/battle/creatures/AnubisWarrior.def",
+			"map" : "bastion/map/creatures/AnubisWarriorMap.def",
+			"iconSmall" : "bastion/iconsSmall/creatures/AnubisWarriorSmall.bmp",
+			"iconLarge" : "bastion/iconsBig/creatures/AnubisWarrior.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00,
+			},
+               "missile" :
+			{
+				"projectile" : "bastion/battle/creatures/projectile/shot281.def",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}	
+	
+		},
+        "growth" : 1,
+		"hitPoints" : 250,
+		"level" : 7,
+        
+   
+		"sound" :
+		{
+			"attack" : "bastion/anubAtt.wav",
+			"defend": "bastion/anubDef.wav",
+			"killed": "bastion/anubDie.wav",
+			"move": "DEVLMOVE.wav",
+			"wince": "bastion/anubHit.wav",
+            "shoot" : "bastion/anubShoot.wav",
+			"startMoving": "bastion/anubTel.wav",
+			"endMoving": "bastion/anubTel.wav"
+ 		},
+		"speed" : 13,
+        "shots" : 2,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			    "teleports" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+            "immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+
+            "regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 200
+			},
+            "deathCloud" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.deathCloud"
+			},
+            "noPenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		
+		]	
+	}
+}

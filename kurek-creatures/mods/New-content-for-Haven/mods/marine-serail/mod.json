@@ -1,0 +1,20 @@
+{
+	"name" : "Marine Serail",
+	"description" : "Bank for Marids, Genies and Efreets. The marids dwell on the Plane of Water, and are subjects of Acwalander the Water Lord. The marids on the continent of Enroth were usually neutral, sometimes willing to serve anyone who found their golden shell or a bottle and paid them. Sometimes they don't obey those, who find them due to their very chaotic, selfish and unpredictable behavior. The marids of Antagarich, on the other hand, were extremely rare, considered only a legend by pirates and marinefolk. It isn't sure if any marid survived the Reckoning. The marids never listen to anyone, who doesn't own their golden shell, it is also very hard to trap them in one. They can be found anywhere in the seas and oceans, however its always a very rare event. Some marids prefer living in lakes and rivers, but those are extremely rare. Marids are very powerful, as powerful as efreets and some stronger genies. They don't like genies, but its the efreets that they extremely hate. Most encounters with marids result with drowned sailors, magically cursed ships, bitten off arms and legs, frozen sails, or stolen valuables. Some encounters, however, result with friendships. Its mostly mermaids, tritons, abyssal shamans, pirate mages and sea sorceresses, who manage to convince marids to join their armies, it happens rarely and alway for a high price. All marids are immune to any form of water magic. They can also use their magical powers to completely wash all magic effects from attacked unit.",
+	"author": "Graphics and mod: Kurek, special thanks to Kammer",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"modType" : "Compatibility",
+	"version" : "2.0",
+	"objects" :
+	[
+		"config/marid/marineserail"
+	],
+		"depends" :
+	[
+		"haven-town"
+	],
+		"battlefields" :
+	[
+		"config/marid/marineserailbattlefield.json"
+	]
+}
