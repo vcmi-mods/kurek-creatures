@@ -1,0 +1,128 @@
+{
+	"eagle": {
+		"name": {
+			"plural": "Eagles",
+			"singular": "Eagle"
+		},
+		"advMapAmount": {
+			"max": 18,
+			"min": 11
+		},
+		"hasDoubleWeek": true,
+		"faction": "neutral",
+		"aiValue": 322,
+		"attack": 6,
+		"cost": {
+			"gold": 300,
+			},
+		"damage": {
+			"max": 7,
+			"min": 5
+		},
+		"defense": 5,
+		"fightValue": 319,
+		"graphics": {
+			"animation": "battle/eagle.def",
+			"map": "map/eagleonmap.def",
+			"iconSmall": "iconsSmall/eagleavatarsmall.png",
+			"iconLarge": "iconsBig/eagleavatarbig.bmp",
+			"timeBetweenFidgets": 1,
+			"animationTime": {
+				"walk": 1.00,
+				"attack": 0.7,
+				"idle": 10
+			}
+		},
+		"growth": 7,
+		"doubleWide": false,
+		"hitPoints": 30,
+		"level": 3,
+		"sound": {
+			"attack": "eagle/attack.wav",
+			"defend": "ROCCDFND.wav",
+			"killed": "eagle/die.wav",
+			"move": "eagle/move.wav",
+			"wince": "eagle/wince.wav"
+			"shoot" : "eagle/visit.mp3",
+		},
+		"speed": 7,
+		"abilities": {
+			"canFly": {
+				"type": "FLYING",
+				"subtype": "movementFlying"
+			},
+			"casts": {
+				"type": "SPELLCASTER",
+				"val": 3,
+				"subtype": "spell.mirth"
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		},
+"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+			}
+		]
+	}
+}

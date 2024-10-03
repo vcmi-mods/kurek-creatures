@@ -1,0 +1,14 @@
+{
+	"name" : "Eagle",
+	"description" : "New unit - Eagle. It is a 3 level neutral unit, that can fly and cast expert mirth once per battle. Dwelling- Eagle Nest." ,
+	"author": "Kurek",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"modType" : "Creatures",
+	"version" : "1.00",
+	"creatures" :
+	[
+	"config/eagle/eagle"
+	],
+	"objects" : 
+	[  "config/eagle/dwellings"]
+}

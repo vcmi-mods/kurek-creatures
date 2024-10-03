@@ -13,8 +13,8 @@
 						"animation" : "dwelling/purpletower.def",
 						"mask" : [ "VVV", "VBV", "VBV", "VAV"]
 					}
+					}
 				}
 			}
-		}
-	}		
-}	
+		}		
+	}	
