@@ -5,7 +5,7 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
-	"version" : "2.00",
+	"version" : "1.04",
 	"modType" : "Creatures",
 	"changelog" :
     {
@@ -13,17 +13,11 @@
 		"1.01" : ["small update for vcmi-1.2"],
 		"1.02" : ["small fix for bonus morale"],
 		"1.03" : ["small update for vcmi-1.4"],
-		"2.00" : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"]
+		"2.0" : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"],
+		"2.1" : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."]
     },
-	"chinese" : {
-		"name" : "?????(Kurek)",
-		"description" : "Kurek??????,?????????????",
-		"translations" : [
-			"translation/kurek-creatures/chinese.json"
-		]
-	},
 	"compatibility" :
 	{
-		"min" : "1.5.0"
+		"min" : "1.4.0"
 	}
 }
