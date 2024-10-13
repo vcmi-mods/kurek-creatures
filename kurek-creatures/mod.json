@@ -15,7 +15,7 @@
 		"1.03" : ["small update for vcmi-1.4"],
 		"2.0" : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"],
 		"2.1" : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."],
-		"2.2" : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."]
+		"2.2" : ["Czech translation by George King"]
     },
 	"chinese" : {
 		"name" : "生物模组包（Kurek）",
