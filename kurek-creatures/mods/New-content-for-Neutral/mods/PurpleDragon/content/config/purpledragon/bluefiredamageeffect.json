@@ -68,11 +68,6 @@
 								"hit": "PurpleDragon/blueflames.wav"
 							}
 						},
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
 						"sounds": {
 							"hit": "PurpleDragon/blueflames.wav"
 						}
@@ -110,11 +105,6 @@
 							"sounds": {
 								"hit": "PurpleDragon/blueflames.wav"
 							}
-						},
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
 						},
 						"sounds": {
 							"hit": "PurpleDragon/blueflames.wav"
@@ -154,11 +144,6 @@
 								"hit": "PurpleDragon/blueflames.wav"
 							}
 						},
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
 						"sounds": {
 							"hit": "PurpleDragon/blueflames.wav"
 						}
@@ -197,11 +182,6 @@
 								"hit": "PurpleDragon/blueflames.wav"
 							}
 						},
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
 						"sounds": {
 							"hit": "PurpleDragon/blueflames.wav"
 						}
@@ -239,11 +219,6 @@
 							"sounds": {
 								"hit": "PurpleDragon/blueflames.wav"
 							}
-						},
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
 						},
 						"sounds": {
 							"hit": "PurpleDragon/blueflames.wav"
