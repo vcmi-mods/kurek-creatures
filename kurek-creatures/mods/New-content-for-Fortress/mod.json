@@ -4,6 +4,10 @@
 	"description" : "Adds new Fortress creatures",
 	"modType" : "Creatures",
 	"name" : "New Content for Fortress",
-	"version" : "2.0"
+	"version" : "2.0",
+	"czech" : {
+		"name" : "Nový obsah pro Pevnost",
+		"description" : "Přidává nové jednotky pro Pevnost"
+	}
 	
 }

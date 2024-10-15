@@ -11,5 +11,9 @@
 	"depends" :
 	[
 		"new-pavilion"
-	]
+	],
+	"czech" : {
+		"name" : "Nový obsah pro Pavilión",
+		"description" : "Přidává nové jednotky pro Pavilión a novou rasu Faraon"
+	}
 }

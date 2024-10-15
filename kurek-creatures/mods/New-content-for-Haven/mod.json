@@ -8,5 +8,9 @@
 	"depends" :
 	[
 		"haven-town"
-	]
+	],
+	"czech" : {
+		"name" : "Nový obsah pro Útočiště",
+		"description" : "Přidává nové jednotky pro Útočiště"
+	}
 }

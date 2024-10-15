@@ -5,6 +5,10 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"version" : "1.03",
 	"modType" : "Creatures",
+	"czech" : {
+		"name" : "Cherubíní",
+		"description" : "Nová jednotka – Cherubíni. Cherubíní jsou druhou nejvyšší hodností v andělské hierarchii, následují po Serafínech. V tradiční angelologii jsou cherubové považováni za anděly druhého nejvyššího řádu z devítinásobné nebeské hierarchie."
+	},
 	"creatures" :
 	[
 		"config/cherub/cherub.json"

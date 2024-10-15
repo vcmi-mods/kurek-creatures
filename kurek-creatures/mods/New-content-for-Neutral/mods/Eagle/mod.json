@@ -5,6 +5,10 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"modType" : "Creatures",
 	"version" : "1.00",
+	"czech" : {
+		"name" : "Orli",
+		"description" : "Nová jednotka – Orel. Je to neutrální jednotka 3. úrovně, která může létat a jednou za bitvu seslat kouzlo expertní Radost. Obydlí – Orlí hnízdo."
+	},
 	"creatures" :
 	[
 	"config/eagle/eagle"
