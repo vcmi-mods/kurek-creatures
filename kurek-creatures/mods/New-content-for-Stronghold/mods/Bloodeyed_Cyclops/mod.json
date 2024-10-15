@@ -1,10 +1,14 @@
 {
-	"name" : "bloodeyed_cyclops",
+	"name" : "Bloodeyed Cyclops",
 	"description" : "New unit - Bloodeyed Cyclops. The Bloodeyed Cyclops has no need of a club. Its weapon is the bloody eye with which it strikes down any poor soul unlucky enough to meet its accursed gaze. He can also cast spells, as he is the most intelligent subtype of cyclopes.",
 	"author": "Graphics and mod: Kurek",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"version" : "1.00",
 	"modType" : "Creatures",
+	"czech" : {
+		"name" : "Krvaví Kyklopové",
+		"description" : "Nová jednotka – Krvaví Kyklopové. Krvavý Kyklop nepotřebuje žádnou palici. Jeho zbraní je krvavé oko, kterým srazí každou nešťastnou duši, která se setká s jeho prokletým pohledem. Dokáže také sesílat kouzla, jelikož je nejinteligentnějším podtypem kyklopů."
+	},
 	"creatures" :
 	[
 	"config/bloodeyed_cyclops/bloodeyed_cyclops.json"
