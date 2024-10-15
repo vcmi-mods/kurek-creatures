@@ -8,6 +8,7 @@
 	"czech" : {
 		"name" : "Kyklopští Válečníci",
 		"description" : "Nová jednotka – Kyklopský Válečník. Tito kyklopové nesou obrovskou palici a jsou tak silní a odolní, že i hradby se před nimi třesou."
+	},
 	"creatures" :
 	[
 	"config/cyclop_warrior/cyclop_warrior.json"
