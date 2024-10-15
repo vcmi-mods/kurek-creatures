@@ -5,6 +5,10 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=1361",
 	"version": "2.0",
 	"modType": "Creatures",
+	"czech" : {
+		"name" : "Černé Gorgony",
+		"description" : "Nová jednotka – Černé Gorgony"
+	},
 	"creatures": [
 		"config/blackgorgon/blackgorgon.json"
 	],
