@@ -28,15 +28,16 @@
 			"iconEffect": "IconsBig/bluefiredamage.bmp"
 		},
 		"sounds": {
-			"hit": "PurpleDragon/blueflames.wav"
+			"cast": "PurpleDragon/blueflames.wav"
 		},
 		"levels": {
 			"base": {
-				"animation": {
-					"cast": ["spells/bluefire1.def"],
-					"hit": ["spells/bluefire.def"],
-					"affect": ["spells/bluefire2.def"]
-				},
+				"description": "Blue Fire damage",
+//				"animation": {
+//					"cast": ["spells/bluefire1.def"],
+//					"hit": ["spells/bluefire.def"],
+//					"affect": ["spells/bluefire2.def"]
+//				},
 				"cost": 5,
 				"range": "0",
 				"power": 40, // Base damage
@@ -65,166 +66,22 @@
 								"affect": ["spells/bluefire2.def"]
 							},
 							"sounds": {
-								"hit": "PurpleDragon/blueflames.wav"
+								"cast": "PurpleDragon/blueflames.wav"
 							}
 						},
 						"sounds": {
-							"hit": "PurpleDragon/blueflames.wav"
+							"cast": "PurpleDragon/blueflames.wav"
 						}
 					}
 				}
 			},
 			"none": {
-				"animation": {
-					"cast": ["spells/bluefire1.def"],
-					"hit": ["spells/bluefire.def"],
-					"affect": ["spells/bluefire2.def"]
-				},
-				"description": "Blue Fire damage",
-				"power": 40,
-				"battleEffects": {
-					"directDamage": {
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
-						"type": "core:damage",
-						"val": 10,
-						"valueType": "ADDITIVE_VALUE",
-						"additionalEffects": {
-							"type": "core:damage",
-							"valueType": "PERCENT_TO_SOURCE",
-							"sourceType": "CREATURE_ABILITY",
-							"percent": 20,
-							"animation": {
-								"cast": ["spells/bluefire1.def"],
-								"hit": ["spells/bluefire.def"],
-								"affect": ["spells/bluefire2.def"]
-							},
-							"sounds": {
-								"hit": "PurpleDragon/blueflames.wav"
-							}
-						},
-						"sounds": {
-							"hit": "PurpleDragon/blueflames.wav"
-						}
-					}
-				}
 			},
 			"basic": {
-				"animation": {
-					"cast": ["spells/bluefire1.def"],
-					"hit": ["spells/bluefire.def"],
-					"affect": ["spells/bluefire2.def"]
-				},
-				"description": "Blue Fire damage",
-				"power": 40,
-				"battleEffects": {
-					"directDamage": {
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
-						"type": "core:damage",
-						"val": 10,
-						"valueType": "ADDITIVE_VALUE",
-						"additionalEffects": {
-							"type": "core:damage",
-							"valueType": "PERCENT_TO_SOURCE",
-							"sourceType": "CREATURE_ABILITY",
-							"percent": 20,
-							"animation": {
-								"cast": ["spells/bluefire1.def"],
-								"hit": ["spells/bluefire.def"],
-								"affect": ["spells/bluefire2.def"]
-							},
-							"sounds": {
-								"hit": "PurpleDragon/blueflames.wav"
-							}
-						},
-						"sounds": {
-							"hit": "PurpleDragon/blueflames.wav"
-						}
-					}
-				}
 			},
 			"advanced": {
-				"animation": {
-					"cast": ["spells/bluefire1.def"],
-					"hit": ["spells/bluefire.def"],
-					"affect": ["spells/bluefire2.def"]
-				},
-				"description": "Blue Fire damage",
-				"power": 40,
-				"battleEffects": {
-					"directDamage": {
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
-						"type": "core:damage",
-						"val": 10,
-						"valueType": "ADDITIVE_VALUE",
-						"additionalEffects": {
-							"type": "core:damage",
-							"valueType": "PERCENT_TO_SOURCE",
-							"sourceType": "CREATURE_ABILITY",
-							"percent": 20,
-							"animation": {
-								"cast": ["spells/bluefire1.def"],
-								"hit": ["spells/bluefire.def"],
-								"affect": ["spells/bluefire2.def"]
-							},
-							"sounds": {
-								"hit": "PurpleDragon/blueflames.wav"
-							}
-						},
-						"sounds": {
-							"hit": "PurpleDragon/blueflames.wav"
-						}
-					}
-				}
 			},
 			"expert": {
-				"animation": {
-					"cast": ["spells/bluefire1.def"],
-					"hit": ["spells/bluefire.def"],
-					"affect": ["spells/bluefire2.def"]
-				},
-				"description": "Blue Fire damage",
-				"power": 40,
-				"battleEffects": {
-					"directDamage": {
-						"animation": {
-							"cast": ["spells/bluefire1.def"],
-							"hit": ["spells/bluefire.def"],
-							"affect": ["spells/bluefire2.def"]
-						},
-						"type": "core:damage",
-						"val": 10,
-						"valueType": "ADDITIVE_VALUE",
-						"additionalEffects": {
-							"type": "core:damage",
-							"valueType": "PERCENT_TO_SOURCE",
-							"sourceType": "CREATURE_ABILITY",
-							"percent": 20,
-							"animation": {
-								"cast": ["spells/bluefire1.def"],
-								"hit": ["spells/bluefire.def"],
-								"affect": ["spells/bluefire2.def"]
-							},
-							"sounds": {
-								"hit": "PurpleDragon/blueflames.wav"
-							}
-						},
-						"sounds": {
-							"hit": "PurpleDragon/blueflames.wav"
-						}
-					}
-				}
 			}
 		}
 	}
