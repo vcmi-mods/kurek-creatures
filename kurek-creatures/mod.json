@@ -25,7 +25,7 @@
 		]
 	},
 	"czech" : {
-		"name" : "Balíček tvorů (Kurek)",
+		"name" : "Balíček jednotek (Kurek)",
 		"description" : "Nové jednotky s obydlími.",
 		"translations" : [
 			"translation/kurek-creatures/czech.json"
