@@ -1,10 +1,13 @@
 {
-	"name" : "cyclop_warrior",
+	"name" : "Cyclops Warrior",
 	"description" : "New unit - Cyclop Warrior. These cyclopes carry a huge club and are so strong and tough, that even the castle walls are afraid of them.",
 	"author": "Graphics and mod: Kurek",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"version" : "1.00",
 	"modType" : "Creatures",
+	"czech" : {
+		"name" : "Kyklopští Válečníci",
+		"description" : "Nová jednotka – Kyklopský Válečník. Tito kyklopové nesou obrovskou palici a jsou tak silní a odolní, že i hradby se před nimi třesou."
 	"creatures" :
 	[
 	"config/cyclop_warrior/cyclop_warrior.json"
