@@ -4,5 +4,9 @@
 	"description" : "Adds new Stronghold creatures",
 	"modType" : "Creatures",
 	"name" : "New Content for Stronghold",
-	"version" : "2.0"
+	"version" : "2.0",
+	"czech" : {
+		"name" : "Nový obsah pro Tvrz",
+		"description" : "Přidává nové jednotky pro Tvrz"
+	}
 }

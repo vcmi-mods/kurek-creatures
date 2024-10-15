@@ -4,5 +4,9 @@
 	"description" : "Adds new Castle creatures",
 	"modType" : "Creatures",
 	"name" : "New Content for Castle",
-	"version" : "2.0"
+	"version" : "2.0",
+	"czech" : {
+		"name" : "Nový obsah pro Hrad",
+		"description" : "Přidává nové jednotky pro Hrad"
+	}
 }
