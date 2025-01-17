@@ -1,0 +1,63 @@
+{
+	"hellhornet" :
+	{
+			"spellbook" : 
+			[
+			"bloodlust",
+			"berserk"
+			],
+		"class" : "hiveruler",
+		"female" : false,
+		"onlyOnMapWithoutWater" : false,
+		"images" :
+		{
+			"large" : "wasps/Hellhornet.png",
+			"small" : "wasps/herosmall2.png",
+			"specialtyLarge" : "wasps/waspwarriorspec.bmp",
+			"specialtySmall" : "wasps/waspwarriorspecsmall.bmp"
+		},
+		"army" : [
+			{
+				"creature" : "waspwarrior",
+				"min" : 1,
+				"max" : 2
+			},
+			{
+				"creature" : "waspdrone",
+				"min" : 1,
+				"max" : 2
+			},
+			{
+				"creature" : "hornetdrone",
+				"min" : 1,
+				"max" : 2
+			},
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "advanced"
+			},
+			{
+				"skill" : "scouting",
+				"level" : "basic"
+			},
+		],
+		"specialty" : {
+		"base" : null,
+		"creature" : "waspwarrior"
+					},
+		"texts" : {
+			"name" : "Hell Hornet",
+			"biography" : "Hell Hornet, the leader of the most aggressive wasps and hornets, strikes terror into the hearts of his enemies with his fierce green form and savage presence. A relentless force of nature, he commands his swarm with brutal precision, fueling their fury with the powerful spells Berserk and Bloodlust. Under his command, his forces become an unstoppable tide of rage, leaving nothing but destruction in their wake.",
+			"specialty" : {
+			
+			"description" : "{Wasp Warrior}\r\n\r\nIncreases the Attack and Defense skills of Wasp Warriors for each level attained after 1st level.",
+			
+			"name" : "Wasp Warrior",
+			
+			"tooltip" : "{Wasp Warrior}\r\n\r\nIncreases the Attack and Defense skills of Wasp Warriors"
+		}
+		}
+	}
+}

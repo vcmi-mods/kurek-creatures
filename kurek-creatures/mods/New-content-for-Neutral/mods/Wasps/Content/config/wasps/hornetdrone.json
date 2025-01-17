@@ -1,0 +1,96 @@
+{
+	"hornetdrone":
+	{
+		"name" :
+		{
+			"singular" : "Hornet Drone",
+			"plural" : "Hornet Drones"
+		},
+		"description": "{Hornet Drone}\r\n\r\nThe Hornet Drone is a unique and rare larger wasp, acting as a viceroy within the hive. Its commanding presence inspires nearby swarms, while its tactical prowess bolsters their ferocity in battle.\r\n\r\n{gold|Special Abilities:}\r\n{gold|Bloodlust:} The Hornet Drone can cast the Bloodlust spell on allied wasps, increasing their attack power and unleashing their full potential.\r\n",
+		"faction" : "neutral",
+		"level": 0,
+		"speed" : 4,
+		"hitPoints" : 40,
+		"attack" : 5,
+		"defense" : 5,
+		"damage" :
+		{
+			"min" : 6,
+			"max" : 12
+		},
+		"growth" : 9,
+		"aiValue" : 156,
+		"fightValue" : 130,
+		"doubleWide" : false,
+		"special" : true,
+		"shots" : 24,
+		"abilities" :
+		{
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bloodlust",
+				"val" : 1
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"magicResistance" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"val" : 5
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			}
+		},
+		"graphics" :
+		{
+			"iconSmall" : "wasps/hornedronesmall2.bmp",
+			"iconLarge" : "wasps/hornedronebig.bmp",
+			"map" : "wasps/hornetdronemap.def",
+			"animation" : "wasps/hornetdrone.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 20.00,
+				"attack" : 1.00
+			},
+			"missile" : {
+				"attackClimaxFrame" : 4,
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ],
+				"offset" : {
+					"lowerX" : 9,
+					"lowerY" : 9,
+					"middleX" : 46,
+					"middleY" : -17,
+					"upperX" : 37,
+					"upperY" : -52
+				},
+				"projectile" : "wasps/hornetdroneprojectile.def"
+			}
+		},
+		"sound" :
+		{
+			"attack" : "waspsounds/cdroneattack.wav",
+			"defend" : "waspsounds/cdronedefend",
+			"killed" : "waspsounds/cdronedeath.wav",
+			"shoot" : "waspsounds/cdroneshoot.wav",
+			"move" : "waspsounds/cdronemove.wav",
+			"startMoving" : "waspsounds/cdronestartmove.wav",
+			"endMoving" : "waspsounds/cdronestopmove.wav",
+			"wince" : "waspsounds/cdronewince.wav"
+		}
+	}
+}

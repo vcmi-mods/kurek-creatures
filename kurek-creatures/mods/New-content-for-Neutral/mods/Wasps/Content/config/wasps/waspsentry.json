@@ -1,0 +1,139 @@
+{
+	"waspsentry":
+	{
+		"name" :
+		{
+			"singular" : "Wasp Sentry",
+			"plural" : "Wasp Sentries"
+		},
+		"description": "{Wasp Sentry}\r\n\r\nThe Wasp Sentry is a vigilant defender of the hive, always ready to protect its territory. Stronger and more aggressive than the Worker Wasp, it poses a significant threat to any intruder.\r\n\r\n{gold|Special Abilities:}\r\n{gold|Flight:} The Wasp Sentry's mobility makes it difficult to corner or strike effectively.\r\n{gold|Venomous Sting (25% chance after attack):} Its sting has an increased chance to poison enemies, dealing damage over time.\r\n{gold|Strike and Return:} The Wasp Sentry attacks swiftly and retreats, minimizing the risk of being surrounded.\r\n" ,
+		"faction" : "neutral",
+		"level" : 4,
+		"cost" : { "gold" : 350 },
+		"speed" : 13,
+		"hitPoints" : 20,
+		"attack" : 7,
+		"defense" : 7,
+		"doubleWide" : false,
+		"damage" :
+		{
+			"min" : 3,
+			"max" : 6
+		},
+		"fightValue" : 518,
+		"aiValue" : 560,
+		"advMapAmount" :
+		{
+			"min" : 11,
+			"max" : 18
+		},
+		"growth" : 7,
+		"hasDoubleWeek": false,
+		"abilities" :
+		{
+			"venom" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 25
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 700
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},
+			"flying" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
+			},	
+			"returnafterstrike" :			
+			{
+				"type" : "RETURN_AFTER_STRIKE",
+			}		
+			
+		},
+		"graphics" :
+		{
+			"iconSmall" : "wasps/sentryportraitsmall.png",
+			"iconLarge" : "wasps/sentryportraitbig2.png",
+			"map" : "wasps/waspsentrymap.def",
+			"mapMask" : [ "VVV", "VAV"],
+			"animation" : "wasps/waspsentry.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"idle" : 15.00,
+				"attack" : 1
+			}
+		},
+		"sound" :
+		{
+			"attack": "waspsounds/waspattack.wav",
+			"defend": "waspsounds/waspdefend.wav",
+			"killed": "waspsounds/waspdeath.wav",
+			"move": "waspsounds/waspmove.wav",
+			"startMoving" : "waspsounds/waspstartmove.wav",
+			"endMoving" : "waspsounds/waspstopmove.wav",
+			"wince": "waspsounds/waspwince.wav"
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACK_HEALTH",
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+

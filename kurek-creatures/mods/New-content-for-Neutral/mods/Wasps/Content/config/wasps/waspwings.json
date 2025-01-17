@@ -1,0 +1,32 @@
+{
+	"waspwings": {
+		"bonuses": [
+			{
+				"type": "STACKS_SPEED",
+				"val": 1
+			},
+			{
+				"type": "SPELL",
+				"subtype": "spell.jump"
+			}
+		],
+		"graphics": {
+			"image": "wasps/waspwings",
+			"large": "wasps/waspwingsbonus",
+			"map": "wasps/waspwingsmap.def"
+		},
+		"class": "MAJOR",
+		"slot": [
+			"MISC4"
+		],
+		"text": {
+			"description": "{Wasp Wings}\n\nThis item increases your units' speed by +1 and grants access to the Air Magic spell - Jump.",
+			"event": "You pick up the Wasp Wings, their delicate, translucent form radiating an otherworldly energy. A sudden rush of agility flows through you, and the power to leap great distances now resides at your fingertips.",
+			"name": "Wasp Wings"
+		},
+		"type": [
+			"HERO"
+		],
+		"value": 6000
+	}
+}

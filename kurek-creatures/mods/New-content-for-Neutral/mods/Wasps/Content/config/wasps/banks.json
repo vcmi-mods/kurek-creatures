@@ -1,0 +1,72 @@
+{
+    "core:creatureBank": {
+        "types": {
+            "honeypalace": {
+                "name": "Honey Palace",
+                "battleground": "new-monsters-pack.kurek-creatures.new-content-for-neutral.wasps:honeypalacebattlefield",
+                "blockedVisitable": false,
+                "onGuardedMessage": "The hive emits a hum, which sets your teeth rattling in your jaw. The breeze you feel is not the wind, but the blowback of a thousand monstrous wings. Battling the wasps is a true test of strength – the Queen, endowed with immense power, can summon vast numbers of guardians. Defeating this monarch will require courage and wit. Will you dare to enter?",
+                "onVisitedMessage": "The halls of the Wasp Queen's palace stand silent, the once-buzzing swarm now defeated. The sweet scent of honey lingers, a reminder of the battle fought here. Nothing remains but the echoes of triumph.",
+                "visitMode": "once",
+                "selectMode": "selectFirst",
+                "guardsLayout": "creatureBankWide",
+                "templates": {
+                    "default": {
+                        "animation": "wasps/honeypalace.def",
+                        "visitableFrom": ["---", "-+-", "+++"],
+                        "mask" : 
+						[
+						"VVVVVVV",
+						"VVVVBBV",
+						"VVVBBBV",
+						"VVVBBBB",
+						"VVVBBAB"
+						],
+                    }
+                },
+                "sounds": {
+                    "ambient": ["waspsounds/honeypalaceloop"],
+                    "visit": ["waspsounds/honeypalacevisit"]
+                },
+                "rmg": {
+                    "value": 40000,
+                    "rarity": 100,
+                    "zoneLimit": 1
+                },
+                "coastVisitable": false,
+                "rewards": [
+                    {
+                        "message": 34,
+                        "appearChance": { "min": 0, "max": 100 },
+                        "guards": [
+                            { "amount": 500, "type": "waspworker" },
+                            { "amount": 500, "type": "waspworker" },
+                            { "amount": 400, "type": "waspsentry" },
+							{ "amount": 400, "type": "waspwarrior" },
+                            { "amount": 1, "type": "waspqueen" },
+                            { "amount": 400, "type": "waspsentry" },
+                            { "amount": 500, "type": "waspworker" }
+                        ],
+						"heroExperience" : 50000,
+                        "resources" : {
+						"crystals" : 20,
+						"gems" : 20,
+						"gold" : 50000,
+						"mercury" : 20,
+						"ore" : 100,
+						"sulfur" : 20,
+						"wood" : 100
+						},
+						"artifacts": [
+						"waspjelly",
+						"waspstinger",
+						"waspwings",
+						{ "class": "RELIC" },
+						{ "class": "RELIC" }
+									],
+                    }
+                ]
+            }
+        }
+    }
+}

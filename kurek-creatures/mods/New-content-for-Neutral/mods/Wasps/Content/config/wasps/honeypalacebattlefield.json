@@ -1,0 +1,7 @@
+{
+	"honeypalacebattlefield": {
+		"graphics": "wasps/honeypalacebattlefield.png",
+		"impassableHexes" : [24, 25, 26, 41, 42, 50, 58, 59, 60, 75, 76, 67, 83, 84, 100, 101, 118, 143, 144, 145, 161, 162, 178],
+		"isSpecial" : true
+	}
+}

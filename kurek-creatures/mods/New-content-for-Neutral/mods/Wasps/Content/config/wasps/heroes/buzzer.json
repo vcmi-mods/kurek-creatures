@@ -1,0 +1,58 @@
+{
+	"buzzer" :
+	{
+			"spellbook" : 
+			[
+			"summonwaspsentry",
+			],
+		"class" : "hiveruler",
+		"female" : false,
+		"onlyOnMapWithoutWater" : false,
+		"images" :
+		{
+			"large" : "wasps/Buzzer.png",
+			"small" : "wasps/herosmall6.png",
+			"specialtyLarge" : "wasps/swsback5.bmp",
+			"specialtySmall" : "wasps/swsback4.bmp"
+		},
+		"army" : [
+			{
+				"creature" : "waspsentry",
+				"min" : 3,
+				"max" : 5
+			},
+			{
+				"creature" : "waspsentry",
+				"min" : 3,
+				"max" : 5
+			},
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "advanced"
+			},
+		],
+		"specialty": {
+			"bonuses": {
+				"maxwaspsentry": {
+					"addInfo": 3,
+					"subtype": "spell.summonwaspsentry",
+					"type": "SPECIAL_FIXED_VALUE_ENCHANT"
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Buzzer",
+			"biography" : "Buzzer, a slender yet influential wasp hero, commands respect with his sharp mind and strategic prowess. Despite his lean form, he possesses the power to summon a swarm of wasp sentries, creating a formidable defense on the battlefield. His tactical brilliance ensures his enemies are constantly surrounded by a relentless, ever-watchful army.",
+			"specialty" : {
+			
+			"description" : "{Summon Wasp Sentries}\r\n\r\nCasts Summon Wasp Sentry spell with increased effect.",
+			
+			"name" : "Wasp Sentry Summoner",
+			
+			"tooltip" : "{Summon Wasp Sentries}\r\n\r\nCasts Summon Wasp Sentry spell with increased effect."
+		}
+		}
+	}
+}

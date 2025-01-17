@@ -1,0 +1,77 @@
+{
+	"bumblewasp" :
+	{
+		"class" : "hiveruler",
+		"female" : false,
+		"onlyOnMapWithoutWater" : false,
+		"images" :
+		{
+			"large" : "wasps/Bumblewasp.png",
+			"small" : "wasps/herosmall5.png",
+			"specialtyLarge" : "wasps/honeyspec.bmp",
+			"specialtySmall" : "wasps/honeyspecsmall.bmp"
+		},
+		"army" : [
+			{
+				"creature" : "waspwarrior",
+				"min" : 1,
+				"max" : 2
+			},
+			{
+				"creature" : "waspworker",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "waspsentry",
+				"min" : 2,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "scouting",
+				"level" : "basic"
+			},
+			{
+				"skill" : "waterMagic",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+		"base" : null,
+		 
+		"bonuses" : {
+			 
+			"health1" : {
+				
+				"type" : "STACK_HEALTH",
+				 
+				"val" : 1,
+				 
+				"valueType" : "BASE_NUMBER"
+			},
+			 
+			"health2" : {
+				 
+				"type" : "STACK_HEALTH",
+				 
+				"val" : 4,
+				
+				"valueType" : "PERCENT_TO_BASE"
+			}
+		}
+	},
+    
+
+		"texts" : {
+			"name" : "Bumblewasp",
+			"biography" : "Bumblewasp, the great hero of the wasps, is a tireless champion devoted to the well-being of the hive. With a robust golden-striped body and powerful wings, he ventures far and wide, collecting the finest nectar to craft potent honey that restores vitality to all who partake. Revered for his bravery and selflessness, Bumblewasp is a symbol of resilience and the hive’s unwavering spirit.",
+			"specialty" : {
+				"name" : "Passive Bonus: Life Source",
+				"description" : "All creatures receive +5% Health.",
+				"tooltip" : "+5% Health"
+			}
+		}
+	}
+}

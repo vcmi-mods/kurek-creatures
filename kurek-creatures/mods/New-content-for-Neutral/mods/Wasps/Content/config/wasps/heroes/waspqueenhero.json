@@ -1,0 +1,152 @@
+{
+	"waspqueenhero" :
+	{
+		"spellbook" : 
+			[
+			"bloodlust"
+			],
+		"class" : "hiveruler",
+		"female" : true,
+		"onlyOnMapWithoutWater" : false,
+		"images" :
+		{
+			"large" : "wasps/queenheroiconbig.bmp",
+			"small" : "wasps/queenheroiconsmall.bmp",
+			"specialtyLarge" : "wasps/waspqueenspec.bmp",
+			"specialtySmall" : "wasps/waspqueenspecsmall.bmp"
+		},
+		"army" : [
+			{
+				"creature" : "waspdrone",
+				"min" : 1,
+				"max" : 2
+			},
+			{
+				"creature" : "waspworker",
+				"min" : 4,
+				"max" : 7
+			},
+			{
+				"creature" : "waspsentry",
+				"min" : 2,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "leadership",
+				"level" : "basic"
+			},
+			{
+				"skill" : "earthMagic",
+				"level" : "basic"
+			}
+		],
+		"specialty" : {
+    "base" : {
+        "limiters": [
+            {
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters": ["waspworker", true]
+            },
+            {
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters": ["waspsentry", true]
+            },
+            {
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters": ["waspwarrior", true]
+            },
+            {
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters": ["waspdrone", true]
+            },
+            {
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters": ["hornetdrone", true]
+            },
+            {
+                "type": "CREATURE_TYPE_LIMITER",
+                "parameters": ["waspqueen", true]
+            }
+        ],
+        "type" : "PRIMARY_SKILL",
+        "val" : 5
+    },
+    "bonuses" : {
+        "attack" : {
+            "limiters": [
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspworker", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspsentry", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspwarrior", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspdrone", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["hornetdrone", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspqueen", true]
+                }
+            ],
+            "subtype" : "primarySkill.attack",
+            "type" : "PRIMARY_SKILL",
+            "val" : 5
+        },
+        "defence" : {
+            "limiters": [
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspworker", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspsentry", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspwarrior", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspdrone", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["hornetdrone", true]
+                },
+                {
+                    "type": "CREATURE_TYPE_LIMITER",
+                    "parameters": ["waspqueen", true]
+                }
+            ],
+            "subtype" : "primarySkill.defence",
+            "type" : "PRIMARY_SKILL",
+            "val" : 5
+        }
+    }
+},
+
+		"texts" : {
+			"name" : "Wasp Queen Alvaria",
+			"biography" : "Wasp Queen Alvaria is the majestic ruler of all wasps, her domain stretching across the ancient forests and canyons of Alvar, where her honey palace stands as a symbol of power and unity. With shimmering wings and piercing shiny eyes, she commands her countless subjects with an aura of regal authority and natural ferocity. Allies may earn her devastating swarm’s aid, while enemies face her unrelenting wrath and venomous vengeance.",
+			"specialty" : {
+				"name" : "Queen of Wasps",
+				"description" : "All wasps receive +5 Att, +5 Def.",
+				"tooltip" : "Creature Bonus: All Wasps"
+			}
+		}
+	}
+}

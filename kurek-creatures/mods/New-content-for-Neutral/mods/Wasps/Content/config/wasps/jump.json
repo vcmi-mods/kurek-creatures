@@ -1,0 +1,205 @@
+{
+	"jump": {
+	 
+	"animation" : {
+		 
+		"affect" : [
+			 
+			"wasps/jump.def"
+		]
+	},
+	 
+	"flags" : {
+		 
+		"positive" : true
+	},
+	
+	"defaultGainChance" : 5,
+	 
+	"gainChance" : {
+		 
+		"castle" : 5,
+		 
+		"conflux" : 10,
+		 
+		"dungeon" : 5,
+		 
+		"fortress" : 10,
+		 
+		"inferno" : 5,
+		 
+		"necropolis" : 5,
+		 
+		"rampart" : 10,
+		 
+		"stronghold" : 5,
+		 
+		"tower" : 5
+	},
+	 
+	"graphics" : {
+		 
+		"iconBook" : "wasps/jumpbook",
+		 
+		"iconEffect" : "wasps/jumpeffect",
+		 
+		"iconScenarioBonus" : "wasps/jumpbonus",
+		 
+		"iconScroll" : "wasps/jumpscroll"
+	},
+	 
+	"level" : 4,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 30,
+			 
+			"cost" : 16,
+			 
+			"description" : "{Advanced Jump}\n\nThe selected unit will be able to jump over obstacles.\n",
+			 
+			"effects": {
+			"movementFlying": {
+				"duration": "N_TURNS",
+				"type": "FLYING",
+				"val": 1
+							}
+						},
+			 
+			"power" : 2,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"base" : {
+			 
+			"effects": {
+			"movementFlying": {
+				"duration": "N_TURNS",
+				"type": "FLYING",
+				"val": 1
+							}
+						},
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 20,
+			 
+			"cost" : 20,
+			 
+			"description" : "{Basic Jump}\n\nThe selected unit will be able to jump over obstacles.\n",
+			 
+			"effects": {
+			"movementFlying": {
+				"duration": "N_TURNS",
+				"type": "FLYING",
+				"val": 1
+							}
+						},
+			 
+			"power" : 1,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 30,
+			 
+			"cost" : 12,
+			 
+			"description" : "{Expert Jump}\n\nAll friendly units will be able to jump over obstacles.\n",
+			 
+			"effects": {
+			"movementFlying": {
+				"duration": "N_TURNS",
+				"type": "FLYING",
+				"val": 1
+							}
+						},
+			
+			 
+			"power" : 2,
+			 
+			"range" : "X",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 20,
+			 
+			"cost" : 24,
+			 
+			"description" : "{Jump}\n\nThe selected unit will be able to jump over obstacles.\n",
+			 
+			"effects": {
+			"movementFlying": {
+				"duration": "N_TURNS",
+				"type": "FLYING",
+				"val": 1
+							}
+						},
+			 
+			"power" : 1,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		}
+	},
+	 
+	"name" : "Jump",
+	 
+	"power" : 0,
+	 
+	"school" : {
+		 
+		"air" : true
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "waspsounds/jump.wav"
+	},
+	 
+	"targetCondition" : {
+		 
+		"noneOf" : {
+			 
+			"bonus.SIEGE_WEAPON" : "absolute"
+		}
+	},
+	 
+	"targetType" : "CREATURE",
+	 
+	"type" : "combat"
+}
+}

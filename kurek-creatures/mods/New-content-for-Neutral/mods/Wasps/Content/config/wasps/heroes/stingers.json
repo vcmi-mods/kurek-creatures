@@ -1,0 +1,60 @@
+{
+	"stingers" :
+	{
+		"class" : "hiveruler",
+		"female" : false,
+		"onlyOnMapWithoutWater" : false,
+		"images" :
+		{
+			"large" : "wasps/Stingers.png",
+			"small" : "wasps/herosmall9.png",
+			"specialtyLarge" : "wasps/stingspec.bmp",
+			"specialtySmall" : "wasps/stingspecsmall.bmp"
+		},
+		"army" : [
+			{
+				"creature" : "waspwarrior",
+				"min" : 2,
+				"max" : 3
+			},
+			{
+				"creature" : "waspsentry",
+				"min" : 2,
+				"max" : 3
+			}
+		],
+		"skills" : [
+			{
+				"skill" : "offence",
+				"level" : "basic"
+			},
+			{
+				"skill" : "scouting",
+				"level" : "basic"
+			}
+		],
+"specialty": {
+	"bonuses": 
+		{
+			"venom":
+			{
+			"type": "SPELL_AFTER_ATTACK",
+			"subtype": "spell.poison",
+			"val": 1,
+			"valueType": "ADDITIVE_VALUE",
+			"updater": "TIMES_HERO_LEVEL"
+			}
+		}
+	
+},
+		"texts" : {
+			"name" : "Stingers",
+			"biography" : "Stingers, the fearsome wasp hero, is a master of venomous warfare, inspiring his allies to strike with lethal precision. With sleek, jet-black wings and a brown venom-coated stinger that gleams in battle, he leads his units with unmatched ferocity. Under his command, the swarm gains a potent venom bonus, turning every attack into a deadly poison that ensures their enemies' swift demise.",
+			"specialty" : {
+				"name" : "Passive Bonus: Venomous Poison",
+				"description" : "All creatures receive chance to poison target after attack.",
+				"tooltip" : "+3% Chance for Poison"
+			}
+		}
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"waspqueen":
+	{
+		"name" :
+		{
+			"singular" : "Wasp Queen",
+			"plural" : "Wasp Queen" //there can be only one!
+		},
+		"description": "{Wasp Queen}\r\n\r\nThe Wasp Queen is a rare and powerful entity, the heart and mind of the entire colony. Her unmatched abilities, including summoning wasps, laying eggs, and commanding her army, make her one of the most formidable foes in the realm.\r\n\r\n{gold|Special Abilities:}\r\n{gold|Flight:} Like other wasps, the Queen can fly, evading most attacks, though her true strength lies in defense and summoning guardians.\r\n{gold|Two Additional Retaliations:} The Queen is able to bite and sting while defending herself.\r\n{gold|Strike and Return:} Even though she isn't the fastest type of wasp, her majesty is still able to return to the hive after every strike.\r\n{gold|Venomous Sting 30 percent chance after attack:} Her attacks have a high chance to poison enemies, causing damage over time.\r\n{gold|Armor Piercing 20 percent chance:} The Queen can bypass enemy defenses, dealing enhanced damage.\r\n{gold|Egg Laying:} She can summon Worker Wasps, Sentry Wasps, and Warrior Wasps to bolster the hive's forces.\r\n{gold|Summoning Guards Drones at Battle Start:} At the start of combat, the Queen is surrounded by drones acting as her personal guardians.\r\n{gold|Bloodlust, Swarm, and Berserk before attack:} The Queen can enhance herself or disrupt foes with these spells, ensuring her dominance in battle.\r\n{gold|Mind Spell Immunity:} The Queen is immune to all mind-affecting spells, ensuring her hivemind commands cannot be disrupted.\r\n",
+		"faction" : "neutral",
+		"level" : 99,
+		"cost" : { "gold" : 100000 },
+		"speed" : 6,
+		"hitPoints" : 65000,
+		"attack" : 100,
+		"defense" : 100,
+		"doubleWide" : true,
+		"damage" :
+		{
+			"min" : 150,
+			"max" : 200
+		},
+		"fightValue" : 500000,
+		"aiValue" : 1000000,
+		"special" : true,
+		"advMapAmount" :
+		{
+			"min" : 1,
+			"max" : 1
+		},
+		"growth" : 1,
+		"hasDoubleWeek": false,
+		"abilities" :
+		{
+			"venom" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 30
+			},
+			"mindimmunity" :
+			{
+				"type" : "MIND_IMMUNITY",
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 2000
+			},
+			"enchantpower" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 2
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 30
+			},
+			"flying" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
+			},	
+			"stings" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 30
+			},	
+			"castsbloodlust" :
+			{
+				"type" : "SPELLCASTER",
+				"val" : 3,
+				"additionalInfo" : 70,
+				"subtype" : "spell.selfbloodlust",
+			},	
+			"castsberserk" :
+			{
+				"type" : "SPELLCASTER",
+				"val" : 1,
+				"additionalInfo" : 30,
+				"subtype" : "spell.berserk",
+			},	
+			"summonguardianswaspdrones" :			
+			{
+				"type" : "SUMMON_GUARDIANS",
+				"subtype" : "creature.waspdrone",
+				"val" : 15000,
+			},		
+			"castswaspswarmability" :
+			{
+				"type" : "ENCHANTER",
+				"val" : 2,
+				"additionalInfo" : 3,
+				"subtype" : "spell.waspswarmability",
+			},
+			"summonwasps1" :
+			{
+				"type" : "ENCHANTER",
+				"val" : 3,
+				"additionalInfo" : 3,
+				"subtype" : "spell.summonwaspworker",
+			},
+			"summonwasps2" :
+			{
+				"type" : "ENCHANTER",
+				"val" : 3,
+				"additionalInfo" : 3,
+				"subtype" : "spell.summonwaspsentry",
+			},
+			"summonwasps3" :
+			{
+				"type" : "ENCHANTER",
+				"val" : 3,
+				"additionalInfo" : 3,
+				"subtype" : "spell.summonwaspwarrior",
+			},
+			"returnafterstrike" :			
+			{
+				"type" : "RETURN_AFTER_STRIKE",
+			},
+			"additionalretaliation" :
+			{
+				"type" : "ADDITIONAL_RETALIATION",
+				"val" : 2,
+
+			}
+		},
+		"graphics" :
+		{
+			"iconSmall" : "wasps/queenunitportsmall.png",
+			"iconLarge" : "wasps/queenunitportbig2.png",
+			"map" : "wasps/unitwaspqueenmap.def",
+			"mapMask" : [ "VVV", "VAV"],
+			"animation" : "wasps/unitwaspqueen.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"idle" : 15.00,
+				"attack" : 1.20
+			}
+		},
+		"sound" :
+		{
+			"attack": "waspsounds/queenattack.wav",
+			"defend": "waspsounds/queendefend.wav",
+			"killed": "waspsounds/queendeath.wav",
+			"move": "waspsounds/queenmove.wav",
+			"startMoving" : "waspsounds/queenstartmove.wav",
+			"endMoving" : "waspsounds/queenstopmove.wav",
+			"wince": "waspsounds/queenwince.wav"
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACK_HEALTH",
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+

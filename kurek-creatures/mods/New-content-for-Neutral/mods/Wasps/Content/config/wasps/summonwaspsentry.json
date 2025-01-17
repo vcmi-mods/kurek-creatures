@@ -1,0 +1,199 @@
+{
+	"summonwaspsentry": {
+	 
+	"animation" : {
+		 
+		"cast" : [
+			 
+			"wasps/summonwaspsentry.def"
+		]
+	},
+	 
+	"defaultGainChance" : 0,
+	 
+	"flags" : {
+		 
+		"indifferent" : true
+	},
+	 
+	"gainChance" : {
+		 
+		"inferno" : 0
+	},
+	 
+	"graphics" : {
+		 
+		"iconBook" : "wasps/swsback0",
+		 
+		"iconEffect" : "wasps/swsback3",
+		 
+		"iconScenarioBonus" : "wasps/swsback2",
+		 
+		"iconScroll" : "wasps/swsback1"
+	},
+	 
+	"level" : 4,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 13,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspsentry",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 15,
+			 
+			"description" : "{Advanced Summon Wasp Sentry}\r\n\r\nAllows you to summon Wasp Sentries.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 3,
+			 
+			"range" : "X"
+		},
+		 
+		"base" : {
+			 
+			"aiValue" : 10,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspsentry",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 18,
+			 
+			"description" : "{Summon Wasp Sentry}\r\n\r\nAllows you to summon Wasp Sentries.\r\n\r\nOnce cast, any other creature can be summoned.",
+
+			"power" : 2,
+			 
+			"range" : "X"
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspsentry",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 15,
+			 
+			"description" : "{Basic Summon Wasp Sentry}\r\n\r\nAllows you to summon Wasp Sentries.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 2,
+			 
+			"range" : "X"
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 13,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspsentry",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 15,
+			 
+			"description" : "{Expert Summon Wasp Sentry}\r\n\r\nAllows you to summon Wasp Sentries.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 4,
+			 
+			"range" : "X"
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 11,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspsentry",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 18,
+			 
+			"description" : "{Summon Wasp Sentry}\r\n\r\nAllows you to summon Wasp Sentries.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 1,
+			 
+			"range" : "X"
+		}
+	},
+	 
+	"name" : "Wasp Sentry",
+	 
+	"power" : 10,
+	 
+	"school" : {
+		 
+		"air" : false,
+		 
+		"earth" : true,
+		 
+		"fire" : false,
+		 
+		"water" : false
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "waspsounds/summonwaspsentry.wav"
+	},
+	 
+	"targetType" : "NO_TARGET",
+	 
+	"type" : "combat"
+}
+}

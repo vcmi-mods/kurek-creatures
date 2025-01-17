@@ -1,0 +1,156 @@
+{
+	"waspwarrior":
+	{
+		"name" :
+		{
+			"singular" : "Wasp Warrior",
+			"plural" : "Wasp Warriors"
+		},"description": "{Wasp Warrior}\r\n\r\nThe Wasp Warrior is a fearsome combatant, bred for battle and fiercely protective of the hive. Its deadly precision and tactical cunning make it a dangerous adversary on the battlefield.\r\n\r\n{gold|Special Abilities:}\r\n{gold|Flight:} The Wasp Warrior’s aerial agility allows it to outmaneuver opponents with ease.\r\n{gold|Venomous Sting (33% chance before and after attack):} Its venomous sting can poison enemies after striking, inflicting poisoning over time.\r\n{gold|Bloodlust:} The Wasp Warrior can cast Bloodlust on itself, boosting its Attack skill and ferocity.\r\n{gold|Berserk:} When casting Berserk, the Wasp Warrior heals and forces itself into a berserk, causing itself to attack the nearest target—friend or foe—without hesitation.\r\n{gold|Strike and Return:} It strikes swiftly and retreats, leaving enemies struggling to counter its assault.\r\n", "faction" : "neutral",
+		"level" : 5,
+		"cost" : { "gold" : 550 },
+		"speed" : 14,
+		"hitPoints" : 35,
+		"attack" : 13,
+		"defense" : 13,
+		"doubleWide" : false,
+		"damage" :
+		{
+			"min" : 7,
+			"max" : 12
+		},
+		"fightValue" : 700,
+		"aiValue" : 700,
+		"advMapAmount" :
+		{
+			"min" : 8,
+			"max" : 16
+		},
+		"growth" : 5,
+		"hasDoubleWeek": false,
+		"abilities" :
+		{
+			"venom" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 33
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 800
+			},
+			"enchantpower" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 2
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 2
+			},
+			"flying" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementFlying"
+			},	
+			"castsbloodlust" :
+			{
+				"type" : "SPELLCASTER",
+				"val" : 0,
+				"additionalInfo" : 70,
+				"subtype" : "spell.selfbloodlust",
+			},	
+			"castsberserk" :
+			{
+				"type" : "HEALER",
+				//"val" : 1,
+				//"additionalInfo" : 3,
+				"subtype" : "spell.selfberserk",
+			},	
+			"returnafterstrike" :			
+			{
+				"type" : "RETURN_AFTER_STRIKE",
+			}		
+			
+		},
+		"graphics" :
+		{
+			"iconSmall" : "wasps/hornetportraitsmall.png",
+			"iconLarge" : "wasps/hornetportraitbig2.png",
+			"map" : "wasps/waspwarriormap.def",
+			"mapMask" : [ "VVV", "VAV"],
+			"animation" : "wasps/waspwarrior.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.30,
+				"idle" : 15.00,
+				"attack" : 1.20
+			}
+		},
+		"sound" :
+		{
+			"attack": "waspsounds/hornetattack.wav",
+			"defend": "waspsounds/hornetdefend.wav",
+			"killed": "waspsounds/hornetdeath.wav",
+			"move": "waspsounds/hornetmove.wav",
+			"startMoving" : "waspsounds/hornetstartmove.wav",
+			"endMoving" : "waspsounds/hornetstopmove.wav",
+			"wince": "waspsounds/hornetwince.wav"
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACK_HEALTH",
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			}
+		]
+	}
+}
+
+

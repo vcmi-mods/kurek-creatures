@@ -1,0 +1,69 @@
+{
+	"name": "Wasps",
+	"description": "New group of neutral units - Wasps. This mod adds 5 new units- Wasp Worker, Wasp Sentry, Wasp Warrior, Wasp Drone, and a BOSS creature- Wasp Queen. Creature Bank- Honey Palace. Dwelling- Wasp Nest. There is also a new neutral Hero Class- Hive Ruler, who uses a Drone Hornet as a WoG Commander. This mod also adds 3 new wasp artifacts and Jump spell.",
+	"author" : "Kurek",
+	"contact" : "w.k6476 on Discord",
+	"version" : "1.0.0",
+	"modType" : "Creatures",	
+	"spells" :
+	[
+		"config/wasps/waspswarmability.json",
+		"config/wasps/summonwaspworker.json",
+		"config/wasps/summonwaspsentry.json",
+		"config/wasps/summonwaspwarrior.json",
+		"config/wasps/selfbloodlust.json",
+		"config/wasps/selfberserk.json",
+		"config/wasps/symbiosisqueen.json",
+		"config/wasps/jump.json"
+	],
+	"changelog" :
+    {
+		"1.0"   : [ "Initial release" ]
+    },
+    "polish" : {
+		"name" : "Osy",
+		"description" : "Nowa grupa jednostek neutralnych - Osy. Ten mod dodaje 5 nowych jednostek - Osa Robotnica, Osa Strażniczka, Osa Wojowniczka, Osa Truteń i stworzenie BOSS - Królowa Os. Bank Stworzeń - Pałac Miodu. Siedlisko - Gniazdo Os. Jest również nowa neutralna klasa bohatera - Władca Roju, który używa Szerszeniowych Trutni jako dowódcy WoG. Ten mod dodaje też 3 nowe osowe artefakty i czar Skok."
+    },
+	"creatures" :
+	[
+	"config/wasps/waspworker",
+	"config/wasps/waspsentry",
+	"config/wasps/waspwarrior",
+	"config/wasps/waspdrone",
+	"config/wasps/waspqueen",
+	"config/wasps/hornetdrone"
+	],
+	"objects" : 
+	[  
+	"config/wasps/dwellings",
+	"config/wasps/banks"
+	],
+	"battlefields" :
+	[
+	"config/wasps/honeypalacebattlefield.json",
+	"config/wasps/waspnestbattlefield.json"
+	],
+ 	"heroClasses" :
+	[
+	"config/wasps/hiveruler.json"
+	],
+	"artifacts" :
+	[
+	"config/wasps/waspjelly.json",
+	"config/wasps/waspwings.json",
+	"config/wasps/waspstinger.json"
+	],
+	"heroes" :
+	[
+		"config/wasps/heroes/bumblewasp.json",
+		"config/wasps/heroes/buzzer.json",
+		"config/wasps/heroes/hellhornet.json",
+		"config/wasps/heroes/killerbee.json",
+		"config/wasps/heroes/ohnobug.json",
+		"config/wasps/heroes/stingers.json",
+		"config/wasps/heroes/swarmer.json",
+		"config/wasps/heroes/waspgeneral.json",
+		"config/wasps/heroes/zeet.json",
+		"config/wasps/heroes/waspqueenhero.json"
+	]
+}

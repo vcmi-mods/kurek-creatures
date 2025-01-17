@@ -1,0 +1,199 @@
+{
+	"summonwaspworker": {
+	 
+	"animation" : {
+		 
+		"cast" : [
+			 
+			"wasps/summonwaspworker.def"
+		]
+	},
+	 
+	"defaultGainChance" : 0,
+	 
+	"flags" : {
+		 
+		"indifferent" : true
+	},
+	 
+	"gainChance" : {
+		 
+		"inferno" : 0
+	},
+	 
+	"graphics" : {
+		 
+		"iconBook" : "wasps/swworkerback0",
+		 
+		"iconEffect" : "wasps/swworkerback3",
+		 
+		"iconScenarioBonus" : "wasps/swworkerback2",
+		 
+		"iconScroll" : "wasps/swworkerback1"
+	},
+	 
+	"level" : 3,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspworker",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 10,
+			 
+			"description" : "{Advanced Summon Wasp Worker}\r\n\r\nAllows you to summon Wasp Workers.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 3,
+			 
+			"range" : "X"
+		},
+		 
+		"base" : {
+			 
+			"aiValue" : 10,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspworker",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 12,
+			 
+			"description" : "{Summon Wasp Worker}\r\n\r\nAllows you to summon Wasp Workers.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 2,
+			 
+			"range" : "X"
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 11,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspworker",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 10,
+			 
+			"description" : "{Basic Summon Wasp Worker}\r\n\r\nAllows you to summon Wasp Workers.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 2,
+			 
+			"range" : "X"
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 13,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspworker",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 10,
+			 
+			"description" : "{Expert Summon Wasp Worker}\r\n\r\nAllows you to summon Wasp Workers.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 4,
+			 
+			"range" : "X"
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 10,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspworker",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 12,
+			 
+			"description" : "{Summon Wasp Worker}\r\n\r\nAllows you to summon Wasp Workers.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 1,
+			 
+			"range" : "X"
+		}
+	},
+	 
+	"name" : "Wasp Worker",
+	 
+	"power" : 10,
+	 
+	"school" : {
+		 
+		"air" : false,
+		 
+		"earth" : true,
+		 
+		"fire" : false,
+		 
+		"water" : false
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "waspsounds/summonwaspworker.wav"
+	},
+	 
+	"targetType" : "NO_TARGET",
+	 
+	"type" : "combat"
+}
+}

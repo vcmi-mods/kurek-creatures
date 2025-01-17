@@ -1,0 +1,32 @@
+{
+	"core:creatureGeneratorSpecial" : {
+		"types" : {
+			"waspnest" : {
+				"battleground": "new-monsters-pack.kurek-creatures.new-content-for-neutral.wasps:waspnestbattlefield",
+				"name" : "Wasp Nest",
+				"guards" : true,
+				"creatures" : [
+				[
+					"waspwarrior"
+				],
+				[
+					"waspsentry"
+				],
+				[
+					"waspworker"
+				]
+			],
+				  "sounds": {
+                    "ambient": ["waspsounds/waspnestloop"],
+					"visit": ["waspsounds/waspnestvisit"]
+                },
+				"templates" : {
+					"default" : {
+						"animation" : "wasps/waspnest.def",
+						"mask" : [ "VVV", "VBB", "VBA" ]
+					}
+				}
+			}
+		}		
+	}
+}	

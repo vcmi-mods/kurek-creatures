@@ -1,0 +1,42 @@
+{
+	"waspjelly": {
+		"bonuses": [
+			{
+				"subtype": "spell.summonwaspsentry",
+				"type": "OPENING_BATTLE_SPELL",
+				"val": 50,
+				"valueType": "BASE_NUMBER"
+			},
+			{
+				"subtype": "spell.summonwaspworker",
+				"type": "OPENING_BATTLE_SPELL",
+				"val": 50,
+				"valueType": "BASE_NUMBER"
+			},
+			{
+				"subtype": "spell.summonwaspwarrior",
+				"type": "OPENING_BATTLE_SPELL",
+				"val": 50,
+				"valueType": "BASE_NUMBER"
+			}
+		],
+		"class": "RELIC",
+		"graphics": {
+			"image": "wasps/waspjelly",
+			"large": "wasps/waspjellybonus",
+			"map": "wasps/waspjellymap.def"
+		},
+		"slot": [
+			"MISC1"
+		],
+		"text": {
+			"description": "{Wasp Jelly}\r\n\r\nAt the beginning of every combat this jar lures three swarms of large wasps to your aid.",
+			"event": "You carefully lift the Jar of Wasp Honey, its golden contents shimmering with a strange allure. The faint sound of buzzing fills the air, as if the jar holds the promise of swarms eager to answer your call.",
+			"name": "Wasp Jelly"
+		},
+		"type": [
+			"HERO"
+		],
+		"value": 12000
+	}
+}

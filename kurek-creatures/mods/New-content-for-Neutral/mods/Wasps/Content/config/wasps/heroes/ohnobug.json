@@ -1,0 +1,54 @@
+{
+	"ohnobug" :
+	{
+			"spellbook" : 
+			[
+			"summonwaspwarrior",
+			],
+		"class" : "hiveruler",
+		"female" : false,
+		"onlyOnMapWithoutWater" : false,
+		"images" :
+		{
+			"large" : "wasps/Ohnobug.png",
+			"small" : "wasps/herosmall8.png",
+			"specialtyLarge" : "wasps/swwback5.bmp",
+			"specialtySmall" : "wasps/swwback4.bmp"
+		},
+		"army" : [
+
+			{
+				"creature" : "waspwarrior",
+				"min" : 1,
+				"max" : 2
+			},
+		],
+		"skills" : [
+			{
+				"skill" : "wisdom",
+				"level" : "expert"
+			},
+		],
+		"specialty": {
+			"bonuses": {
+				"maxwaspwarrior": {
+					"addInfo": 3,
+					"subtype": "spell.summonwaspwarrior",
+					"type": "SPECIAL_FIXED_VALUE_ENCHANT"
+				}
+			}
+		},
+		"texts" : {
+			"name" : "Ohnobug",
+			"biography" : "Ohnobug is a fearsome and eerie wasp captain, towering with a thin, elongated black body. His unsettling presence strikes terror into all who face him. Specializing in summoning powerful wasp warriors, Ohnobug commands an army of fearsome fighters that wreak havoc on the battlefield. His chilling appearance and lethal swarm leave no hope for his enemies, who are overpowered by his unrelenting force.",
+			"specialty" : {
+			
+			"description" : "{Summon Wasp Warriors}\r\n\r\nCasts Summon Wasp Warrior spell with increased effect.",
+			
+			"name" : "Wasp Warrior Summoner",
+			
+			"tooltip" : "{Summon Wasp Warriors}\r\n\r\nCasts Summon Wasp Warrior spell with increased effect."
+		}
+		}
+	}
+}

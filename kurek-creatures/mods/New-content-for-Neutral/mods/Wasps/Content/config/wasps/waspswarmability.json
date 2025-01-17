@@ -1,0 +1,149 @@
+{
+	"waspswarmability":
+	{
+		"type": "combat", 
+		"name": "Wasp Swarm Ability",
+		"school":
+		{
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+			"rampart": 0,
+			"necropolis": 0,
+			"inferno" : 0,
+			"stronghold" : 0,
+			"fortress" : 0,
+			"conflux" : 0
+		},
+ 
+		"flags" :
+		{
+			"damage": true,
+			"offensive": true,
+			"negative": true
+		},
+ 
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},			
+			"noneOf" : {
+				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal",
+				"core:bonus.NON_LIVING": "normal",
+				"core:bonus.UNDEAD": "normal"
+			}
+	},  
+		"graphics":
+		{
+			"iconBook": "wasps/waspabilityBook.png",
+			"iconScroll": "wasps/waspabilityScroll.png",
+			"iconScenarioBonus": "wasps/waspabilityScenario.bmp",
+			"iconEffect": "wasps/waspabilityEffect.bmp",
+			"iconImmune": "wasps/waspabilityImmune.bmp"
+		},
+		
+		"animation":
+		{
+			"hit":["wasps/waspSpellability.def"]
+		},
+
+		"sounds":
+		{
+			"cast":"waspsounds/sound.spell.waspability.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"aiValue": 5,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{Wasp Swarm Ability}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+	 
+				"cost": 8,
+				"power": 10,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -25
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{Basic Wasp Swarm Ability}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+	 
+				"cost": 6,
+				"power": 15,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -25
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{Advanced Wasp Swarm Ability}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+	 
+				"cost": 6,
+				"power": 15,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -50
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{Expert Wasp Swarm Ability}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+	 
+				"cost": 6,
+				"power": 15,
+	 
+				"effects":
+				{
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "STACK_GETS_TURN",
+						"val": -75
+					}
+				}
+			}
+		}
+	}
+ 
+}

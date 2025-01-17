@@ -1,0 +1,7 @@
+{
+	"waspnestbattlefield": {
+		"graphics": "wasps/waspnestbattlefield.png",
+		"impassableHexes" : [ 42, 77, 93, 160, 161, 176, 177, 178],
+		"isSpecial" : true
+	}
+}

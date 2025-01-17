@@ -1,0 +1,121 @@
+{
+	"waspdrone": {
+		"name": {
+			"singular": "Wasp Drone",
+			"plural": "Wasp Drones"
+		},
+		"description": "{Wasp Drone}\r\n\r\nThe Wasp Drone is a rare and loyal guardian of the Queen, tasked with both protecting her and ensuring the continuation of the hive. Their unique symbiosis with the Queen grants her the ability to regenerate health, while the drones can also regenerate themselves, making them formidable allies in battle.\r\n\r\n{gold|Special Abilities:}\r\n{gold|Flight:} The Wasp Drone’s ability to fly allows it to swiftly maneuver across the battlefield, evading attacks and positioning itself strategically.\r\n{gold|Regeneration:} The Wasp Drone can regenerate its health, allowing it to stay in the fight longer and continue defending the Queen.\r\n{gold|Strike and Return:} After striking, the Wasp Drone swiftly retreats, leaving its enemies struggling to counter its quick assaults.\r\n{gold|Symbiosis with the Queen:} Due to their unique bond, the drones provide the Queen with health regeneration, ensuring her survival and strengthening her role as the hive’s heart.\r\n",
+		"faction": "neutral",
+		"level": 5,
+		"cost": { "gold": 950 },
+		"speed": 9,
+		"hitPoints": 45,
+		"attack": 9,
+		"defense": 17,
+		"doubleWide": false,
+		"damage": {
+			"min": 7,
+			"max": 9
+		},
+		"fightValue": 645,
+		"aiValue": 701,
+		"advMapAmount": {
+			"min": 8,
+			"max": 16
+		},
+		"growth": 4,
+		"hasDoubleWeek": false,
+		"abilities": {
+			"spellPower": {
+				"type": "SPECIFIC_SPELL_POWER",
+				"subtype": "spell.symbiosisqueen",
+				"val": 800
+			},
+			"helpQueen": {
+				"type": "ENCHANTER",
+				"subtype": "spell.symbiosisqueen",
+				"val": 1,
+				"additionalInfo": 1
+			},
+			"flying": {
+				"type": "FLYING"
+			},
+			"hpregeneration": {
+				"type": "HP_REGENERATION",
+				"val": 45
+			},
+			"returnafterstrike": {
+				"type": "RETURN_AFTER_STRIKE"
+			},
+			"spellpoints": {
+				"type": "CASTS",
+				"val": 99
+			}
+		},
+		"graphics": {
+			"iconSmall": "wasps/waspdroneportraitsmall.png",
+			"iconLarge": "wasps/waspdroneportraitbig1.png",
+			"map": "wasps/waspdronemap.def",
+			"mapMask": ["VVV", "VAV"],
+			"animation": "wasps/waspdrone.def",
+			"timeBetweenFidgets": 1,
+			"animationTime": {
+				"walk": 1.00,
+				"idle": 20.00,
+				"attack": 1.00
+			}
+		},
+		"sound": {
+			"attack": "waspsounds/droneattack.wav",
+			"defend": "waspsounds/dronedefend.wav",
+			"killed": "waspsounds/dronedeath.wav",
+			"move": "waspsounds/dronemove.wav",
+			"startMoving": "waspsounds/dronestartmove.wav",
+			"endMoving": "waspsounds/dronestopmove.wav",
+			"wince": "waspsounds/dronewince.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.attack"
+				},
+				"values": [1, 2, 2, 3, 4, 5, 6, 6, 7, 8]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "primarySkill.defence"
+				},
+				"values": [1, 2, 2, 3, 4, 4, 5, 6, 7, 8]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [0, 1, 1, 2, 2, 3, 3, 4, 4, 5]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [0, 1, 1, 2, 2, 3, 3, 4, 4, 4]
+			},
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			}
+		]
+	}
+}

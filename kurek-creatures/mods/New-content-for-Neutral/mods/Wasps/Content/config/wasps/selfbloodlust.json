@@ -1,0 +1,250 @@
+{
+    "selfbloodlust": {
+	"animation" : {
+		 
+		"affect" : [
+			 
+			{
+				 
+				"effectName" : "bloodlust"
+			}
+		]
+	},
+	"graphics" : {
+		 
+		"iconBook" : "wasps/swsback0",
+		 
+		"iconEffect" : "wasps/waspbloodlust",
+		 
+		"iconScenarioBonus" : "wasps/swsback2",
+		 
+		"iconScroll" : "wasps/swsback1"
+	}, 
+	"counters" : {
+		 
+		"spell.weakness" : true
+	},
+	"canCastOnlyOnSelf" : true,
+	"canCastWithoutSkip": true,
+	"flags" : {
+		 
+		"positive" : true
+	},
+	"defaultGainChance" : 0,
+	"gainChance" : {
+		 
+		"castle" : 0,
+		 
+		"conflux" : 0,
+		 
+		"dungeon" : 0,
+		 
+		"fortress" : 0,
+		 
+		"inferno" : 0,
+		 
+		"necropolis" : 0,
+		 
+		"rampart" : 0,
+		 
+		"stronghold" : 0,
+		 
+		"tower" : 0
+	},
+	 
+	"index" : 43,
+	 
+	"level" : 1,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 70,
+			 
+			"cost" : 4,
+			 
+			"description" : "{Advanced Bloodlust}\n\nIncreases the hand-to-hand damage inflicted by the selected unit.\n\nEffect is twice that of Basic Bloodlust.\n",
+			 
+			"effects" : {
+				 
+				"primarySkill" : {
+					 
+					"duration" : "N_TURNS",
+					 
+					"effectRange" : "ONLY_MELEE_FIGHT",
+					 
+					"subtype" : "primarySkill.attack",
+					 
+					"type" : "PRIMARY_SKILL",
+					 
+					"val" : 6
+				}
+			},
+			 
+			"power" : 6,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"base" : {
+			 
+			"effects" : {
+				 
+				"primarySkill" : {
+					 
+					"duration" : "N_TURNS",
+					 
+					"effectRange" : "ONLY_MELEE_FIGHT",
+					 
+					"subtype" : "primarySkill.attack",
+					 
+					"type" : "PRIMARY_SKILL",
+					 
+					"val" : 3
+				}
+			},
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 70,
+			 
+			"cost" : 4,
+			 
+			"description" : "{Basic Bloodlust}\n\nIncreases the hand-to-hand damage inflicted by the selected unit.\n",
+			 
+			"effects" : {
+				 
+				"primarySkill" : {
+					 
+					"duration" : "N_TURNS",
+					 
+					"effectRange" : "ONLY_MELEE_FIGHT",
+					 
+					"subtype" : "primarySkill.attack",
+					 
+					"type" : "PRIMARY_SKILL",
+					 
+					"val" : 3
+				}
+			},
+			 
+			"power" : 3,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 70,
+			 
+			"cost" : 4,
+			 
+			"description" : "{Expert Bloodlust}\n\nIncreases the hand-to-hand damage inflicted by all friendly units.\n\nEffect is twice that of Basic Bloodlust.\n",
+			 
+			"effects" : {
+				 
+				"primarySkill" : {
+					 
+					"duration" : "N_TURNS",
+					 
+					"effectRange" : "ONLY_MELEE_FIGHT",
+					 
+					"subtype" : "primarySkill.attack",
+					 
+					"type" : "PRIMARY_SKILL",
+					 
+					"val" : 6
+				}
+			},
+			 
+			"power" : 6,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 70,
+			 
+			"cost" : 5,
+			 
+			"description" : "{Bloodlust}\n\nIncreases the hand-to-hand damage inflicted by the selected unit.\n",
+			 
+			"effects" : {
+				 
+				"primarySkill" : {
+					 
+					"duration" : "N_TURNS",
+					 
+					"effectRange" : "ONLY_MELEE_FIGHT",
+					 
+					"subtype" : "primarySkill.attack",
+					 
+					"type" : "PRIMARY_SKILL",
+					 
+					"val" : 3
+				}
+			},
+			 
+			"power" : 3,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		}
+	},
+	 
+	"name" : "Inner Bloodlust",
+	 
+	"power" : 0,
+	 
+	"school" : {
+		 
+		"fire" : true
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "BLOODLUS"
+	},
+	 
+	"targetCondition" : {
+		 
+		"noneOf" : {
+			 
+			"bonus.SIEGE_WEAPON" : "absolute"
+		}
+	},
+	 
+	"targetType" : "CREATURE",
+	 
+	"type" : "ability"
+}
+}

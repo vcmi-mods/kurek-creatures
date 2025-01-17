@@ -1,0 +1,42 @@
+{
+	"waspstinger": {
+		"bonuses": [
+			{
+				"subtype": "primarySkill.attack",
+				"type": "PRIMARY_SKILL",
+				"valueType": "BASE_NUMBER",
+				"val": 4
+				
+			},
+			{
+				//"limiters": [
+				//	{
+				//		"type": "CREATURES_ONLY"
+				//	}
+				//],
+				"type": "SPELL_AFTER_ATTACK",
+				"subtype": "spell.poison",
+				"val": 7,
+				"valueType": "ADDITIVE_VALUE"
+			}
+		],
+		"graphics": {
+			"image": "wasps/waspstinger",
+			"large": "wasps/waspstingerbonus",
+			"map": "wasps/waspstingermap.def"
+		},
+		"class": "RELIC",
+		"slot": [
+			"RIGHT_HAND"
+		],
+		"text": {
+			"description": "{Wasp Stinger}\n\nThis right-handed weapon increases your Attack skill by +4 and grants all units in your army a 7% chance to cast Poison on enemies after attacking.",
+			"event": "You grasp the Wasp Stinger, its long, sleek, venom-tipped edge pulsing faintly with a deadly energy. The artifact hums in your hand, a reminder of wasp's wrath and the power now at your command.",
+			"name": "Wasp Stinger"
+		},
+		"type": [
+			"HERO"
+		],
+		"value": 8000
+	}
+}

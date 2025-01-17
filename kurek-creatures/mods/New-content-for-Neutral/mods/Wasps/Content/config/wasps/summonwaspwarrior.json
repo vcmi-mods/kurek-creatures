@@ -1,0 +1,195 @@
+{
+	"summonwaspwarrior": {
+	 
+	"animation" : {
+		 
+		"cast" : [
+			 
+			"wasps/summonwaspwarrior.def"
+		]
+	},
+	 
+	"defaultGainChance" : 0,
+	 
+	"flags" : {
+		 
+		"indifferent" : true
+	},
+	 
+	"gainChance" : {
+		 
+		"inferno" : 0
+	},
+	 
+	"graphics" : {
+		 
+		"iconBook" : "wasps/swwback0",
+		 
+		"iconEffect" : "wasps/swwback3",
+		 
+		"iconScenarioBonus" : "wasps/swwback2",
+		 
+		"iconScroll" : "wasps/swwback1"
+	},
+	 
+	"level" : 5,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 15,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspwarrior",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 20,
+			 
+			"description" : "{Advanced Summon Wasp Warrior}\r\n\r\nAllows you to summon Wasp Warriors.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 3,
+			 
+			"range" : "X"
+		},
+		"base" : {
+			 
+			"aiValue" : 11,
+			 
+			"battleEffects" : {
+				"summon" : {
+					"exclusive" : false,
+					 
+					"id" : "waspwarrior",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 24,
+			 
+			"description" : "{Summon Wasp Warrior}\r\n\r\nAllows you to summon Wasp Warriors.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 2,
+			 
+			"range" : "X"
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 13,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspwarrior",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			"cost" : 20,
+			 
+			"description" : "{Basic Summon Wasp Warrior}\r\n\r\nAllows you to summon Wasp Warriors.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 2,
+			 
+			"range" : "X"
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 14,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspwarrior",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 20,
+			 
+			"description" : "{Expert Summon Wasp Warrior}\r\n\r\nAllows you to summon Wasp Warriors.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 4,
+			 
+			"range" : "X"
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"summon" : {
+					 
+					"exclusive" : false,
+					 
+					"id" : "waspwarrior",
+					 
+					"permanent" : false,
+					 
+					"type" : "core:summon"
+				}
+			},
+			 
+			"cost" : 24,
+			 
+			"description" : "{Summon Wasp Warrior}\r\n\r\nAllows you to summon Wasp Warriors.\r\n\r\nOnce cast, any other creature can be summoned.",
+			 
+			"power" : 1,
+			 
+			"range" : "X"
+		}
+	},
+	 
+	"name" : "Wasp Warrior",
+	 
+	"power" : 10,
+	 
+	"school" : {
+		 
+		"air" : false,
+		 
+		"earth" : true,
+		 
+		"fire" : false,
+		 
+		"water" : false
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "waspsounds/summonwaspwarrior.wav"
+	},
+	 
+	"targetType" : "NO_TARGET",
+	 
+	"type" : "combat"
+}
+}
