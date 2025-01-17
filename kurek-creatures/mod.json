@@ -5,32 +5,29 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
-	"version" : "2.21",
+	"version" : "2.5",
 	"modType" : "Creatures",
 	"changelog" :
-    {
+	{
 		"1.00" : ["Initial release"],
 		"1.01" : ["small update for vcmi-1.2"],
 		"1.02" : ["small fix for bonus morale"],
 		"1.03" : ["small update for vcmi-1.4"],
-		"2.0" : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"],
-		"2.1" : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."],
-		"2.2" : ["Czech translation by George King"],
-		"2.21" : ["Some syntax fixes"]
-    },
+		"2.0"  : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"],
+		"2.1"  : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."],
+		"2.2"  : ["Czech translation by George King"],
+		"2.21" : ["Some syntax fixes"],
+		"2.3"  : ["Added Neutral creature, dwelling and bank: Wild Griffin, Griffin Cliffs, Griffin Nest."],
+		"2.4"  : ["Added Neutral creature, dwelling and spell: Orange Dragon, Enchanted Forest, Fire ring."],
+		"2.5"  : ["Added Neutral creatures, dwelling, bank, artifacts and spells: Wasps addon."]
+	},
 	"chinese" : {
 		"name" : "生物模组包（Kurek）",
-		"description" : "Kurek的生物模组包，包括了新的中立生物和巢穴。",
-		"translations" : [
-			"translation/kurek-creatures/chinese.json"
-		]
+		"description" : "Kurek的生物模组包，包括了新的中立生物和巢穴。"
 	},
 	"czech" : {
 		"name" : "Balíček jednotek (Kurek)",
-		"description" : "Nové jednotky s obydlími.",
-		"translations" : [
-			"translation/kurek-creatures/czech.json"
-		]
+		"description" : "Nové jednotky s obydlími."
 	},
 	"compatibility" :
 	{
