@@ -1,0 +1,20 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"enchantedforest" : {
+				"battleground": "enchantedforestbattlefield",
+				"name" : "Enchanted Forest",
+				"guards" : true,
+				"creatures" : [[ "orangedragon" ]],
+				"sounds": {	"ambient": ["OrangeDragon/loop"],
+				"visit": ["OrangeDragon/visit"]},
+				"templates" : {
+					"default" : {
+						"animation" : "dwelling/enchantedforest.def",
+						"mask" : [ "VVV", "VVV", "VBA"]
+					}
+					}
+				}
+			}
+		}		
+	}	

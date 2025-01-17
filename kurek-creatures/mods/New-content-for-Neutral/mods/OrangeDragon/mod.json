@@ -1,0 +1,32 @@
+{
+	"name" : "Orange Dragon",
+	"description" : "New unit - Orange Dragon. Orange dragons are completely immune to magical attacks, reflecting spells back at the caster (similar to the Magic Mirror spell). They can also cast spells such as Confusion, Fire Ring, Fireball, Lightning Bolt, Ice Bolt, Ice Ring, Inferno, Meteor Shower, Chain Lightning and Magic Arrow. Any forest under the protection of a orange dragon is a calm and magical place, one best left alone if you're wise. Like the sprite, this creature is born magically, spawned by the forces of Nature from a clear pool of water.",
+	"author": "Kurek",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"modType" : "Creatures",
+	"version" : "1.00",
+	"changelog" :
+	{
+		"1.0"   : [ "Initial release" ],
+	},
+	"creatures" :
+	[
+	"config/orangedragon/orangedragon"
+	],
+	"objects" : 
+	[  "config/orangedragon/dwellings"], 
+	"spells" : 
+	[  "config/orangedragon/firering.json", "config/orangedragon/confusion.json", "config/orangedragon/orangedragonpowerbondspells.json"],
+	"battlefields" :
+	[
+	"config/orangedragon/enchantedforestbattlefield.json"
+	],
+	"czech" : {
+		"name": "Oranžoví draci",
+		"description": "Oranžoví draci jsou zcela imunní vůči magickým útokům a odrážejí kouzla zpět na sesílatele (podobně jako kouzlo magické zrcadlo). Umí také sesílat kouzla jako Zmatení, Ohnivý kruh, Ohnivá koule, Blesk, Ledový šíp, Mrazící kruh, Peklo, Pád meteoritů, Kulový blesk a Magický šíp. Každý les pod ochranou oranžového draka je klidné a magické místo, které je moudré nechat na pokoji."
+	},
+	"polish" : {
+		"name" : "Pomarańczowy Smok",
+		"description" : "„Nowa jednostka – Pomarańczowy Smok. Pomarańczowe smoki są całkowicie odporne na magiczne ataki, odbijając zaklęcia w kierunku rzucającego (podobnie jak w przypadku zaklęcia Magiczne lustro). Potrafią również rzucać zaklęcia: Zamęt, Ognisty krąg, Kula ognia, Błyskawica,  Lodowy Pocisk, Krąg Zimna, Inferno, Deszcz Meteorytów, Łańcuch Błyskawic i Magiczna Strzała. Każdy las pod ochroną pomarańczowego smoka jest spokojnym i magicznym miejscem, które najlepiej zostawić w spokoju, jeśli jesteś mądry. Podobnie jak rusałka, to stworzenie rodzi się w sposób magiczny, powstałe z sił natury z czystej sadzawki wody."
+	}
+}

@@ -1,0 +1,196 @@
+{
+"fireRing":{
+	 
+	"animation" : {
+		 
+		"hit" : [
+			 
+			"spells/firering.def"
+		]
+	},
+	 
+	"flags" : {
+		 
+		"damage" : true,
+		 
+		"negative" : true
+	},
+	"defaultGainChance": 10, 
+	"gainChance" : {
+		 
+			"castle": 22,
+			"inferno": 80,
+			"rampart": 22,
+			"dungeon": 42,
+			"conflux": 30,
+			"fortress": 8,
+			"tower": 25,
+			"necropolis": 28,
+			"stronghold": 30
+	},
+	
+	"graphics" : {
+	
+			"iconBook": "spells/fireringBook.bmp",
+			"iconScroll": "spells/fireringScroll.bmp",
+			"iconScenarioBonus": "spells/fireringScenario.bmp",
+			"iconEffect": "spells/fireringEffect.bmp",
+			"iconImmune": "spells/fireringImmune.bmp"
+	},
+	 
+	 
+	"level" : 3,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"directDamage" : {
+					 
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 12,
+			 
+			"description" : "{Advanced Fire Ring}\n\nBurns all units surrounding the target location with exploding fire, without inflicting damage in the middle of the ring.\n\nDamage inflicted is 15 points more than Basic Fire Ring.\n",
+			 
+			"power" : 30,
+			 
+			"range" : "1",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		},
+		 
+		"base" : {
+			 
+			"battleEffects" : {
+				 
+				"directDamage" : {
+					 
+					"type" : "core:damage"
+				}
+			},
+			 
+			"range" : "1",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"directDamage" : {
+					 
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 12,
+			 
+			"description" : "{Basic Fire Ring}\n\nBurns all units surrounding the target location with exploding fire, without inflicting damage in the middle of the ring.\n",
+			 
+			"power" : 15,
+			 
+			"range" : "1",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"directDamage" : {
+					 
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 12,
+			 
+			"description" : "{Expert Fire Ring}\n\nBurns all units surrounding the target location with exploding fire, without inflicting damage in the middle of the ring.\n\nDamage inflicted is 45 points more than Basic Fire Ring.\n",
+			 
+			"power" : 60,
+			 
+			"range" : "1",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 12,
+			 
+			"battleEffects" : {
+				 
+				"directDamage" : {
+					 
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 15,
+			 
+			"description" : "{Fire Ring}\n\nBurns all units surrounding the target location with exploding fire, without inflicting damage in the middle of the ring.\n",
+			 
+			"power" : 15,
+			 
+			"range" : "1",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		}
+	},
+	 
+	"name" : "Fire Ring",
+	 
+	"power" : 11,
+	 
+	"school" : {
+		 
+		"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "OrangeDragon/firering.wav"
+	},
+	 
+	"targetCondition" : {
+		 
+		"noneOf" : {
+		}
+	},
+	 
+	"targetType" : "LOCATION",
+	 
+	"type" : "combat"
+}
+}

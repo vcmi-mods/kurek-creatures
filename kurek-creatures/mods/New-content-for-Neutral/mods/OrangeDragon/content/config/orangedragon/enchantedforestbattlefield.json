@@ -1,0 +1,6 @@
+{
+	"enchantedforestbattlefield": {
+		"graphics":  "battle/enchantedforestbattlefield.png",
+		"isSpecial" : true,
+		}
+}

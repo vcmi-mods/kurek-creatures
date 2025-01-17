@@ -1,0 +1,235 @@
+{
+	"orangedragon": {
+		"name": {
+			"plural": "Orange Dragons",
+			"singular": "Orange Dragon"
+		},
+		"advMapAmount": {
+			"max": 2,
+			"min": 1
+		},
+		"hasDoubleWeek": false,
+		"faction": "neutral",
+		"excludeFromRandomization" : true,
+		"description" : "Any forest under the protection of an orange dragon is a calm and magical place, one best left alone if you're wise. Like the sprite, this creature is born magically, spawned by the forces of Nature from a clear pool of water. Orange dragons are almost completely immune to magical attacks, reflecting spells back at the caster (70%, similar to the Magic Mirror spell). They can also cast spells such as Confusion, Fire Ring, Fireball, Lightning Bolt, Ice Bolt, Ice Ring, Inferno, Meteor Shower, Chain Lightning and Magic Arrow.",
+		"aiValue": 35501,
+		"attack": 20,
+		"cost": {
+			"gold": 14000,
+			"gems": 13,
+		},
+		"damage": {
+			"max": 30,
+			"min": 20
+		},
+		"defense": 30,
+		"fightValue": 20000,
+		"graphics": {
+			"animation": "battle/orangedragon.def",
+			"map": "map/orangedragononmap.def",
+			"iconSmall": "iconsSmall/orangedragonavatarsmall.png",
+			"iconLarge": "iconsBig/orangedragonavatarbig.bmp",
+			"timeBetweenFidgets": 1,
+			"animationTime": {
+				"walk": 1.00,
+				"attack": 0.7,
+				"idle": 10
+			}
+		},
+		"growth": 1,
+		"doubleWide": true,
+		"hitPoints": 500,
+		"level": 8,
+		"sound": {
+			"attack": "OrangeDragon/orangedragonmelee.wav",
+			"defend": "OrangeDragon/defend.wav",
+			"killed": "OrangeDragon/orangedragondie.wav",
+			"move": "OrangeDragon/fly.wav",
+			"wince": "OrangeDragon/orangedragongethit.wav"
+		},
+		"speed": 10,
+		"abilities": {
+			"dragon": {
+				"type": "DRAGON_NATURE"
+			},
+			"canFly": {
+				"type": "FLYING",
+				"subtype": "movementFlying"
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 700
+			},
+			"mirror" :
+			{
+				"type" : "MAGIC_MIRROR",
+				"val" : 70
+			},
+			"powerAttack" :
+			{
+				
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.enchantedStrike",
+				"val" : 0
+			},
+			"castsMagicArrow" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.magicArrow",
+				"addInfo" : 22,
+				"val" : 2
+			},
+			"castsIceBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.iceBolt",
+				"addInfo" : 22,
+				"val" : 2
+			},
+			"castsLightningBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.lightningBolt",
+				"addInfo" : 22,
+				"val" : 2
+			},
+			"castsChainLightning" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.chainLightning",
+				"addInfo" : 5,
+				"val" : 2
+			},
+			"castsFrostRing" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.frostRing",
+				"addInfo" : 10,
+				"val" : 2
+			},
+			"castsFireball" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireball",
+				"addInfo" : 21,
+				"val" : 2
+			},
+			"castsInferno" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.inferno",
+				"addInfo" : 5,
+				"val" : 2
+			},
+			"castsMeteorShower" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.meteorShower",
+				"addInfo" : 5,
+				"val" : 2
+			},
+			"castsConfusion" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.confusiondragon",
+				"addInfo" : 21,
+				"val" : 2
+			},
+			"castsFireRing" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireRing",
+				"addInfo" : 10,
+				"val" : 2
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 7
+			},
+			"king" :
+			{
+			"type" : "KING",
+				"val" :0
+			},
+		},
+"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.magicMirror"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 2, 3, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_BEFORE_ATTACK",
+					"subtype" : "spell.clone",
+					"addInfo" : [3, 0]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+	},
+    "core:fairieDragon": {
+        "upgrades": ["orangedragon"]
+    }
+}
