@@ -1,0 +1,29 @@
+{
+	"name" : "Wild Griffin",
+	"description" : "New unit - Wild Griffin. It is a 3 level neutral unit, that can fly and retaliate 2 times. It is slightly more offence oriented than the regular Griffin. Dwelling- Griffin Cliffs. Creature Bank- Griffin Nest." ,
+	"author": "Kurek",
+	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
+	"modType" : "Creatures",
+	"version" : "1.00",
+	"creatures" :
+	[
+	"config/wildgriffin/wildgriffin"
+	],
+	"objects" : 
+		[  
+		"config/wildgriffin/dwellings.json", 
+		"config/wildgriffin/banks.json" 
+		],
+	"battlefields" :
+	[
+		"config/wildgriffin/griffinnestbattlefield.json"
+	],
+	"czech" : {
+		"name": "Divocí gryfové",
+		"description": "Neutrální jednotka 3. úrovně, která umí létat a dokáže dvakrát opětovat útok. Ve srovnání s běžným gryfem je více zaměřen na útok. Přidává nové obydlí gryfí útesy a hnízdo gryfů jako zásobárnu."
+	},
+	"polish" : {
+		"name" : "Dziki Gryf",
+		"description" : "Nowa jednostka - Dziki Gryf. Jest to neutralna jednostka poziomu 3, zdolna do latania i kontratakowania dwa razy. Ma nieco większe ukierunkowanie na atak w porównaniu do zwykłego Gryfa. Siedlisko – Gryfie Skały. Bank stworzeń – Gniazdo Gryfów."
+	}
+}
