@@ -1,12 +1,32 @@
 {
 	"author" : "Kurek",
-	"contact" : "",
+	"contact" : "w.k6476 on Discord",
 	"description" : "Adds new neutral creatures",
-	"modType" : "Creatures",
 	"name" : "New Neutral Content",
-	"version" : "2.1",
+	"version" : "2.4",
+	"modType" : "Creatures",
+	"changelog" :
+    	{
+		"1.00" : ["Initial release"],
+		"1.01" : ["small update for vcmi-1.2"],
+		"1.02" : ["small fix for bonus morale"],
+		"1.03" : ["small update for vcmi-1.4"],
+		"2.0"  : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"],
+		"2.1"  : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."],
+		"2.2"  : ["Added Neutral creature, dwelling and bank: Wild Griffin, Griffin Cliffs, Griffin Nest."],
+		"2.3"  : ["Added WildOrange Dragon"],
+		"2.4"  : ["Added Big Wasp Addon"],
+    	},
+	"compatibility" :
+	{
+		"min" : "1.4.0"
+	},
+	"chinese" : {
+		"name" : "Kurek生物",
+		"description" : "添加新的生物和野外巢穴。"
+	},
 	"czech" : {
-		"name" : "Nové neutrální jednotky",
+		"name" : "Neutrální jednotky",
 		"description" : "Přidává nové neutrální jednotky"
 	}
 }
