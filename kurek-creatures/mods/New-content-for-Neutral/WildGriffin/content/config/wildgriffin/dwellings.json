@@ -1,0 +1,19 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"griffincliffs" : {
+				"name" : "Griffin Cliffs",
+				"guards" : false,
+				"creatures" : [[ "wildgriffin" ]],
+				"sounds": {	"ambient": ["wildgriffin/loop"],
+				"visit": ["wildgriffin/visit"]},
+				"templates" : {
+					"default" : {
+						"animation" : "dwelling/griffincliffs.def",
+						"mask" : [ "VVV", "VVV", "VBB", "VAB"]
+					}
+					}
+				}
+			}
+		}		
+	}	
