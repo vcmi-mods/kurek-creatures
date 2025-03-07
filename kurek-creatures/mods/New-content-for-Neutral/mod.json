@@ -1,9 +1,9 @@
 {
 	"author" : "Kurek",
-	"contact" : "w.k6476 on Discord",
+	"contact" : "",
 	"description" : "Adds new neutral creatures",
 	"name" : "New Neutral Content",
-	"version" : "2.4",
+	"version" : "2.3",
 	"modType" : "Creatures",
 	"changelog" :
     	{
@@ -14,8 +14,7 @@
 		"2.0"  : ["Bloodeyed Cyclops, Cyclop Warrior, Purple Dragon, Black Gorgon added, Marine Serail changed to a bank"],
 		"2.1"  : ["Added Neutral creature and dwelling: Eagle and Eagle Nest."],
 		"2.2"  : ["Added Neutral creature, dwelling and bank: Wild Griffin, Griffin Cliffs, Griffin Nest."],
-		"2.3"  : ["Added WildOrange Dragon"],
-		"2.4"  : ["Added Big Wasp Addon"],
+		"2.3"  : ["Added WildOrange Dragon"]
     	},
 	"compatibility" :
 	{
