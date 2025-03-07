@@ -4,16 +4,27 @@
 	"description" : "Adds new Pavilion creatures and a new hero class- Pharaoh",
 	"modType" : "Compatibility",
 	"name" : "New Content for Pavilion",
-	"version" : "1.1",
-	"changelog" :{
-		"1.00" : ["Initial release"],
-		"1.1" : ["new def for Sacred Scarab"]},
+	"version" : "1.4",
+	"changelog" : {
+		"1.0" : ["Initial release"],
+		"1.1" : ["new def for Sacred Scarab"],
+		"1.2" : ["polish translation added"],
+		"1.4" : ["fixed 2 new spells"]
+	},
 	"depends" :
 	[
-		"new-pavilion"
+		"new-pavilion", "new-monsters-pack.axolotl-creatures-pack", "new-monsters-pack.undeadsphinxes"
 	],
+	"chinese" : {
+		"name" : "沙堡的新内容",
+		"description" : "添加新的沙堡内容。"
+	},
 	"czech" : {
-		"name" : "Nový obsah pro Pavilión",
-		"description" : "Přidává nové jednotky pro Pavilión a novou rasu Faraon"
+		"name" : "Obsah pro Pavilon",
+		"description" : "Přidá nové jednotky pro Pavilion"
+	},
+	"polish" : {
+		"name" : "Nowe treści dla Pawilonu",
+		"description" : "„Dodaje nową klasę bohatera Pawilonu: Faraon. 8 dodatkowych jednostek dla Pawilonu. Bazowane na Bastionie z Bastion New Town Group, Pawilon. Mod dodaje także kilku bohaterów Wezyrów i Balsamistów. Specjalne podziękowania dla: Nephretesa, J. M. Sowera, Hobbita, Kuririna, Witchkinga, Tritha, Mitlandy'ego i całej społeczności Acid Cave.",
 	}
 }
