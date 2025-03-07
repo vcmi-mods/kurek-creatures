@@ -1,6 +1,6 @@
 {
 	"wildgriffin": {
-		"description": "Wild Griffins are fierce, indomitable creatures, filled with raw strength and an unbreakable spirit. Unlike their tamed kin, they defy all attempts at control, their will as unyielding as mountain stone, and their hearts driven by ancient instincts. In battle, Wild Griffins are skilled at countering attacks, striking fear into the hearts of their foes. Their blows are swift and precise, making them a daunting challenge for any who dare face them.",
+		"description": "{#ff0000|Wild Griffin}\r\n\r\nWild Griffins are fierce, indomitable creatures, filled with raw strength and an unbreakable spirit. Unlike their tamed kin, they defy all attempts at control, their will as unyielding as mountain stone, and their hearts driven by ancient instincts.\r\n\r\n{gold|Special Ability : In battle, Wild Griffins are skilled at countering attacks, striking fear into the hearts of their foes.\r\n Their blows are swift and precise, making them a daunting challenge for any who dare face them.}",
 		"name": {
 			"plural": "Wild Griffins",
 			"singular": "Wild Griffin"
