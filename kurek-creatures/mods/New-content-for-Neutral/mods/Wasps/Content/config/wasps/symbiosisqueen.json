@@ -41,7 +41,7 @@
 				"cost" : 0,
 				"aiValue" : 20,
 				"power" : 10,
-				"description" : "{Symbiosis}\r\n\r\nAllows Drones to resurrect Queen (permanent).",
+				"description" : "{Symbiosis}\r\n\r\nAllows Drones to heal Queen (permanent).",
 				"battleEffects" : {
 					"heal" : {
 						"type" :"core:heal",
