@@ -1,6 +1,7 @@
 {
 	"blackgorgon":
 	{
+		"description" : "{#ff0000|Black Gorgon}\r\n\r\nThe sturdy Black Demigorgons attack with their acidic breath.\r\n\r\n{gold|Special Ability : The Black Gorgon has a death stare with a 10% chance per attack of killing 1 creature in a troop outright per 10 Black Gorgons.\r\n\r\nIt can also change its enemies to stone with their cursed gaze and is immune to poison and acid damage.}",
 		"name" :
 		{
 			"plural" : "Black Gorgons",
@@ -58,25 +59,97 @@
 				"subtype" : "spell.stoneGaze",
 				"val" : 10
 			},
-			"acidVulnerablity" :
+			"acidImmunity" :
 			{
-				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"type" : "SPELL_IMMUNITY",
 				"subtype" : "spell.acidBreathDamage",
-				"val" : 100
 			},
 			"poisonImmunity" :
 			{
 				"type" : "SPELL_IMMUNITY",
 				"subtype" : "spell.poison"
+			},
+			"powerAttack" : 
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.powerbondblackgorgonsBreath",
+				"val" : 0
 			}
 		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEAR"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DEATH_STARE",
+					"subtype" : "deathStareGorgon"
+				},
+				"values" : [ 13, 16, 19, 22, 25, 28, 31, 34, 37, 40 ]
+			}
+		],
 		"sound" :
 		{
-			"attack": "BGORATTK.wav",
-			"defend": "BGORDFND.wav",
-			"killed": "BGORKILL.wav",
-			"move": "BGORMOVE.wav",
-			"wince": "BGORWNCE.wav"
-		},	
+			"attack": "battlegorgon/BGORATTK1.wav",
+			"defend": "battlegorgon/BGORDFND1.wav",
+			"killed": "battlegorgon/BGORKILL1.wav",
+			"move": "battlegorgon/BGORMOVE1.wav",
+			"wince": "battlegorgon/BGORWNCE1.wav",
+			"startMoving" : "battlegorgon/BGORSTARTMOVE1.wav",
+            "endMoving" : "battlegorgon/BGORENDMOVE1.wav"
+		}
 	}
 }		

@@ -1,13 +1,21 @@
 {
 	"name": "Black Gorgon",
-	"description": "New unit - Black Gorgon",
+	"description": "New unit - Black Gorgon. The sturdy black gorgons attack with their acidic breath. The Black Gorgon has a death stare with a 10% chance per attack of killing 1 creature in a troop outright per 10 Black Gorgons. It can also change its enemies to stone with their cursed gaze and is immune to poison and acid damage.",
 	"author": "Graphics and mod: Drwal",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=1361",
 	"version": "2.0",
 	"modType": "Creatures",
+	"chinese" : {
+		"name" : "黑野牛",
+		"description" : "新单位——黑野牛。"
+	},
 	"czech" : {
-		"name" : "Černé Gorgony",
-		"description" : "Nová jednotka – Černé Gorgony"
+		"name" : "Černé gorgony",
+		"description" : "Nová jednotka – Černé gorgony"
+	},
+	"polish" : {
+		"name" : "Czarna Gorgona",
+		"description" : "Nowa jednostka - Czarna Gorgona. Potężne czarne gorgony atakują swoim kwasowym oddechem. Czarna Gorgona posiada śmiertelne spojrzenie, które ma 10% szans na natychmiastowe zabicie 1 jednostki w oddziale na każde 10 Czarnych Gorgon. Może także zamieniać wrogów w kamień swoim przeklętym spojrzeniem i jest odporna na truciznę oraz obrażenia od kwasu."
 	},
 	"creatures": [
 		"config/blackgorgon/blackgorgon.json"
@@ -17,5 +25,9 @@
 	],
 	"objects": [
 		"config/blackgorgon/dwellings.json"
+	],
+	"spells" : 
+	[
+		"config/blackgorgon/powerbondblackgorgonsBreath.json"
 	]
 }

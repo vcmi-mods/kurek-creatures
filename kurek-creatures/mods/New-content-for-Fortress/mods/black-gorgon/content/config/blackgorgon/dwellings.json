@@ -4,13 +4,13 @@
 		{
 			"blackLair" : 
 			{
-				"battleground": "kurek-creatures.new-content-for-fortress.black-gorgon:blacklairbattlefield",
+				"battleground": "new-monsters-pack.kurek-creatures.new-content-for-fortress.black-gorgon:blacklairbattlefield",
 				"name" : "Black Lair",
 				"guards" : true,
 				"creatures" : [[ "blackgorgon" ]],
 				"sounds": {	"ambient": ["LOOPBEHE"],
 				"visit": ["battlegorgon/blackgorgonvisit"]},
-	"templates" : 
+				"templates" : 
 				{
 					"default" : 
 					{
