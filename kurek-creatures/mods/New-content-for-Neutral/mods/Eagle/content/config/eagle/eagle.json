@@ -1,5 +1,6 @@
 {
 	"eagle": {
+		"description": "{#ff0000|Eagle}\r\n\r\nGreat eagles are majestic and wild birds that have long symbolized dominance, hope, courage, and zeal.\r\n\r\n{gold|Special Ability : The eagle can cast the spell expert Mirth once per battle.}",
 		"name": {
 			"plural": "Eagles",
 			"singular": "Eagle"

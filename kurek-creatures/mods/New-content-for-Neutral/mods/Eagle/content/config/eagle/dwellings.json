@@ -12,8 +12,8 @@
 						"animation" : "dwelling/eaglenest.def",
 						"mask" : [ "VVV", "VVV", "VBB", "VBA"]
 					}
-					}
 				}
 			}
-		}		
-	}	
+		}
+	}		
+}	

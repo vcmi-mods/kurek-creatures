@@ -2,7 +2,7 @@
 	"core:creatureGeneratorCommon" : {
 		"types" : {
 			"purpleTower" : {
-				"battleground": "kurek-creatures.new-content-for-neutral.purpledragon:purpletowerbattlefield",
+				"battleground": "new-monsters-pack.kurek-creatures.new-content-for-neutral.purpledragon:purpletowerbattlefield",
 				"name" : "Purple Tower",
 				"guards" : true,
 				"creatures" : [[ "purpledragon" ]],
@@ -13,8 +13,8 @@
 						"animation" : "dwelling/purpletower.def",
 						"mask" : [ "VVV", "VBV", "VBV", "VAV"]
 					}
-					}
 				}
 			}
-		}		
-	}	
+		}
+	}		
+}	

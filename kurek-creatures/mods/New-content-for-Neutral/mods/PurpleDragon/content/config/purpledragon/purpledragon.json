@@ -1,12 +1,14 @@
 {
 	"purpledragon": {
+	
+		"description": "{#ff0000|Purple Dragon}\r\n\r\nThe purple dragon is a majestic creature with scales that shimmer like amethyst as it soars high in the skies. It is likely the oldest dragon species the world has ever seen.\r\n\r\n{gold|Special Ability : Its blue fiery breath covers a large area, leaving flames that burn longer than ordinary fire.\r\n\r\n This dragon possesses a unique resistance to magic, protecting it from most spells.}",
 		"name": {
 			"plural": "Purple Dragons",
 			"singular": "Purple Dragon"
 		},
 		"advMapAmount": {
-			"max": 2,
-			"min": 1
+			"max": 5,
+			"min": 2
 		},
 		"hasDoubleWeek": false,
 		"faction": "neutral",
@@ -66,9 +68,9 @@
                 "type": "SPELL_AFTER_ATTACK",
                 "subtype": "spell.bluefire",
                 "val": 100
-            },
+            }
 		},
-"stackExperience" :
+		"stackExperience" :
 		[
 			{
 				"bonus" :

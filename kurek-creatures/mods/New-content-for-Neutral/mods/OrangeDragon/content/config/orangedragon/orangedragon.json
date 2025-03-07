@@ -11,7 +11,7 @@
 		"hasDoubleWeek": false,
 		"faction": "neutral",
 		"excludeFromRandomization" : true,
-		"description" : "Any forest under the protection of an orange dragon is a calm and magical place, one best left alone if you're wise. Like the sprite, this creature is born magically, spawned by the forces of Nature from a clear pool of water. Orange dragons are almost completely immune to magical attacks, reflecting spells back at the caster (70%, similar to the Magic Mirror spell). They can also cast spells such as Confusion, Fire Ring, Fireball, Lightning Bolt, Ice Bolt, Ice Ring, Inferno, Meteor Shower, Chain Lightning and Magic Arrow.",
+		"description" : "{#ff0000|Orange Dragon}\r\n\r\nAny forest under the protection of an orange dragon is a calm and magical place, one best left alone if you're wise. Like the sprite, this creature is born magically, spawned by the forces of Nature from a clear pool of water.\r\n\r\n{gold|Special Ability : Orange dragons are almost completely immune to magical attacks, reflecting spells back at the caster (70%, similar to the Magic Mirror spell). \r\n\r\nThey can also cast spells such as Confusion, Fire Ring, Fireball, Lightning Bolt, Ice Bolt, Ice Ring, Inferno, Meteor Shower, Chain Lightning and Magic Arrow.}",
 		"aiValue": 35501,
 		"attack": 20,
 		"cost": {

@@ -14,7 +14,9 @@
         "defaultGainChance": 0,
         "gainChance": {},
         "animation": {
-            "affect": ["spells/bluefire.def"]
+            "affect": ["spells/bluefire.def"],
+			"hit":["spells/bluefire.def"],
+			"cast":["spells/bluefire.def"]
         },
         "flags": {
             "damage": true,
