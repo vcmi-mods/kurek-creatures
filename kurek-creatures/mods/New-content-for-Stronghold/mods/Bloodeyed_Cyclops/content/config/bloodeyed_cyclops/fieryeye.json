@@ -30,20 +30,47 @@
                 "range": "0", // Adjusted to a string
                 "targetModifier": {
                     "smart": true
-                },
-				"effects" : {}
+                }
             },
             "none": {
-                "description": "No special skills at this level."
+                "description": "No special skills at this level.",
+                "cost": 0,
+                "power": 0,
+                "aiValue": 0,
+                "range": "0", // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             },
             "basic": {
-                "description": "Basic level of Fiery Eye ability."
+                "description": "Basic level of Fiery Eye ability.",
+                "cost": 0,
+                "power": 0,
+                "aiValue": 0,
+                "range": "0", // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             },
             "advanced": {
-                "description": "Advanced level of Fiery Eye ability."
+                "description": "Advanced level of Fiery Eye ability.",
+                "cost": 0,
+                "power": 0,
+                "aiValue": 0,
+                "range": "0", // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             },
             "expert": {
-                "description": "Expert level of Fiery Eye ability."
+                "description": "Expert level of Fiery Eye ability.",
+                "cost": 0,
+                "power": 0,
+                "aiValue": 0,
+                "range": "0", // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             }
         },
         "flags": {

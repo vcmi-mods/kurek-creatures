@@ -6,6 +6,7 @@
 			"plural" : "Cyclops Warriors",
 			"singular" : "Cyclops Warrior"
 		},
+		"description" : "{#ff0000|Cyclops Warrior}\r\n\r\nFearless combatants who have abandoned throwing boulders in favor of melee combat with massive clubs.\r\n\r\n{gold|Special Ability : Each of their strikes not only deals tremendous damage but also has a chance to stun the enemy, immobilizing them for one turn.}\r\n\r\n Although they lack ranged attacks, they make up for it with exceptional resilience and devastating strength, making them unmatched in close-quarters battles. Their sheer brutality makes them a key unit for breaking through enemy lines.",
 		"advMapAmount" :
 		{
 			"max" : 7,
@@ -38,8 +39,8 @@
 			"animationTime" :
 			{
 				"walk" : 1.30,
-				"attack" : 2,
-				"idle" : 4
+				"attack" : 1,
+				"idle" : 6.5
 			}
 		},
 		"growth" : 2,
@@ -53,6 +54,8 @@
 			"killed": "CYCLKILL.wav",
 			"move": "CYCLMOVE.wav",
 			"wince": "CYCLWNCE.wav"
+			"startMoving" : "cyclopswarrior/CYCLSTARTMOVE2.wav",
+            "endMoving" : "cyclopswarrior/CYCLENDMOVE2.wav"
 		},
 		"speed" : 8,
 		"abilities" :
@@ -60,7 +63,7 @@
 			"Crushing Blow" : {
 				"subtype" : "spell.crushingblow",
 				"type" : "SPELL_AFTER_ATTACK",
-				"val": 50
+				"val": 27
 				//"range" : "ONLY_MELEE_FIGHT"
 			}
 			//"Crushing Blow2" :

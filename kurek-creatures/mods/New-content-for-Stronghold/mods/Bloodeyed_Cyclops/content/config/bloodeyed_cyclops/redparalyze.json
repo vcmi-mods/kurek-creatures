@@ -1,6 +1,6 @@
 {
     "redparalyze": {
-        "type": "combat",
+        "type": "ability",
         "name": "Red Paralysis",
         "targetType": "NO_TARGET",
         "school": {
@@ -58,26 +58,43 @@
             },
             "none": {
                 "description": "No special skills at this level.",
+                "cost": 0,
                 "power": 0,
-                "aiValue": 0
+                "aiValue": 0,
+                "range": "0",  // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             },
             "basic": {
                 "description": "Basic level of Red Paralysis ability.",
+                "cost": 0,
                 "power": 5,
                 "aiValue": 10,
-                "range": "1"
+                "range": "1",  // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             },
             "advanced": {
                 "description": "Advanced level of Red Paralysis ability.",
+                "cost": 0,
                 "power": 10,
                 "aiValue": 20,
-                "range": "2"
+                "range": "2",  // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             },
             "expert": {
                 "description": "Expert level of Red Paralysis ability.",
+                "cost": 0,
                 "power": 15,
                 "aiValue": 30,
-                "range": "3"
+                "range": "3",  // Adjusted to a string
+                "targetModifier": {
+                    "smart": true
+                }
             }
         },
         "flags": {

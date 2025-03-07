@@ -5,9 +5,17 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"version" : "1.00",
 	"modType" : "Creatures",
+	"chinese" : {
+		"name" : "血眼巨人",
+		"description" : "新单位 - 血眼巨人。血眼巨人不需要棍棒。它的武器是那只血腥的眼睛，它用这只眼睛击倒任何一个不幸与其诅咒目光相遇的可怜灵魂。作为最聪明的巨人亚种，它还能施放法术。"
+	},
 	"czech" : {
-		"name" : "Krvaví Kyklopové",
-		"description" : "Nová jednotka – Krvaví Kyklopové. Krvavý Kyklop nepotřebuje žádnou palici. Jeho zbraní je krvavé oko, kterým srazí každou nešťastnou duši, která se setká s jeho prokletým pohledem. Dokáže také sesílat kouzla, jelikož je nejinteligentnějším podtypem kyklopů."
+		"name" : "Krvaví kyklopové",
+		"description" : "Nová jednotka – Krvaví kyklopové. Krvavý kyklop nepotřebuje žádnou palici. Jeho zbraní je krvavé oko, kterým srazí každou nešťastnou duši, která se setká s jeho prokletým pohledem. Dokáže také sesílat kouzla, jelikož je nejinteligentnějším podtypem kyklopů."
+	},
+	"polish" : {
+		"name" : "Krwawooki Cyklop",
+		"description" : "„Nowa jednostka - Krwawooki Cyklop. Krwawooki Cyklop nie potrzebuje maczugi. Jego bronią jest krwawe oko, którym powala każdą biedną duszę, która ma pecha spotkać jego przeklęte spojrzenie. Potrafi również rzucać czary, ponieważ jest najinteligentniejszym podtypem cyklopów."
 	},
 	"creatures" :
 	[

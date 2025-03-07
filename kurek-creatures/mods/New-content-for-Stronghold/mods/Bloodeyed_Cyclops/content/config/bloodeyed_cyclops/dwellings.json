@@ -3,7 +3,7 @@
 		"types" : {
 			"kurekCyclopsPyramid" : 
 			{
-				"battleground": "kurek-creatures.new-content-for-stronghold.bloodeyed_cyclops:cyclopspyramidbattlefield",
+				"battleground": "new-monsters-pack.kurek-creatures.new-content-for-stronghold.bloodeyed_cyclops:cyclopspyramidbattlefield",
 				"name" : "Cyclops Pyramid",
 				"guards" : true,
 				"creatures" : [[ "kurekBloodeyedCyclops" ]],

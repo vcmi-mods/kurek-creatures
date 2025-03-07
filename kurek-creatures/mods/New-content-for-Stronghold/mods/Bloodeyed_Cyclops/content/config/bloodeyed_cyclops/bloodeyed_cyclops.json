@@ -4,6 +4,8 @@
             "plural": "Bloodeyed Cyclopes",
             "singular": "Bloodeyed Cyclop"
         },
+	"description" : "{#ff0000|Bloodeyed Cyclop}\r\n\r\nBloodeyed Cyclopes are fearsome shamanic warriors who channel fiery energy through their glowing red eyes.\r\n\r\n{gold|Special Ability : Their deadly eye beams incinerate enemies, dealing fire damage, and magically paralyze them with crimson energy, immobilizing them for a turn.\r\n\r\n Uniquely, they can use this beam effectively in close combat, where it can strike two units standing in a line. This makes them exceptionally versatile, both at range and in melee.\r\n\r\n As spiritual leaders of the cyclopes, they also possess the ability to cast the Misfortune spell, cursing their enemies with dreadful luck.}",
+	
         "advMapAmount": {
             "max": 9,
             "min": 3
@@ -53,8 +55,8 @@
             },
             "animationTime": {
                 "walk": 1,
-                "attack": 5,
-                "idle": 4
+                "attack": 1,
+                "idle": 6.5
             }
         },
         "growth": 2,
@@ -63,11 +65,13 @@
         "level": 6,
         "sound": {
             "attack": "cyclops/Bloodeyed_cyclops_beam.wav",
-            "defend": "CYCLDFND.wav",
-            "killed": "CYCLKILL.wav",
-            "move": "CYCLMOVE.wav",
+            "defend": "cyclops/CYCLDFND1.wav",
+            "killed": "cyclops/CYCLKILL1.wav",
+            "move": "cyclops/CYCLMOVE1.wav",
             "shoot": "cyclops/Bloodeyed_cyclops_beam.wav",
-            "wince": "CYCLWNCE.wav"
+            "wince": "cyclops/CYCLWNCE1.wav
+			"startMoving" : "cyclops/CYCLSTARTMOVE1.wav",
+            "endMoving" : "cyclops/CYCLENDMOVE1.wav"
         },
         "speed": 8,
         "abilities": {
@@ -89,16 +93,6 @@
             "twohexattackcyclopseye": 
 			{
 				"type": "TWO_HEX_ATTACK_BREATH",
-				//"graphics":
-				//	{
-				//"icon": "spell/laserikona.bmp"
-				//	},
-				//"name": "Fire ray",
-				"description": "This bonus allows the creature to attack two hexes in a line.",
-				//"flags": 
-				//	{
-				//"displayOnly": false
-				//	}
 			},
             "Casts misfortune": {
                 "type": "SPELLCASTER",
@@ -110,62 +104,305 @@
                 "val": 1
             }
         },
-"stackExperience" :
-		[
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.defence",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageMin",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+"stackExperience" : [
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"subtype" : "primarySkill.attack",
+				 
+				"type" : "PRIMARY_SKILL"
 			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageMax",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			 
+			"values" : [
+				 
+				1,
+				 
+				2,
+				 
+				3,
+				 
+				4,
+				 
+				4,
+				 
+				5,
+				 
+				6,
+				 
+				7,
+				 
+				8,
+				 
+				9
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"subtype" : "primarySkill.defence",
+				 
+				"type" : "PRIMARY_SKILL"
 			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			 
+			"values" : [
+				 
+				1,
+				 
+				2,
+				 
+				2,
+				 
+				3,
+				 
+				4,
+				 
+				5,
+				 
+				6,
+				 
+				7,
+				 
+				8,
+				 
+				9
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"subtype" : "creatureDamageMax",
+				 
+				"type" : "CREATURE_DAMAGE"
 			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+			 
+			"values" : [
+				 
+				1,
+				 
+				2,
+				 
+				3,
+				 
+				4,
+				 
+				5,
+				 
+				6,
+				 
+				7,
+				 
+				8,
+				 
+				8,
+				 
+				9
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"subtype" : "creatureDamageMin",
+				 
+				"type" : "CREATURE_DAMAGE"
 			},
-			{
-				"bonus" :
-				{
-					"type" : "ADDITIONAL_ATTACK"
-				},
-				"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
-			}
-		]
+			 
+			"values" : [
+				 
+				0,
+				 
+				1,
+				 
+				2,
+				 
+				3,
+				 
+				4,
+				 
+				5,
+				 
+				5,
+				 
+				6,
+				 
+				7,
+				 
+				8
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"type" : "STACK_HEALTH",
+				 
+				"valueType" : "PERCENT_TO_BASE"
+			},
+			 
+			"values" : [
+				 
+				5,
+				 
+				10,
+				 
+				15,
+				 
+				20,
+				 
+				25,
+				 
+				30,
+				 
+				35,
+				 
+				40,
+				 
+				45,
+				 
+				50
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"type" : "STACKS_SPEED"
+			},
+			 
+			"values" : [
+				 
+				0,
+				 
+				0,
+				 
+				0,
+				 
+				1,
+				 
+				1,
+				 
+				1,
+				 
+				1,
+				 
+				1,
+				 
+				1,
+				 
+				2
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"addInfo" : [
+					 
+					3,
+					 
+					1
+				],
+				 
+				"subtype" : "spell.earthquake",
+				 
+				"type" : "SPELL_BEFORE_ATTACK"
+			},
+			 
+			"values" : [
+				 
+				5,
+				 
+				10,
+				 
+				20,
+				 
+				30,
+				 
+				40,
+				 
+				50,
+				 
+				60,
+				 
+				60,
+				 
+				60,
+				 
+				60
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"type" : "NO_DISTANCE_PENALTY"
+			},
+			 
+			"values" : [
+				 
+				false,
+				 
+				false,
+				 
+				false,
+				 
+				false,
+				 
+				false,
+				 
+				false,
+				 
+				true,
+				 
+				true,
+				 
+				true,
+				 
+				true
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+				 
+				"type" : "NO_WALL_PENALTY"
+			},
+			 
+			"values" : [
+				 
+				false,
+				 
+				false,
+				 
+				false,
+				 
+				false,
+				 
+				true,
+				 
+				true,
+				 
+				true,
+				 
+				true,
+				 
+				true,
+				 
+				true
+			]
+		}
+	]
     }
 }

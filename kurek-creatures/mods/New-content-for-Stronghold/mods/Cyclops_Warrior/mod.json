@@ -5,9 +5,17 @@
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
 	"version" : "1.00",
 	"modType" : "Creatures",
+	"chinese" : {
+		"name" : "独眼战士",
+		"description" : "新单位 - 独眼战士。这些独眼巨人手持巨大的棍棒，力量和耐力强大到连城堡的墙壁都害怕他们。"
+	},
 	"czech" : {
-		"name" : "Kyklopští Válečníci",
-		"description" : "Nová jednotka – Kyklopský Válečník. Tito kyklopové nesou obrovskou palici a jsou tak silní a odolní, že i hradby se před nimi třesou."
+		"name" : "Kyklopští válečníci",
+		"description" : "Nová jednotka – Kyklopský válečník. Tito kyklopové nesou obrovskou palici a jsou tak silní a odolní, že i hradby se před nimi třesou."
+	},
+	"polish" : {
+		"name" : "Cyklop Wojownik",
+		"description" : "„Nowa jednostka - Cyklop Wojownik. Te cyklopy noszą ogromną maczugę i są tak silne i wytrzymałe, że nawet mury zamków się ich boją."
 	},
 	"creatures" :
 	[

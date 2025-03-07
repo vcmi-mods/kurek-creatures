@@ -5,8 +5,12 @@
 	"modType" : "Creatures",
 	"name" : "New Content for Stronghold",
 	"version" : "2.0",
+	"chinese" : {
+		"name" : "据点的新内容",
+		"description" : "添加新的据点内容。"
+	},
 	"czech" : {
-		"name" : "Nový obsah pro Tvrz",
+		"name" : "Obsah pro Tvrz",
 		"description" : "Přidává nové jednotky pro Tvrz"
 	}
 }
