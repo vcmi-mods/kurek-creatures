@@ -2,7 +2,7 @@
 	"core:creatureGeneratorCommon" : {
 		"types" : {
 			"kurekAltarOfProphecies" : {
-				"battleground": "kurek-creatures.new-content-for-castle.cherub:altarofpropheciesbattlefield",
+				"battleground": "new-monsters-pack.kurek-creatures.new-content-for-castle.cherub:altarofpropheciesbattlefield",
 				"name" : "Altar of Prophecies",
 				"guards" : true,
 				"creatures" : [[ "kurekCherub" ]],

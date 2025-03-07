@@ -6,6 +6,8 @@
 			"plural" : "Cherubim",
 			"singular" : "Cherub"
 		},
+		"description" : "{#ff0000|Cherub}\r\n\r\nCherubim in the are high in the hierarchy celestial beings who serve as guardians and protectors of divine holiness. Described as having many wings and great power and speed, they often appear in the visions of prophets, symbolizing glory and holy presence. With their great offensive and defensive power and flying ability, Cherubs are among the mightiest and fastest creatures among celestials. \n\n{gold|They do 150% damage when attacking devils and strengthen morale of allied units.}\n\n {#00aaff|Cherubim can 3 times resurrect allied units fallen on the battlefield, provided they were not undead in life.}",
+		
 		"advMapAmount" :
 		{
 			"max" : 2,
@@ -17,7 +19,7 @@
 		"attack" : 30,
 		"cost" :
 		{
-			"gold" : 7500,
+			"gold" : 8000,
 			"gems" : 3
 		},
 		"damage" :
@@ -47,11 +49,13 @@
 		"level" : 7,
 		"sound" :
 		{
-			"attack": "AAGLATTK.wav",
-			"defend": "AAGLDFND.wav",
-			"killed": "AAGLKILL.wav",
-			"move": "AAGLMOVE.wav",
-			"wince": "AAGLWNCE.wav"
+			"attack": "battle1/AAGLATTK1.wav",
+			"defend": "battle1/AAGLDFND1.wav",
+			"killed": "battle1/AAGLKILL1.wav",
+			"move": "battle1/AAGLMOVE1.wav",
+			"wince": "battle1/AAGLWNCE1.wav",
+			"startMoving" : "battle1/AAGLSTARTMOVE1.wav",
+            "endMoving" : "battle1/AAGLENDMOVE1.wav"
 		},
 		"speed" : 21,
 		"abilities" :
@@ -75,7 +79,7 @@
 			"spellpoints" :
 			{
 				"type" : "CASTS",
-				"val" : 1
+				"val" : 3
 			},
 			"hateDevils" :
 			{
@@ -89,70 +93,139 @@
 				"subtype" : "creature.archDevil",
 				"val" : 50
 			},
-			"holyMorale" :
+			"const_raises_morale" : 
 			{
+				"propagator" : "HERO",
+				"stacking" : "Angels",
 				"type" : "MORALE",
-				"val" : 1,
-				"valueType" : "INDEPENDENT_MAX"
+				"val" : 1
+			},
+			"KING_2" : 
+			{
+				"type" : "KING",
+				"val" : 2
+			},
+			"powerAttack" : {
+				"subtype" : "spell.holyBlade",
+				"type" : "SPELL_LIKE_ATTACK",
+				"val" : 0
 			}
 		},
-	"stackExperience" :
-		[
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.defence",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+		"stackExperience" : [
+		{
+
+			"bonus" : {
+
+				"subtype" : "primarySkill.attack",
+
+				"type" : "PRIMARY_SKILL"
 			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageBoth",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+		},
+
+		{
+
+			"bonus" : {
+
+				"subtype" : "primarySkill.defence",
+
+				"type" : "PRIMARY_SKILL"
 			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+		},
+
+		{
+
+			"bonus" : {
+
+				"subtype" : "creatureDamageMax",
+				"type" : "CREATURE_DAMAGE"
 			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+		},
+
+		{
+
+			"bonus" : {
+
+				"subtype" : "creatureDamageMin",
+				"type" : "CREATURE_DAMAGE"
 			},
-			{
-				"bonus" :
-				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll",
-				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+		},
+
+		{
+			"bonus" : {
+
+				"type" : "STACK_HEALTH",
+				"valueType" : "PERCENT_TO_BASE"
 			},
-			{
-				"bonus" :
-				{
-					"type" : "DOUBLE_DAMAGE_CHANCE"
-				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
-			}
-		]
+			"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+		},
+
+		{
+			"bonus" : {
+
+				"type" : "STACKS_SPEED"
+			},
+			"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3 ]
+		},
+
+		{
+			"bonus" : {
+				
+				"type" : "FEARLESS"
+			},
+			"values" : [ false, false, false, false, true, true, true, true, true, true
+			]
+		},
+
+		{
+			"bonus" : {
+
+				"type" : "MIND_IMMUNITY"
+			},
+			"values" : [ false, false, false, false, false, false, false, true, true, true ]
+		},
+
+		{
+
+			"bonus" : {
+				"subtype" : "spell.armageddon",
+				"type" : "SPELL_IMMUNITY"
+			},
+			"values" : [ false, false, true, true, true, true, true, true, true, true ]
+		},
+
+		{
+
+			"bonus" : {
+
+				"type" : "CASTS"
+			},
+			"values" : [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ]
+		},
+
+		{
+
+			"bonus" : {
+
+				"type" : "MAGIC_RESISTANCE"
+			},
+
+			"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]
+		},
+
+		{
+
+			"bonus" : {
+
+				"subtype" : "spellSchool.water",
+				"type" : "NEGATIVE_EFFECTS_IMMUNITY"
+			},
+			"values" : [ false, false, false, false, false, false, true, true, true, true ]
+		}
+	]
 	}
 }
 

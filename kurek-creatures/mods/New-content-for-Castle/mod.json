@@ -5,8 +5,12 @@
 	"modType" : "Creatures",
 	"name" : "New Content for Castle",
 	"version" : "2.0",
+	"chinese" : {
+		"name" : "城堡的新内容",
+		"description" : "添加新的城堡生物。"
+	},
 	"czech" : {
-		"name" : "Nový obsah pro Hrad",
+		"name" : "Obsah pro Hrad",
 		"description" : "Přidává nové jednotky pro Hrad"
 	}
 }

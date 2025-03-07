@@ -3,11 +3,24 @@
 	"description" : "New unit - Cherub. The cherubim are the second highest rank in the angelic hierarchy, following the Seraphim. Cherubim are regarded in traditional angelology as angels of the second highest order of the ninefold celestial hierarchy.",
 	"author": "Kurek",
 	"contact": "http://www.forum.acidcave.net/profile.php?UID=4121",
-	"version" : "1.03",
+	"version" : "2.0",
 	"modType" : "Creatures",
+	"changelog" :
+	{
+		"1.0"   : [ "Initial release" ],
+		"2.0"   : [ "new moving sounds, new dwelling look, new portraits, creature description added" ]
+	},
+	"chinese" : {
+		"name" : "基路伯",
+		"description" : "新单位——基路伯。基路伯是天使阶层中仅次于炽天使的第二高等级。传统天使学中，基路伯被视为九重天界层级中第二高等级的天使。"
+	},
 	"czech" : {
 		"name" : "Cherubíní",
 		"description" : "Nová jednotka – Cherubíni. Cherubíní jsou druhou nejvyšší hodností v andělské hierarchii, následují po Serafínech. V tradiční angelologii jsou cherubové považováni za anděly druhého nejvyššího řádu z devítinásobné nebeské hierarchie."
+	},
+	"polish" : {
+		"name" : "Cherubin",
+		"description" : "Nowa jednostka - Cherub. Cherubini zajmują drugie miejsce w hierarchii anielskiej, zaraz po Serafinach. W tradycyjnej angelologii cherubini są uważani za anioły drugiego najwyższego rzędu w dziewięciostopniowej hierarchii niebiańskiej."
 	},
 	"creatures" :
 	[
