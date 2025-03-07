@@ -17,7 +17,7 @@
                 }
             },
             "ancientcenotaph": {
-                "battleground": "kurek-creatures.new-content-for-pavilion.pavilionpharaoh:ancientcenotaphbattlefield",
+                "battleground": "new-monsters-pack.kurek-creatures.new-content-for-pavilion.pavilionpharaoh:ancientcenotaphbattlefield",
                 "name": "Ancient Cenotaph",
                 "creatures": [["anubissabrewarrior"]],
                 "sounds": {
@@ -33,7 +33,7 @@
                 }
             },
             "sphinxTemple": {
-                "battleground": "kurek-creatures.new-content-for-pavilion.pavilionpharaoh:sphinxtemplebattlefield",
+                "battleground": "new-monsters-pack.kurek-creatures.new-content-for-pavilion.pavilionpharaoh:sphinxtemplebattlefield",
                 "name": "Sphinx Temple",
                 "creatures": [["guardiansphinx"]],
                 "sounds": {
@@ -49,7 +49,7 @@
                 }
             },
             "shrineoffalcons": {
-                "battleground": "kurek-creatures.new-content-for-pavilion.pavilionpharaoh:shrineoffalconsbattlefield",
+                "battleground": "new-monsters-pack.kurek-creatures.new-content-for-pavilion.pavilionpharaoh:shrineoffalconsbattlefield",
                 "name": "Shrine of Falcons",
                 "creatures": [["horus"]],
                 "sounds": {

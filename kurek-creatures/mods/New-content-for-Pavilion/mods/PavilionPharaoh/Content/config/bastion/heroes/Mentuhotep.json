@@ -10,8 +10,8 @@
 			"biography" : " Deserts always hide treasures, as Mentuhotep firmly believes. He is proven right whenever he discoveres great riches there. Subsequently, he settled in one of the desert cities, where he expanded his wealth.",
 			"specialty" :
 			{
-				"description" : "{Gold}\r\n\r\nIncreases kingdom's income by 350 gold per day",
-				"tooltip" : "+350 Gold each day",
+				"description" : "{Gold}\r\n\r\nIncreases kingdom's income by 350 gold pieces per day",
+				"tooltip" : "+350 Gold pieces each day",
 				"name" : "+350 Gold"
 			}
 		},

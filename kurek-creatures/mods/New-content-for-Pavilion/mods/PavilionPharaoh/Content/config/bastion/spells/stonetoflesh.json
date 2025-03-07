@@ -1,0 +1,275 @@
+{
+	"stonetoflesh":
+{
+	 
+	"animation" : {
+		 
+		"cast" : ["bastion/battle/stonetoflesh.def"],
+		"affect" : ["bastion/battle/stonetoflesh.def"]
+	},
+	 
+	"flags" : {
+		 
+		"indifferent" : true
+	},
+	 
+	"gainChance" : {
+		 
+		"castle" : 6,
+		 
+		"conflux" : 6,
+		 
+		"dungeon" : 8,
+		 
+		"fortress" : 6,
+		 
+		"inferno" : 6,
+		 
+		"necropolis" : 4,
+		 
+		"rampart" : 12,
+		 
+		"stronghold" : 4,
+		 
+		"tower" : 6
+	},
+
+	"graphics" : {
+
+		"iconScenarioBonus" : "bastion/battle/stonetoflesh3.bmp",
+		"iconEffect" : "bastion/battle/stonetoflesh4.bmp",
+		"iconBook" : "bastion/battle/stonetoflesh1.bmp",
+		"iconScroll" : "bastion/battle/stonetoflesh2.bmp",
+		"iconImmune" : "bastion/battle/immstonetoflesh.bmp"
+	},
+	 
+	 
+	"level" : 1,
+	 
+	"levels" : {
+		 
+		"advanced" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : true,
+					 
+					"dispelPositive" : false,
+					 
+					"ignoreImmunity" : false,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				}
+			},
+			 
+			"cost" : 4,
+			 
+			"description" : "{Advanced Stone to Flesh}\n\nRemoves petrification effect from a friendly or hostile creature.\n",
+			 
+			"power" : 0,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		},
+		 
+		"base" : {
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+										 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : true,
+					 
+					"dispelPositive" : false,
+					 
+					"ignoreImmunity" : false,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				}
+			},
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : true,
+					 
+					"dispelPositive" : false,
+					 
+					"ignoreImmunity" : false,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				}
+			},
+			 
+			"cost" : 4,
+			 
+			"description" : "{Basic Stone to Flesh}\n\nRemoves petrification effect from a friendly creature.\n",
+			 
+			"power" : 0,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : true,
+					 
+					"dispelPositive" : false,
+					 
+					"ignoreImmunity" : false,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				}
+			},
+			 
+			"cost" : 4,
+			 
+			"description" : "{Expert Stone to Flesh}\n\nRemoves petrification effect from all creatures from target area.\n",
+			 
+			"power" : 0,
+			 
+			"range" : "0-2",
+			 
+			"targetModifier" : {
+				 
+				"smart" : false
+			}
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : true,
+					 
+					"dispelPositive" : false,
+					 
+					"ignoreImmunity" : false,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				}
+			},
+			 
+			"cost" : 5,
+			 
+			"description" : "{Stone to Flesh}\n\nRemoves petrification effect from a friendly creature.\n",
+			 
+			"power" : 0,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		}
+	},
+	 
+	"name" : "Stone to Flesh",
+	 
+	"power" : 0,
+	 
+	"school" : {
+		 
+		"earth" : true
+	},
+	 
+	"sounds" : {
+		 
+		"cast" : "bastion/stonetoflesh.wav"
+	},
+	
+	"targetCondition": {
+		"anyOf": [
+        {
+            "type": "HAS_ANOTHER_BONUS_LIMITER",
+            "parameters": [
+                "SPELL_EFFECT",
+                "spell.stonegaze"
+            ]
+        },
+        {
+            "type": "HAS_ANOTHER_BONUS_LIMITER",
+            "parameters": [
+                "SPELL_EFFECT",
+                "spell.turntostone"
+            ]
+        }
+    ],
+		"noneOf": [
+        {
+            "type": "bonus.SIEGE_WEAPON",
+            "value": "absolute"
+        },
+        {
+            "type": "core:creature.infernaltroglodyte",
+            "value": "absolute"
+        },
+        {
+            "type": "core:creature.troglodyte",
+            "value": "absolute"
+        }
+    ]
+	},
+	"targetType" : "CREATURE",
+	 
+	"type" : "combat"
+}
+}

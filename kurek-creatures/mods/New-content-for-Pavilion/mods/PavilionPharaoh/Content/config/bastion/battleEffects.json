@@ -1,0 +1,17 @@
+{
+    "colorMuxers": {
+        "turntostoneeffect": [
+            {
+                "time": 0.0
+            },
+            {
+                "time": 1.0,
+                // Slightly increase green and decrease red/blue to create a green-gray tint
+                "red": [0.2, 0.5, 0.1, 0.0],
+                "green": [0.3, 0.6, 0.1, 0.1],
+                "blue": [0.2, 0.5, 0.1, 0.0],
+                "alpha": 1.0
+            }
+        ]
+    }
+}

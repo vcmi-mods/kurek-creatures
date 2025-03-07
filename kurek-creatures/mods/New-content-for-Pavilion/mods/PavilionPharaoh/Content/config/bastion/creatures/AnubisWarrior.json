@@ -6,6 +6,7 @@
 			"plural" : "Anubian Blademasters",
 			"singular" : "Anubian Blademaster"
 		},
+		"description" : "{#ff0000|Anubian Blademaster}\r\n\r\nThe pinnacle of Anubian power. Trained in battle, they bring doom to their enemies. Ja'Bak, the supreme pharaoh, descends from them. \r\n\r\n{gold|Special Ability : They draw their strength from a fascination with the afterlife, which imbues their knopeshes with the power of death. They can throw their knopeshes at foes twice.}",		
 		"advMapAmount" :
 		{
 			"max" : 8,
@@ -109,61 +110,7 @@
 		},
 		"stackExperience" :
 		[
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.defence",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageBoth",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll",
-				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "DOUBLE_DAMAGE_CHANCE"
-				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
-			}
 		
-		]	
+		]
 	}
 }

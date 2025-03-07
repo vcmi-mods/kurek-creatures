@@ -4,6 +4,7 @@
             "plural": "Sacred Scarabs",
             "singular": "Sacred Scarab"
         },
+		"description" : "{#ff0000|Sacred Scarab}\r\n\r\nA golden-shelled creature, stronger than ordinary scarabs, said to be created on altars through incantations over black scarabs.\r\n\r\n{gold|Special Ability : Revered as magical talismans, they are believed to bring luck and protect their owner from harm.}",
         "advMapAmount": {
             "max": 50,
             "min": 20
@@ -36,11 +37,11 @@
         "hitPoints": 5,
         "level": 1,
         "sound": {
-            "attack": "Pavilion/scarAtt.wav",
-            "defend": "Pavilion/scarDef.wav",
-            "killed": "Pavilion/scarDie.wav",
-            "move": "Pavilion/scarWalk.wav",
-            "wince": "Pavilion/scarHit.wav"
+            "attack": "bastion/scarAtt.wav",
+            "defend": "bastion/scarDef.wav",
+            "killed": "bastion/scarDie.wav",
+            "move": "bastion/scarWalk.wav",
+            "wince": "bastion/scarHit.wav"
         },
         "speed": 8,
         "abilities": {
@@ -53,53 +54,7 @@
             }
         },
         "stackExperience": [
-            {
-                "bonus": {
-                    "subtype": "primarySkill.attack",
-                    "type": "PRIMARY_SKILL"
-                },
-                "values": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
-            },
-            {
-                "bonus": {
-                    "subtype": "primarySkill.defense",
-                    "type": "PRIMARY_SKILL"
-                },
-                "values": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
-            },
-            {
-                "bonus": {
-                    "subtype": "creatureDamageBoth",
-                    "type": "CREATURE_DAMAGE"
-                },
-                "values": [0, 1, 1, 2, 2, 3, 3, 4, 4, 5]
-            },
-            {
-                "bonus": {
-                    "valueType": "PERCENT_TO_BASE",
-                    "type": "STACK_HEALTH"
-                },
-                "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-            },
-            {
-                "bonus": {
-                    "type": "STACKS_SPEED"
-                },
-                "values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-            },
-            {
-                "bonus": {
-                    "type": "GENERAL_DAMAGE_REDUCTION",
-                    "subtype": "damageTypeAll"
-                },
-                "values": [2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
-            },
-            {
-                "bonus": {
-                    "type": "DOUBLE_DAMAGE_CHANCE"
-                },
-                "values": [0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
-            }
+
         ]
     },
     "new-pavilion:scarab": {

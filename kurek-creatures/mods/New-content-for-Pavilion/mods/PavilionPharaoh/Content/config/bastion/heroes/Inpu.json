@@ -11,8 +11,8 @@
 			"specialty" :
 			{
 				"description" : "{Guardian Sphinxes}\r\n\r\nUpgrades various creatures into sphinxes. These creatures are: Sphinxes, Sphinx Oracles, Lamias, Ashen Sphinxes, Entombed Sphinxes, Manticores and Scorpicores.",
-				"tooltip" : "Creature Bonus: Can change various Hybrids into Guardian Sphinxes",
-				"name" : "Guardian of Sphinxes"
+				"tooltip" : "Creature Bonus: Can change various hybrids into Guardian Sphinxes",
+				"name" : "Master of Sphinxes"
 			}
 		},
 	
@@ -63,7 +63,7 @@
 			"bonuses" : {
 				"sphinx2guardiansphinx" : { "subtype" : "new-pavilion:sphinx" },
 				"sphinxoracles2guardiansphinx" : { "subtype" : "new-pavilion:elderSphinx" },
-				"Lamia2guardiansphinx" : { "subtype" : "axolotl-creatures-pack:sphinx" },
+				"Lamia2guardiansphinx" : { "subtype" : "new-monsters-pack.axolotl-creatures-pack:acpsphinx" },
 				"ashensphinx2guardiansphinx" : { "subtype" : "creature.ashenSphinx" },
 				"entombedsphinx2guardiansphinx" : { "subtype" : "creature.entombedSphinx" },
 				"manticore2guardiansphinx" : { "subtype" : "creature.manticore" },

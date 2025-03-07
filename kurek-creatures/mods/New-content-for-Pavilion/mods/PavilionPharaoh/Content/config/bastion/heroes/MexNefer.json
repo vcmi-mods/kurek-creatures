@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Mex-Nefer",
-			"biography" : "Mex-Nefer began to serve in the temple of the Four Winds since childhood. Through years she was known for her great wisdom and cruelty. For her cruelty was banished from the city. But after spending a long time in the desert, she learned to predict the behavior of the wind, and use it for their own purposes and recall at the appropriate time.",
+			"biography" : "Mex-Nefer began to serve in the temple of the Four Winds since childhood. Through years she was known both for her great wisdom and also cruelty. For her cruelty was banished from the city. But after spending a long time in the desert, she learned to predict the behavior of the wind, and use it for their own purposes and recall at the appropriate time.",
 			"specialty" :
 			{
 				"description" : "{Haste}\r\n\r\nCasts Haste with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",

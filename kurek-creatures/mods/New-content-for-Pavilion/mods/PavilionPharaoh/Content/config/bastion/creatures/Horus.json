@@ -4,6 +4,7 @@
 			"plural": "Horuses",
 			"singular": "Horus"
 		},
+		"description" : "{#ff0000|Horus}\r\n\r\nThe Horus from the Falcon Clan are desert-dwelling, winged humanoids with falcon heads, perfectly adapted to survive in harsh conditions.\r\n\r\n{gold|Special Ability : Resistant to magical damage, they can deliver lethal strikes with their magical gaze, which can fatally injure their enemies.\r\n\r\n In battle, they wield battle picks, using their agility and speed to overcome their foes.}",
 		"advMapAmount": {
 			"max": 16,
 			"min": 8
@@ -62,53 +63,7 @@
 			}
 		},
 		"stackExperience": [
-			{
-				"bonus": {
-					"subtype": "primarySkill.attack",
-					"type": "PRIMARY_SKILL"
-				},
-				"values": [1, 1, 2, 3, 4, 5, 5, 6, 7, 8]
-			},
-			{
-				"bonus": {
-					"subtype": "primarySkill.defense",
-					"type": "PRIMARY_SKILL"
-				},
-				"values": [1, 2, 3, 3, 4, 4, 6, 6, 7, 8]
-			},
-			{
-				"bonus": {
-					"subtype": "creatureDamageMax",
-					"type": "CREATURE_DAMAGE"
-				},
-				"values": [1, 2, 2, 3, 4, 4, 5, 6, 7, 7]
-			},
-			{
-				"bonus": {
-					"subtype": "creatureDamageMin",
-					"type": "CREATURE_DAMAGE"
-				},
-				"values": [0, 1, 2, 3, 3, 4, 5, 6, 6, 7]
-			},
-			{
-				"bonus": {
-					"valueType": "PERCENT_TO_BASE",
-					"type": "STACK_HEALTH"
-				},
-				"values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-			},
-			{
-				"bonus": {
-					"type": "STACKS_SPEED"
-				},
-				"values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-			},
-			{
-				"bonus": {
-					"type": "HP_REGENERATION"
-				},
-				"values": [9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
-			}
+
 		]
 	}
 }

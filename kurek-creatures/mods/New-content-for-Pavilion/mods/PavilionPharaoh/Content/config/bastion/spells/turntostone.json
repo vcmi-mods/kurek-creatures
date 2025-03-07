@@ -1,0 +1,148 @@
+{
+	"turntostone":
+{	
+    "animation": {
+        "cast": ["bastion/battle/turntostone.def"]
+		,
+        "affect": [
+            "bastion/battle/turntostone.def", 
+			{
+                "effectName" : "petrification"
+            }
+        ]
+    },
+    "flags": {
+        "indifferent": true
+    },
+    "gainChance": {
+        "castle": 4,
+        "conflux": 6,
+        "dungeon": 12,
+        "fortress": 6,
+        "inferno": 6,
+        "necropolis": 6,
+        "rampart": 10,
+        "stronghold": 4,
+        "tower": 4
+    },
+    "graphics": {
+        "iconScenarioBonus": "bastion/battle/turntostone3.bmp",
+        "iconEffect": "bastion/battle/turntostone4.bmp",
+        "iconBook": "bastion/battle/turntostone1.bmp",
+        "iconScroll": "bastion/battle/turntostone2.bmp",
+        "iconImmune": "bastion/battle/immturntostone.bmp"
+    },
+    "level": 2,
+    "levels": {
+        "advanced": {
+            "aiValue": 50,
+            "cost": 8,
+            "description": "{Advanced Turn to Stone}\n\nPetrifies a creature so that it cannot move and causes it to take half damage. Petrification persists until the unit is attacked or dispelled.",
+            "effects": {
+                "generalDamageReduction": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "type": "GENERAL_DAMAGE_REDUCTION",
+                    "val": 50
+                },
+                "notActive": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "subtype": "petrification",
+                    "type": "NOT_ACTIVE",
+                    "val": 0
+                }
+            },
+            "power": 80,
+            "range": "0",
+            "targetModifier": {
+                "smart": true
+            }
+        },
+        "basic": {
+            "aiValue": 50,
+            "cost": 10,
+            "description": "{Basic Turn to Stone}\n\nPetrifies a creature so that it cannot move and causes it to take half damage. Petrification persists until the unit is attacked or dispelled.",
+            "effects": {
+                "generalDamageReduction": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "type": "GENERAL_DAMAGE_REDUCTION",
+                    "val": 50
+                },
+                "notActive": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "subtype": "petrification",
+                    "type": "NOT_ACTIVE",
+                    "val": 0
+                }
+            },
+            "power": 70,
+            "range": "0",
+            "targetModifier": {
+                "smart": true
+            }
+        },
+        "expert": {
+            "aiValue": 50,
+            "cost": 6,
+            "description": "{Expert Turn to Stone}\n\nPetrifies a creature so that it cannot move and causes it to take half damage. Petrification persists until the unit is attacked or dispelled.",
+            "effects": {
+                "generalDamageReduction": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "type": "GENERAL_DAMAGE_REDUCTION",
+                    "val": 50
+                },
+                "notActive": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "subtype": "petrification",
+                    "type": "NOT_ACTIVE",
+                    "val": 0
+                }
+            },
+            "power": 100,
+            "range": "0",
+            "targetModifier": {
+                "smart": true
+            }
+        },
+        "none": {
+            "aiValue": 50,
+            "cost": 12,
+            "description": "{Turn to Stone}\n\nPetrifies a creature so that it cannot move and causes it to take half damage. Petrification persists until the unit is attacked or dispelled.",
+            "effects": {
+                "generalDamageReduction": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "type": "GENERAL_DAMAGE_REDUCTION",
+                    "val": 50
+                },
+                "notActive": {
+                    "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                    "subtype": "petrification",
+                    "type": "NOT_ACTIVE",
+                    "val": 0
+                }
+            },
+            "power": 50,
+            "range": "0",
+            "targetModifier": {
+                "smart": true
+            }
+        }
+    },
+    "name": "Turn to Stone",
+    "power": 0,
+    "school": {
+        "earth": true
+    },
+    "sounds": {
+        "cast": "bastion/turntostone.wav"
+    },
+    "targetCondition": {
+        "noneOf": {
+            "bonus.SIEGE_WEAPON": "absolute",
+            "core:creature.infernaltroglodyte": "absolute",
+            "core:creature.troglodyte": "absolute"
+        }
+    },
+    "targetType": "CREATURE",
+    "type": "combat"
+}
+}

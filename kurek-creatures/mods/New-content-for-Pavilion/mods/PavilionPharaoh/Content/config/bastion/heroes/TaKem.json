@@ -56,13 +56,15 @@
 		],
 		
 	"specialty": 
-	{
+		{
         "bonuses": 
-            {
-                "type": "ROUGH_TERRAIN_DISCOUNT",
-				"valueType" : "BASE_NUMBER",
-                "val": 25
-            }
-    }
+				{
+                "pathfinding" : {
+					"type": "ROUGH_TERRAIN_DISCOUNT",
+					"valueType" : "ADDITIVE_VALUE",
+					"val": 25
+								}
+				}
+			}
 	}
 }

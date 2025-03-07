@@ -1,0 +1,480 @@
+{
+	"anubissabrewarrior" : {
+		"stackExperience" :
+			[
+				{
+					"bonus" :
+					{
+						"subtype" : "primarySkill.attack",
+						"type" : "PRIMARY_SKILL"
+					},
+					"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+				},	
+				{
+					"bonus" :
+					{
+						"subtype" : "primarySkill.defence",
+						"type" : "PRIMARY_SKILL"
+					},
+					"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+				},
+				{
+					"bonus" :
+					{
+						"subtype" : "creatureDamageBoth",
+						"type" : "CREATURE_DAMAGE"
+					},
+					"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+				},
+				{
+					"bonus" :
+					{
+						"valueType" : "PERCENT_TO_BASE",
+						"type" : "STACK_HEALTH"
+					},
+					"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				},
+				{
+					"bonus" :
+					{
+						"type" : "STACKS_SPEED"
+					},
+					"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				},
+				{
+					"bonus" :
+					{
+						"type" : "GENERAL_DAMAGE_REDUCTION",
+						"subtype" : "damageTypeAll",
+					},
+					"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+				},
+				{
+					"bonus" :
+					{
+						"type" : "DOUBLE_DAMAGE_CHANCE"
+					},
+					"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+				}
+			]
+	},
+
+	"anubisblademaster":
+	{
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		
+		]
+	},
+
+	"divinehorus":
+	{
+		"stackExperience" :
+		[
+		
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		
+		]	
+	},
+
+	"greatersphinx":
+	{
+		"stackExperience" :
+		[
+		
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		]	
+	},
+
+	"guardiansphinx":
+	{
+		"stackExperience" :
+		[
+		
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMax",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageMin",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		
+		]	
+	},
+
+	"horus": {
+		"stackExperience": 
+		[
+			{
+				"bonus": {
+					"subtype": "primarySkill.attack",
+					"type": "PRIMARY_SKILL"
+				},
+				"values": [1, 1, 2, 3, 4, 5, 5, 6, 7, 8]
+			},
+			{
+				"bonus": {
+					"subtype": "primarySkill.defence",
+					"type": "PRIMARY_SKILL"
+				},
+				"values": [1, 2, 3, 3, 4, 4, 6, 6, 7, 8]
+			},
+			{
+				"bonus": {
+					"subtype": "creatureDamageMax",
+					"type": "CREATURE_DAMAGE"
+				},
+				"values": [1, 2, 2, 3, 4, 4, 5, 6, 7, 7]
+			},
+			{
+				"bonus": {
+					"subtype": "creatureDamageMin",
+					"type": "CREATURE_DAMAGE"
+				},
+				"values": [0, 1, 2, 3, 3, 4, 5, 6, 6, 7]
+			},
+			{
+				"bonus": {
+					"valueType": "PERCENT_TO_BASE",
+					"type": "STACK_HEALTH"
+				},
+				"values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION"
+				},
+				"values": [9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
+			}
+		]
+	},
+	
+	
+	"desertguard":
+	{
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll",
+				},
+				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+			}
+		
+		]		
+	},
+	
+    "sacredscarab": {
+        "stackExperience": [
+            {
+                "bonus": {
+                    "subtype": "primarySkill.attack",
+                    "type": "PRIMARY_SKILL"
+                },
+                "values": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+            },
+            {
+                "bonus": {
+                    "subtype": "primarySkill.defence",
+                    "type": "PRIMARY_SKILL"
+                },
+                "values": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+            },
+            {
+                "bonus": {
+                    "subtype": "creatureDamageBoth",
+                    "type": "CREATURE_DAMAGE"
+                },
+                "values": [0, 1, 1, 2, 2, 3, 3, 4, 4, 5]
+            },
+            {
+                "bonus": {
+                    "valueType": "PERCENT_TO_BASE",
+                    "type": "STACK_HEALTH"
+                },
+                "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            },
+            {
+                "bonus": {
+                    "type": "STACKS_SPEED"
+                },
+                "values": [0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+            },
+            {
+                "bonus": {
+                    "type": "GENERAL_DAMAGE_REDUCTION",
+                    "subtype": "damageTypeAll"
+                },
+                "values": [2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
+            },
+            {
+                "bonus": {
+                    "type": "DOUBLE_DAMAGE_CHANCE"
+                },
+                "values": [0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
+            }
+        ]
+    }
+	
+}

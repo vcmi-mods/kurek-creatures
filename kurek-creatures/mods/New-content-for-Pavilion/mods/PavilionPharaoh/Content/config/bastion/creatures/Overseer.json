@@ -6,6 +6,7 @@
 			"plural" : "Desert Guards",
 			"singular" : "Desert Guard"
 		},
+		"description" : "{#ff0000|Desert Guard}\r\n\r\nThe most experienced among overseers and warriors are granted the honor of serving as the elite Desert Guards.\r\n\r\n{gold|Special Ability : Clad in light armor, they bear shields and long spears, allowing them to effectively repel counterattacks and form impenetrable defensive lines against cavalry.}",
 		"advMapAmount" :
 		{
 			"max" : 30,
@@ -67,61 +68,7 @@
 		},
 		"stackExperience" :
 		[
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.defence",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageBoth",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll",
-				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "DOUBLE_DAMAGE_CHANCE"
-				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
-			}
-		
+
 		]		
 	}
 }

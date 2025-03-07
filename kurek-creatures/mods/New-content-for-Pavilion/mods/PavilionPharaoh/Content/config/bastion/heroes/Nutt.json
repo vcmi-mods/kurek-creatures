@@ -18,8 +18,8 @@
 		
 		"images" :
 		{
-			"specialtySmall" : "bastion/heroes/nutt/un32Sekh.bmp",
-			"specialtyLarge" : "bastion/heroes/nutt/un44Sekh.bmp",
+			"specialtySmall" : "bastion/heroes/nutt/un32Sekh.png",
+			"specialtyLarge" : "bastion/heroes/nutt/un44Sekh.png",
 			"large" : "bastion/heroes/nutt/Nutt.bmp",
 			"small" : "bastion/heroes/nutt/NuttSmall.bmp"
 		},

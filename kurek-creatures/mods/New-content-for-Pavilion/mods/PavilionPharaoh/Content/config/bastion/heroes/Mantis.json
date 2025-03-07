@@ -10,7 +10,7 @@
 			"biography" : "He hails from Bracada and graduated from the prestigious Academy of Mages, where he specialized in the intricate and ancient desert aspects of earth magic. Driven by an insatiable thirst for knowledge and power, he left his hometown after a few years to seek out more potent and elusive forms of magic. The mystical allure of the desert cities captivated him, and he chose to settle there. Immersed in the enigmatic and harsh landscapes, he honed his magical abilities to new heights, delving deep into the secrets of the sands and the earth. His journey through the deserts not only enhanced his powers but also transformed him into a mage of formidable skill and wisdom.",
 			"specialty" :
 			{
-				"description" : "{Quicksand}\r\n\r\nCasts quicksand with strengthened effect.",
+				"description" : "{Quicksand}\r\n\r\nCasts more quicksand pools on the battlefield.",
 				"tooltip" : "Spell Bonus: Quicksand",
 				"name" : "Quicksand Master"
 			}

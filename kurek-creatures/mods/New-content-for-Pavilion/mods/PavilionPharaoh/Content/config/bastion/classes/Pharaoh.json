@@ -1,22 +1,32 @@
 {
     "pharaoh": {
         "name": "Pharaoh",
-        "animation": {
-            "battle": {
-                "female": "bastion/battle/heroes/battleHeroPharaohfemale",
-                "male": "bastion/battle/heroes/battleHeroPharaohmale"
-            }
-        },
-        "mapObject": {
-            "templates": {
-                "male": {
-                    "animation": "bastion/map/heroes/mapHeroPharaoh"
-                },
-                "female": {
-                    "animation": "bastion/map/heroes/mapHeroVizier"
-                }
-            }
-        },
+		
+		"animation" : {
+			"battle" : {
+				"female" : "bastion/battle/heroes/battleHeroPharaohfemale",
+				"male" : "bastion/battle/heroes/battleHeroPharaohmale"
+			}
+		},
+		"mapObject" : {
+			"filters" : {
+				"male" : { "male" : true },
+				"female" : { "female" : true }
+			},
+			"templates" : { 
+				"female" : 
+				{ 
+					"animation" : "bastion/map/heroes/mapHeroVizier",
+					"editorAnimation": "bastion/map/heroes/mapHeroVizier"
+				}, 
+				"male" : 
+				{ 
+					"animation" : "bastion/map/heroes/mapHeroPharaoh",
+					"editorAnimation": "bastion/map/heroes/mapHeroPharaoh"
+				} 
+			} 
+		},
+		
         "affinity": "might",
         "commander": "preacher",
         "faction": "pavilion",

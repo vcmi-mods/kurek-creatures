@@ -6,6 +6,7 @@
 			"plural" : "Anubian Warriors",
 			"singular" : "Anubian Warrior"
 		},
+		"description" : "{#ff0000|Anubian Warrior}\r\n\r\nThe most powerful warriors of the Pavilions. Members of a powerful warrior caste among the Anubians. When they engage in battle, no one stands a chance of emerging unscathed from a clash with them. \r\n\r\n{gold|Special Ability : Their spiritual contact with the afterlife realm allows them to regenerate and teleport.}",		
 		"advMapAmount" :
 		{
 			"max" : 10,
@@ -83,60 +84,7 @@
 		},
 	"stackExperience" :
 		[
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.defence",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageBoth",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll",
-				},
-				"values" : [ 2, 5, 7, 10, 12, 15, 17, 20, 22, 25]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "DOUBLE_DAMAGE_CHANCE"
-				},
-				"values" : [ 0, 0, 10, 15, 20, 25, 30, 35, 40, 50]
-			}
+		
 		]
 	}
 }

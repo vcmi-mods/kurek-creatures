@@ -7,10 +7,10 @@
 		"texts" :
 		{
 			"name" : "Bianor",
-			"biography" : "Anubians are known for their magical nature, but Bianor have always been fascinated with engineering. He brought a few ballistas to his palace basement, where he got them upgraded. During battles his war mashines could kill up to 20 people with a single shot.",
+			"biography" : "Anubians are known for their magical nature, but Bianor have always been fascinated with engineering. He brought a few ballistas to his palace basement, where he got them upgraded. During battles his war mashines can kill up to 20 people with a single shot.",
 			"specialty" :
 			{
-				"description" : "{Ballista}\r\n\r\nIncreases the Attack and Defense skill of any Ballista for each level attained after 4th level.",
+				"description" : "{Ballista}\r\n\r\nIncreases the Attack and Defence skill of Ballista for each level attained after 4th level.",
 				"tooltip" : "Artillery Bonus: Ballista",
 				"name" : "Ballista"
 			}

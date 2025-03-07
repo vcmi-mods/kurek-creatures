@@ -6,6 +6,7 @@
 			"plural" : "Divine Horuses",
 			"singular" : "Divine Horus"
 		},
+		"description" : "{#ff0000|Divine Horus}\r\n\r\nDivine Horus from the higher caste are powerful beings who surpass their ordinary kin not only in physical strength but also in mastery of magic. \r\n\r\n{gold|Special Ability : Gifted with exceptional abilities, they can cast spells that enhance their attacks and control the battlefield, making them even more formidable opponents.}\r\n\r\n Their divine nature allows them to be not only magnificent warriors wielding knopeshes but also sages capable of predicting enemy movements and invoking powerful forces that shape the fate of battles.",
 		"advMapAmount" :
 		{
 			"max" : 16,
@@ -77,11 +78,12 @@
 			"RANDOMSPELLCASTER" : 
 			{ 
 				"type" : "RANDOM_SPELLCASTER", 
-				"val" : 1 
+		        "val": 1
+		        //"spells": ["Haste", "Slow", "bless"]
 			},
 			"ADDITIONALATTACK" : 
 			{ 
-				"type" : "ADDITIONAL_ATTACK", 
+				"type" : "ADDITIONAL_ATTACK"
 			},
 			"spellpoints" :
 			{
@@ -96,62 +98,7 @@
 		},
 		"stackExperience" :
 		[
-		
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
-			},	
-			{
-				"bonus" :
-				{
-					"subtype" : "primarySkill.defense",
-					"type" : "PRIMARY_SKILL"
-				},
-				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
-			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageMax",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
-			},
-			{
-				"bonus" :
-				{
-					"subtype" : "creatureDamageMin",
-					"type" : "CREATURE_DAMAGE"
-				},
-				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "HP_REGENERATION"
-				},
-				"values" : [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90]
-			}
-		
+	
 		]	
 	}
 }

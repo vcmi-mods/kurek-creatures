@@ -18,8 +18,8 @@
 		
 		"images" :
 		{
-			"specialtySmall" : "bastion/heroes/Honsuneb/UN32Wadj.bmp",
-			"specialtyLarge" : "bastion/heroes/Honsuneb/UN44Wadj.bmp",
+			"specialtySmall" : "bastion/heroes/Honsuneb/UN32Wadj.png",
+			"specialtyLarge" : "bastion/heroes/Honsuneb/UN44Wadj.png",
 			"large" : "bastion/heroes/Honsuneb/Honsuneb.bmp",
 			"small" : "bastion/heroes/Honsuneb/HonsunebSmall.bmp"
 		},
