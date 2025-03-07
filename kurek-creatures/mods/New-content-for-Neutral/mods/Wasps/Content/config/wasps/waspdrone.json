@@ -35,7 +35,7 @@
 				"type": "ENCHANTER",
 				"subtype": "spell.symbiosisqueen",
 				"val": 1,
-				"additionalInfo": 1
+				"addInfo": 1
 			},
 			"flying": {
 				"type": "FLYING"

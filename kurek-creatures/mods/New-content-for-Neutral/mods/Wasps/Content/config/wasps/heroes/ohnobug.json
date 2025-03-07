@@ -43,7 +43,7 @@
 			"biography" : "Ohnobug is a fearsome and eerie wasp captain, towering with a thin, elongated black body. His unsettling presence strikes terror into all who face him. Specializing in summoning powerful wasp warriors, Ohnobug commands an army of fearsome fighters that wreak havoc on the battlefield. His chilling appearance and lethal swarm leave no hope for his enemies, who are overpowered by his unrelenting force.",
 			"specialty" : {
 			
-			"description" : "{Summon Wasp Warriors}\r\n\r\nCasts Summon Wasp Warrior spell with increased effect.",
+			"description" : "Casts Summon Wasp Warrior spell with increased effect.",
 			
 			"name" : "Wasp Warrior Summoner",
 			

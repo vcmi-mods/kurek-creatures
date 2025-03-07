@@ -47,7 +47,7 @@
 			"biography" : "Buzzer, a slender yet influential wasp hero, commands respect with his sharp mind and strategic prowess. Despite his lean form, he possesses the power to summon a swarm of wasp sentries, creating a formidable defense on the battlefield. His tactical brilliance ensures his enemies are constantly surrounded by a relentless, ever-watchful army.",
 			"specialty" : {
 			
-			"description" : "{Summon Wasp Sentries}\r\n\r\nCasts Summon Wasp Sentry spell with increased effect.",
+			"description" : "Casts Summon Wasp Sentry spell with increased effect.",
 			
 			"name" : "Wasp Sentry Summoner",
 			

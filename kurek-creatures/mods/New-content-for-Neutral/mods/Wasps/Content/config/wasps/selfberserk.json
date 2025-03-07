@@ -52,15 +52,20 @@
             }
         },
         "levels": {
-            "none": {
+            "base": {
                 "aiValue": 80,
                 "cost": 20,
                 "description": "{Berserk}\n\nThe targeted unit will randomly attack the nearest unit, be it friend or foe.\nAdditionally, heals the targeted unit slightly.\n",
-                "effects": {
+                "battleEffects": {
                     "attacksNearestCreature": {
-                        "duration": "UNTIL_OWN_ATTACK",
-                        "type": "ATTACKS_NEAREST_CREATURE"
-                    },
+						"type":"core:timed",
+						"bonus" :{
+							"berserk" : {
+								"duration": "UNTIL_OWN_ATTACK",
+								"type": "ATTACKS_NEAREST_CREATURE"
+							}
+						}
+					},
                     "heal": {
                         "type": "core:heal",
                         "healLevel": "heal",
@@ -74,71 +79,26 @@
                     "smart": false
                 }
             },
+			
+            "none": {
+            },
+			
             "basic": {
-                "aiValue": 80,
-                "cost": 16,
-                "description": "{Basic Berserk}\n\nThe targeted unit will randomly attack the nearest unit, be it friend or foe.\nAdditionally, heals the targeted unit slightly.\n",
-                "effects": {
-                    "attacksNearestCreature": {
-                        "duration": "UNTIL_OWN_ATTACK",
-                        "type": "ATTACKS_NEAREST_CREATURE"
-                    },
-                    "heal": {
-                        "type": "core:heal",
-                        "healLevel": "heal",
-                        "healPower": "permanent",
-                        "optional": true
-                    }
-                },
-                "power": 0,
-                "range": "0",
-                "targetModifier": {
-                    "smart": false
-                }
+                "cost": 16
             },
+			
             "advanced": {
-                "aiValue": 80,
                 "cost": 16,
-                "description": "{Advanced Berserk}\n\nThe targeted unit will randomly attack the nearest unit, be it friend or foe.\nArea of effect is six hexes greater than Basic Berserk.\nAdditionally, heals the targeted unit moderately.\n",
-                "effects": {
-                    "attacksNearestCreature": {
-                        "duration": "UNTIL_OWN_ATTACK",
-                        "type": "ATTACKS_NEAREST_CREATURE"
-                    },
-                    "heal": {
-                        "type": "core:heal",
-                        "healLevel": "heal",
-                        "healPower": "permanent",
-                        "optional": true
-                    }
-                },
+                "description": "{Advanced Berserk}\n\nThe targeted unit will randomly attack the nearest unit, be it friend or foe.\nArea of effect is six hexes greater than Basic Berserk.\nAdditionally, heals the targeted unit moderately.",
                 "power": 1,
-                "range": "0-1",
-                "targetModifier": {
-                    "smart": false
-                }
+                "range": "0-1"
             },
+			
             "expert": {
-                "aiValue": 80,
                 "cost": 16,
-                "description": "{Expert Berserk}\n\nThe targeted unit will randomly attack the nearest unit, be it friend or foe.\nArea of effect is eighteen hexes greater than Basic Berserk.\nAdditionally, heals the targeted unit significantly.\n",
-                "effects": {
-                    "attacksNearestCreature": {
-                        "duration": "UNTIL_OWN_ATTACK",
-                        "type": "ATTACKS_NEAREST_CREATURE"
-                    },
-                    "heal": {
-                        "type": "core:heal",
-                        "healLevel": "heal",
-                        "healPower": "permanent",
-                        "optional": true
-                    }
-                },
+                "description": "{Expert Berserk}\n\nThe targeted unit will randomly attack the nearest unit, be it friend or foe.\nArea of effect is eighteen hexes greater than Basic Berserk.\nAdditionally, heals the targeted unit significantly.",
                 "power": 2,
-                "range": "0-2",
-                "targetModifier": {
-                    "smart": false
-                }
+                "range": "0-2"
             }
         }
     }

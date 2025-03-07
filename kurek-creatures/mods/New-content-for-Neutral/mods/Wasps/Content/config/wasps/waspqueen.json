@@ -71,14 +71,14 @@
 			{
 				"type" : "SPELLCASTER",
 				"val" : 3,
-				"additionalInfo" : 70,
+				"addInfo" : 70,
 				"subtype" : "spell.selfbloodlust",
 			},	
 			"castsberserk" :
 			{
 				"type" : "SPELLCASTER",
 				"val" : 1,
-				"additionalInfo" : 30,
+				"addInfo" : 30,
 				"subtype" : "spell.berserk",
 			},	
 			"summonguardianswaspdrones" :			
@@ -91,28 +91,28 @@
 			{
 				"type" : "ENCHANTER",
 				"val" : 2,
-				"additionalInfo" : 3,
+				"addInfo" : 3,
 				"subtype" : "spell.waspswarmability",
 			},
 			"summonwasps1" :
 			{
 				"type" : "ENCHANTER",
 				"val" : 3,
-				"additionalInfo" : 3,
+				"addInfo" : 3,
 				"subtype" : "spell.summonwaspworker",
 			},
 			"summonwasps2" :
 			{
 				"type" : "ENCHANTER",
 				"val" : 3,
-				"additionalInfo" : 3,
+				"addInfo" : 3,
 				"subtype" : "spell.summonwaspsentry",
 			},
 			"summonwasps3" :
 			{
 				"type" : "ENCHANTER",
 				"val" : 3,
-				"additionalInfo" : 3,
+				"addInfo" : 3,
 				"subtype" : "spell.summonwaspwarrior",
 			},
 			"returnafterstrike" :			

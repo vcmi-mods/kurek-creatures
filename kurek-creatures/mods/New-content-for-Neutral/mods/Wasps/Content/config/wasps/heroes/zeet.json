@@ -47,7 +47,7 @@
 			"biography" : "Zeet is a powerful wasp hero from ancient nests, commanding respect with his sharp mind and mastery over swarms. He specializes in summoning wasp workers, using them to overwhelm enemies in battle. His tactical brilliance ensures his foes are always outsmarted and outnumbered, falling before his relentless, coordinated swarms.",
 			"specialty" : {
 			
-			"description" : "{Summon Wasp Workers}\r\n\r\nCasts Summon Wasp Worker spell with increased effect.",
+			"description" : "Casts Summon Wasp Worker spell with increased effect.",
 			
 			"name" : "Wasp Worker Summoner",
 			

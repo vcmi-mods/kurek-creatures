@@ -6,16 +6,10 @@
 				"name" : "Wasp Nest",
 				"guards" : true,
 				"creatures" : [
-				[
-					"waspwarrior"
+					["waspwarrior"],
+					["waspsentry"],
+					["waspworker"]
 				],
-				[
-					"waspsentry"
-				],
-				[
-					"waspworker"
-				]
-			],
 				  "sounds": {
                     "ambient": ["waspsounds/waspnestloop"],
 					"visit": ["waspsounds/waspnestvisit"]

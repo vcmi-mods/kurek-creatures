@@ -46,11 +46,11 @@
 			"biography" : "Wasp General, second only to the Queen, stands as the highest-ranking wasp and a formidable military leader. With an imposing figure, razor-sharp mandibles, and a commanding presence, he leads swarms of wasp workers and sentries into battle with ruthless precision. Known for his unmatched strength and unwavering loyalty, the Wasp General ensures the hive's enemies are crushed under the might of his disciplined armies.",
 			"specialty" : {
 			
-			"description" : "{Wasp Leader}\r\n\r\nIncreases the Attack and Defense skills of Wasp Workers or Wasp Sentries for each level attained after 1st level.",
+			"description" : "Increases the Attack and Defense skills of Wasp Workers or Wasp Sentries for each level attained after 1st level.",
 			
 			"name" : "Wasp Leader",
 			
-			"tooltip" : "{Wasp Leader}\r\n\r\nIncreases the Attack and Defense skills of Wasp Workers or Wasp Sentries"
+			"tooltip" : "Increases the Attack and Defense skills of Wasp Workers or Wasp Sentries"
 		}
 		}
 	}

@@ -59,14 +59,14 @@
 			{
 				"type" : "SPELLCASTER",
 				"val" : 0,
-				"additionalInfo" : 70,
+				"addInfo" : 70,
 				"subtype" : "spell.selfbloodlust",
 			},	
 			"castsberserk" :
 			{
 				"type" : "HEALER",
 				//"val" : 1,
-				//"additionalInfo" : 3,
+				//"addInfo" : 3,
 				"subtype" : "spell.selfberserk",
 			},	
 			"returnafterstrike" :			

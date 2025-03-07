@@ -33,34 +33,23 @@
 				"level" : "advanced"
 			}
 		],
-		"specialty" : 
-		{
-		"base" : null,
-		
-		"bonuses" : {
-			 
-			"jump" : {
-				 
-				"val" : 2,
-				
-				"subtype" : "spell.jump",
-				 
-				"type" : "SPELL"
+		"specialty" : {
+			"bonuses" : {
+				"jump" : {
+					"val" : 2,
+					"subtype" : "spell.jump",
+					"type" : "SPELL"
+				}
 			}
-		}
-			
 		},
 		"texts" : {
 			"name" : "Killerbee",
 			"biography" : "Killerbee, the light blue wasp hero, is a master of mobility and surprise, wielding the power of the enhanced Jump spell. His translucent azure wings shimmer with magical energy, allowing him to empower his units with the ability to leap great distances in battle. Under his guidance, the swarm gains unmatched agility, turning the battlefield into a chaotic dance of precise strikes and evasive maneuvers.",
 			"specialty" : {
-			
-			"description" : "{Jump}\r\n\r\nCasts Jump on at least advanced level of mastery.",
-			
-			"name" : "Jump",
-			
-			"tooltip" : "Bonus: spell"
-		}
+				"description" : "Casts Jump on at least advanced level of mastery.",
+				"name" : "Jump",
+				"tooltip" : "Bonus: spell"
+			}
 		}
 	}
 }

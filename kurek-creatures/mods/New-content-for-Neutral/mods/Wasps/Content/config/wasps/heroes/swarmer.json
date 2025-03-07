@@ -1,10 +1,10 @@
 {
 	"swarmer" :
 	{
-			"spellbook" : 
-			[
+		"spellbook" : 
+		[
 			"waspswarmability"
-			],
+		],
 		"class" : "hiveruler",
 		"female" : false,
 		"onlyOnMapWithoutWater" : false,
@@ -38,28 +38,24 @@
 			},
 		],
 		"specialty": {
-    "base": null,
-    "bonuses": [
-        {
-            "subtype": "spell.waspSwarm",
-            "type": "SPECIFIC_SPELL_DAMAGE",
-            "updater": "TIMES_HERO_LEVEL",
-            "value": 5,
-            "valueType": "ADDITIVE_VALUE"
-        }
-    ]
-},
+			"bonuses": {
+				"waspSwarm" : {
+					"subtype": "spell.waspswarmability",
+					"type": "SPECIFIC_SPELL_DAMAGE",
+					"updater": "TIMES_HERO_LEVEL",
+					"val": 5,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		},
 		"texts" : {
 			"name" : "Swarmer",
 			"biography" : "Swarmer, the red-eyed wasp hero, is a fearsome master of the Wasp Swarm spell, summoning clouds of tiny wasps to overwhelm his foes. His crimson gaze and thick, chitinous armor strike fear into enemies as the buzzing hordes obey his every command. With Swarmer's magic, the battlefield becomes a whirlwind of stinging chaos, ensuring his enemies are outnumbered and outmatched.",
-			"specialty" : {
-			
-			"description" : "{Wasp Swarm}\r\n\r\nCasts Wasp Swarm with more damage increasing level by level.",
-			
-			"name" : "wasp Swarm",
-			
-			"tooltip" : "Bonus: spell"
-		}
+			"specialty" : {			
+				"description" : "Casts Wasp Swarm with more damage increasing level by level.",
+				"name" : "wasp Swarm",
+				"tooltip" : "Bonus: spell"
+			}
 		}
 	}
 }
