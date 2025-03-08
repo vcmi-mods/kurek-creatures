@@ -1,0 +1,21 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"pillarofglances" : {
+				"name" : "Pillar of Glances",
+				"guards" : false,
+				"creatures" : [[ "lurker" ]],
+				  "sounds": {
+                    "ambient": ["lurkersounds/pillarofglancesloop"],
+					"visit": ["lurkersounds/pillarofglancesenter"]
+                },
+				"templates" : {
+					"default" : {
+						"animation" : "dwelling/pillarofglances.def",
+						"mask" : [ "VVBV", "VBBB", "VVAB" ]
+					}
+				}
+			}
+		}		
+	}
+}	

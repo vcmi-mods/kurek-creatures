@@ -1,0 +1,31 @@
+{
+    "name": "Lurker",
+    "description": "New unit - Lurker.",
+    "author": "Kurek",
+    "contact": "http://www.forum.acidcave.net/profile.php?UID=4121  or  https://discord.com/channels/298106089885401090/298110850420441094",
+    "version": "1.0",
+    "modType": "Creatures",
+    "changelog": {
+        "1.0": ["Initial release"]
+    },
+    "polish": {
+        "name": "Łypacz",
+        "description": "Nowa jednostka - Łypacz."
+    },
+    "creatures": [
+        "config/lurker/lurker.json"
+    ],
+    "objects": [
+        "config/lurker/dwellings",
+        "config/lurker/evillair"
+    ],
+    "spells": [
+        "config/lurker/lurkerpowerbondspells.json",
+        "config/lurker/magicLeech.json",
+        "config/lurker/cowardice.json",
+        "config/lurker/cancellation.json"
+    ],
+    "battlefields": [
+        "config/lurker/evillairbattlefield.json"
+    ]
+}

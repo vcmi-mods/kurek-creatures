@@ -1,0 +1,559 @@
+{
+	    "lurker": {
+        "name": {
+            "plural": "Lurkers",
+            "singular": "Lurker"
+        },
+        "description": "{#ff0000|Lurker}\n\nLurkers are rare types of beholders, which were created by the twisted warlock Agar. Their familiar look might be deceiving, because they have been credited with different magic ingredients in order to gain different abilities from other types of evil eyes. \n\n{gold|Special Ability: Ranged magic missile attack. Flight. Casts negative spell after every attack.}\n\nUnlike regular beholders, these aberrations can fly thanks to their antigravitational magic aura.\nWhen lurkers attack, they shoot a dark magic energy bolt, which randomly casts a harmful spell on an enemy. The possible spells include: {#00aaff|Curse, Disrupting Ray, Slow, Sorrow, Weakness, Forgetfulness, Misfortune}, {#40bfff|Magic Leech, Cowardice, and Cancellation}.",
+        "advMapAmount": {
+            "max": 18,
+            "min": 12
+        },
+        "hasDoubleWeek": false,
+        "faction": "dungeon",
+        "aiValue": 295,
+        "attack": 9,
+        "cost": {
+            "gold": 310
+        },
+        "damage": {
+            "max": 5,
+            "min": 3
+        },
+        "defense": 8,
+		"fightValue" : 300,
+		"graphics" :
+		{
+			"animation" : "battle/lurker.def",
+			"map" : "map/lurkermap.def",
+			"mapMask" : ["VVV",	"VAV"],
+			"iconSmall" : "iconssmall/lurkersmall.png",
+			"iconLarge" : "iconsbig/lurkerbig.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" : {
+			 
+			"attackClimaxFrame" : 5,
+			 
+			"frameAngles" : [
+				 
+				90,
+				 
+				72,
+				 
+				45,
+				 
+				27,
+				 
+				0,
+				 
+				-27,
+				 
+				-45,
+				 
+				-72,
+				 
+				-90,
+				 
+				0,
+				 
+				0,
+				 
+				0
+			],
+			 
+			"offset" : {
+				"lowerX" : 9,
+				"lowerY" : -60,
+				"middleX" : 14,
+				"middleY" : -70,
+				"upperX" : 14,
+				"upperY" : -73
+			},
+			 
+			"projectile" : "battle/lurkermissile.def"
+		},
+		},
+		"growth" : 6,
+		"doubleWide" : false,
+		"hitPoints" : 22,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "lurkersounds/lurkerattack.wav",
+			"defend": "lurkersounds/lurkerdefend.wav",
+			"killed": "lurkersounds/lurkerkilled.wav",
+			"move": "lurkersounds/lurkermove.wav",
+			"wince": "lurkersounds/lurkerwince.wav",
+			"startMoving" : "lurkersounds/lurkerstartmoving.wav",
+            "endMoving" : "lurkersounds/lurkerstopmoving.wav"
+		},
+		"speed" : 6,
+		"shots" : 15,
+		"abilities" :
+	{
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"powerAttack" : 
+			{
+				"subtype" : "spell.hexingGaze",
+				"type" : "SPELL_LIKE_ATTACK",
+				"val" : 0
+			},
+			"shooter" : 
+			{
+				"type" : "SHOOTER"
+			},
+		 
+
+		"castsMagicLeech" : {
+		
+				"addInfo" : [
+				
+				1,
+				
+				0
+					],
+			 
+			"subtype" : "spell.magicLeech",
+			 
+			"type" : "SPELL_BEFORE_ATTACK",
+			 
+			"val" : 15
+		},
+		 
+		"castsCurse" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.curse",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 8
+		},
+		  
+		 
+		"castsDisruptingRay" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.disruptingRay",
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 5
+		},
+		 
+		"castsForgetfullness" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.forgetfulness",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 11
+		},
+		 
+		"castsCancellation" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.cancellation",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 16
+		},
+		 
+		"castsMisfortune" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.misfortune",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 5
+		},
+		 
+		"castsCowardice" : {
+			 
+			"addInfo" : [
+				 
+				2,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.cowardice",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 16
+		},
+		 
+		"castsSlow" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.slow",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 8
+		},
+		 
+		"castsSorrow" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.sorrow",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 11
+		},
+		 
+		"castsWeakness" : {
+			 
+			"addInfo" : [
+				 
+				1,
+				 
+				0
+			],
+			 
+			"subtype" : "spell.weakness",
+			 
+			"turns" : 3,
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 5
+		},
+		 
+		"spellpower" : {
+			 
+			"type" : "CREATURE_SPELL_POWER",
+			 
+			"val" : 500
+		}
+	},
+		"stackExperience" : [
+		{			
+			"bonus" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL"
+			},			
+			"values" : [
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"subtype" : "primarySkill.defence",
+
+				"type" : "PRIMARY_SKILL"
+			},
+			 
+			"values" : [
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"subtype" : "creatureDamageMax",
+
+				"type" : "CREATURE_DAMAGE"
+			},
+			 
+			"values" : [
+
+				0,
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"subtype" : "creatureDamageMin",
+
+				"type" : "CREATURE_DAMAGE"
+			},
+			 
+			"values" : [
+
+				0,
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"type" : "STACK_HEALTH",
+
+				"valueType" : "PERCENT_TO_BASE"
+			},
+			 
+			"values" : [
+
+				5,
+
+				10,
+
+				15,
+
+				20,
+
+				25,
+
+				30,
+
+				35,
+
+				40,
+
+				45,
+
+				50
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"type" : "STACKS_SPEED"
+			},
+			 
+			"values" : [
+
+				0,
+
+				0,
+
+				0,
+
+				1,
+
+				1,
+
+				1,
+
+				1,
+
+				1,
+
+				1,
+
+				1
+			]
+		},
+		{
+			 
+			"bonus" : {
+
+				"type" : "SHOTS",
+
+				"valueType" : "BASE_NUMBER"
+			},
+			 
+			"values" : [
+
+				1,
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				3,
+
+				4
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"type" : "NO_WALL_PENALTY"
+			},
+			 
+			"values" : [
+
+				false,
+
+				false,
+
+				false,
+
+				false,
+
+				false,
+
+				false,
+
+				true,
+
+				true,
+
+				true,
+
+				true
+			]
+		}
+	],
+	}
+}
+
+

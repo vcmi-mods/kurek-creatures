@@ -1,0 +1,6 @@
+{
+	"evillairbattlefield": {
+		"graphics": "battle/evillairbattlefield.png",
+		"isSpecial" : true
+	}
+}

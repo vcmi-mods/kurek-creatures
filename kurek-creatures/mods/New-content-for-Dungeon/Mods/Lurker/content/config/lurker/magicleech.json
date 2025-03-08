@@ -1,0 +1,187 @@
+{
+    "magicLeech": {
+        "type": "combat",
+        "targetType": "CREATURE",
+        "name": "Magic Leech",
+        "school": {"air": true, "earth": true, "fire": true, "water": true},
+        "level": 3,
+        "power": 15,
+        "defaultGainChance": 3,
+		"canCastOnSelf" : true,
+        "gainChance": {
+            "tower": 7,
+            "inferno": 9,
+            "necropolis": 10,
+            "dungeon": 8,
+            "castle": 0
+        },
+        "flags": { "positive": true },
+        "animation": { 
+            "affect": ["battle/magicleech.def"],
+			"hit": ["battle/magicleech.def"],
+			"cast": ["battle/magicleech.def"]
+        },
+        "sounds": { 
+            "cast": "lurkersounds/magicleech.wav" 
+        },
+        "levels": {
+            "base": {
+                "description": "{Magic Leech}\nEnhances an allied unit, granting it 1 additional spell cast. The caster hero restores 1 Spell Point for every 2 Spell Points spent by enemy hero.",
+                "cost": 10,
+                "power": 10,
+                "aiValue": 5,
+                "range": "0",
+                "targetModifier": {
+                    "smart": true
+                }
+            },
+            "none": {
+                "description": "{Magic Leech}\nGrants an allied unit 1 additional spell cast and increases the enemy hero's spell costs by 1. The caster hero restores 1 Spell Point for every 2 Spell Points spent by enemy hero.",
+                "cost": 9,
+                "power": 15,
+                "aiValue": 20,
+                "effects": {
+                  //  "reduceCasts": {
+                  //      "type": "CASTS",
+                  //      "val": -4,
+                  //      "valueType": "ADDITIVE_VALUE",
+                   //     "propagator": "BATTLE_WIDE",
+                   //     "limiters": ["OPPOSITE_SIDE"],
+                   //     "duration": "N_TURNS"
+                   // },
+                    "increaseCasts": {
+                        "type": "CASTS",
+                        "val": 1,
+                        "valueType": "ADDITIVE_VALUE",
+                        "duration": "N_TURNS"
+                    },
+                    "spellCostIncrease": {
+                        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+                        "val": 1,
+                        "duration": "N_TURNS"
+                    },
+                    "manaLeech": {
+                        "type": "MANA_CHANNELING",
+                        "val": 50,
+                        "duration": "N_TURNS"
+                    }
+                }
+            },
+            "basic": {
+                "description": "{Basic Magic Leech}\nGrants an allied unit 2 additional spell casts and increases the enemy hero's spell costs by 2. The caster hero restores 1 Spell Point for every 2 Spell Points spent by enemy hero.",
+                "cost": 8,
+                "power": 18,
+                "aiValue": 22,
+                "effects": {
+                  //  "reduceCasts": {
+                 //       "type": "CASTS",
+                 //       "val": -5,
+                 //       "valueType": "ADDITIVE_VALUE",
+                 //       "propagator": "BATTLE_WIDE",
+                  //      "limiters": ["OPPOSITE_SIDE"],
+                 //       "duration": "N_TURNS"
+                    //},
+                    "increaseCasts": {
+                        "type": "CASTS",
+                        "val": 2,
+                        "valueType": "ADDITIVE_VALUE",
+                        "duration": "N_TURNS"
+                    },
+                    "spellCostIncrease": {
+                        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+                        "val": 2,
+                        "duration": "N_TURNS"
+                    },
+                    "manaLeech": {
+                        "type": "MANA_CHANNELING",
+                        "val": 50,
+                        "duration": "N_TURNS"
+                    }
+                }
+            },
+            "advanced": {
+                "description": "{Advanced Magic Leech}\nGrants an allied unit 3 additional spell casts and increases the enemy hero's spell costs by 3. The caster hero restores 1 Spell Point for every 2 Spell Points spent by enemy hero.",
+                "cost": 7,
+                "power": 20,
+                "aiValue": 25,
+                "effects": {
+                  //  "reduceCasts": {
+                  //      "type": "CASTS",
+                   //     "val": -6,
+                  //      "valueType": "ADDITIVE_VALUE",
+                   //     "propagator": "BATTLE_WIDE",
+                    //    "limiters": ["OPPOSITE_SIDE"],
+                    //    "duration": "N_TURNS"
+                   // },
+                    "increaseCasts": {
+                        "type": "CASTS",
+                        "val": 3,
+                        "valueType": "ADDITIVE_VALUE",
+                        "duration": "N_TURNS"
+                    },
+                    "spellCostIncrease": {
+                        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+                        "val": 3,
+                        "duration": "N_TURNS"
+                    },
+                    "manaLeech": {
+                        "type": "MANA_CHANNELING",
+                        "val": 50,
+                        "duration": "N_TURNS"
+                    }
+                }
+            },
+            "expert": {
+                "description": "{Expert Magic Leech}\nEmpowers all friendly units, granting them 3 additional spell casts and increasing the enemy hero's spell costs by 4. The caster hero restores 1 Spell Point for every 2 Spell Points spent by enemy hero.",
+                "cost": 6,
+                "power": 25,
+                "aiValue": 30,
+                "range": "X",
+                "targetModifier": {
+                    "smart": true
+                },
+                "effects": {
+                   // "reduceCasts": {
+                   //     "type": "CASTS",
+                  //      "val": -7,
+                    //    "valueType": "ADDITIVE_VALUE",
+                    //    "propagator": "BATTLE_WIDE",
+                   //     "limiters": ["OPPOSITE_SIDE"],
+                   //     "duration": "N_TURNS"
+                   // },
+                    "increaseCasts": {
+                        "type": "CASTS",
+                        "val": 3,
+                        "valueType": "ADDITIVE_VALUE",
+                        "duration": "N_TURNS"
+                    },
+                    "spellCostIncrease": {
+                        "type": "CHANGES_SPELL_COST_FOR_ENEMY",
+                        "val": 4,
+                        "duration": "N_TURNS"
+                    },
+                    "manaLeech": {
+                        "type": "MANA_CHANNELING",
+                        "val": 50,
+                        "duration": "N_TURNS"
+                    }
+                }
+            }
+        },
+        "graphics": {
+            "iconBook": "Iconsbig/magicleechspellBook.png",
+            "iconEffect": "Iconsbig/magicleechspellEffect.png",
+            "iconImmune": "Iconsbig/magicleechspellImmune.png",
+            "iconScenarioBonus": "Iconsbig/magicleechspellScenario.png",
+            "iconScroll": "Iconsbig/magicleechspellScroll.png"
+        },
+        "targetCondition": {
+            "noneOf": {
+                "core:bonus.SPELL_IMMUNITY": "normal"
+            }
+        },
+        "targetModifier": {
+            "smart": true
+        }
+    }
+}

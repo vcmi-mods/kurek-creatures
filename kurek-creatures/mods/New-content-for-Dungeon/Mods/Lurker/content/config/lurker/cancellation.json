@@ -1,0 +1,210 @@
+{
+    "cancellation": {
+        "type": "combat",
+        "targetType": "CREATURE",
+        "name": "Cancellation",
+        "school": { "earth": true },
+        "level": 1,
+        "power": 1,
+        "defaultGainChance": 3,
+        "gainChance": {
+            "tower": 4,
+            "inferno": 5,
+            "necropolis": 12,
+            "dungeon": 8,
+			"rampart" : 0,
+			"castle" : 0
+        },
+        "flags": { "negative": true },
+        "animation": { 
+            "affect": ["battle/cancellation.def"]
+        },
+        "sounds": { 
+            "cast": "lurkersounds/cancellation.wav" 
+        },
+        "levels" : {
+		"advanced" : {
+			"aiValue" : 3,
+			"battleEffects" : {
+				"dispel" : {
+					"dispelNegative" : false,
+					"dispelNeutral" : false,
+					"dispelPositive" : true,
+					"ignoreImmunity" : true,
+					"optional" : false,
+					"type" : "core:dispel"
+				},
+				"directDamage" : {
+					"type" : "core:damage"
+				}
+			},
+			"cost" : 3,
+			"description" : "{Advanced Cancellation}\n\nCancellation removes all beneficial spells from the enemy target. It also deals tiny damage in order to detect clones.\n",
+			"power" : 1,
+			"range" : "0",
+			"targetModifier" : {
+				"smart" : true
+			}
+		},
+		"base" : {
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : false,
+					 
+					"dispelPositive" : true,
+					 
+					"ignoreImmunity" : true,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				},
+				"directDamage" : {
+					"type" : "core:damage"
+				}
+			},
+			 
+			"range" : "0",
+			"power" : 1,
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"basic" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : false,
+					 
+					"dispelPositive" : true,
+					 
+					"ignoreImmunity" : true,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				},
+				"directDamage" : {
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 3,
+			 
+			"description" : "{Basic Cancellation}\n\nCancellation removes all beneficial spells from the enemy target. It also deals tiny damage in order to detect clones.\n",
+			 
+			"power" : 1,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"expert" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : false,
+					 
+					"dispelPositive" : true,
+					 
+					"ignoreImmunity" : true,
+					 
+					"optional" : true,
+					 
+					"type" : "core:dispel"
+				},
+				"directDamage" : {
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 3,
+			 
+			"description" : "{Expert Cancellation}\n\nMass Cancellation removes all beneficial spells from all enemy targets. It also deals tiny damage in order to detect clones.\n",
+			 
+			"power" : 1,
+			 
+			"range" : "X",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		},
+		 
+		"none" : {
+			 
+			"aiValue" : 3,
+			 
+			"battleEffects" : {
+				 
+				"dispel" : {
+					 
+					"dispelNegative" : false,
+					 
+					"dispelNeutral" : false,
+					 
+					"dispelPositive" : true,
+					 
+					"ignoreImmunity" : true,
+					 
+					"optional" : false,
+					 
+					"type" : "core:dispel"
+				},
+				"directDamage" : {
+					"type" : "core:damage"
+				}
+			},
+			 
+			"cost" : 4,
+			 
+			"description" : "{Cancellation}\n\nCancellation removes all beneficial spells from the enemy target. It also deals tiny damage in order to detect clones.\n",
+			 
+			"power" : 1,
+			 
+			"range" : "0",
+			 
+			"targetModifier" : {
+				 
+				"smart" : true
+			}
+		}
+	},
+        "graphics": {
+            "iconBook": "Iconsbig/cancellationspellBook.png",
+            "iconEffect": "Iconsbig/cancellationspellEffect.png",
+            "iconImmune": "Iconsbig/cancellationspellImmunity.png",
+            "iconScenarioBonus": "Iconsbig/cancellationspellScenario.png",
+            "iconScroll": "Iconsbig/cancellationspellScroll.png"
+        },
+        "targetCondition": {
+            "noneOf": {
+            }
+        }
+    }
+}

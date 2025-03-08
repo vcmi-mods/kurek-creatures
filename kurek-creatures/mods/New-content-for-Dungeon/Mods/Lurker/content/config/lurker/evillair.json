@@ -1,0 +1,112 @@
+{
+    "core:creatureBank": {
+        "types": {
+            "evillair": {
+                "name": "Evil Lair",
+                "battleground": "new-monsters-pack.kurek-creatures.new-content-for-dungeon.lurker:evillairbattlefield",
+                "blockedVisitable": false,
+                "onGuardedMessage": "Lurking just inside this Lair are some loathesome evil eyes and the treasure they have stolen from unwary travelers. Do you dare to lurk inside?",
+                "onVisitedMessage": "The lair has been raided. The only things you find are smelly and rotting remains of various types of beholders.",
+                "visitMode": "once",
+                "selectMode": "selectFirst",
+                "guardsLayout": "creatureBankNarrow",
+                "templates": {
+                    "default": {
+                        "animation": "dwelling/evillair.def",
+                        "visitableFrom": ["---", "-++", "+++"],
+                        "mask": ["00000", "0VVVV", "VVBBV", "VVBBV", "VBBBB", "VVBAV"],
+                        "allowedTerrains": ["rough", "subterra"]
+                    }
+                },
+                "sounds": {
+                    "ambient": ["lurkersounds/evillairloop"],
+                    "visit": ["lurkersounds/evillairenter"]
+                },
+                "rmg": {
+                    "value": 4000,
+                    "rarity": 90,
+                    "zoneLimit": 2
+                },
+                "coastVisitable": false,
+                "rewards": [
+                    {
+                        "message": 34,
+                        "appearChance": { "min": 0, "max": 30 },
+                        "guards": [
+                            { "amount": 13, "type": "beholder" },
+                            { "amount": 7, "type": "lurker" },
+                            { "amount": 10, "type": "beholder", "upgradeChance" : 90 },
+                            { "amount": 7, "type": "lurker" },
+                            { "amount": 13, "type": "beholder" },
+                            { "amount": 7, "type": "lurker" },
+                            { "amount": 10, "type": "beholder", "upgradeChance" : 90 }
+                        ],
+                        "resources": { "gold": 4300 },
+						"artifacts" : [
+						{
+							"class" : "MINOR"
+						}
+						]
+                    },
+                    {
+                        "message": 34,
+                        "appearChance": { "min": 0, "max": 30 },
+                        "guards": [
+                            { "amount": 18, "type": "beholder" },
+                            { "amount": 10, "type": "lurker" },
+                            { "amount": 15, "type": "beholder", "upgradeChance" : 90 },
+                            { "amount": 10, "type": "lurker" },
+                            { "amount": 18, "type": "beholder" },
+                            { "amount": 10, "type": "lurker" },
+                            { "amount": 15, "type": "beholder", "upgradeChance" : 90 }
+                        ],
+                        "resources": { "gold": 6000 },
+						"artifacts" : [
+						{
+							"class" : "MINOR"
+						}
+						]
+                    },
+                    {
+                        "message": 34,
+                        "appearChance": { "min": 60, "max": 90 },
+                        "guards": [
+                            { "amount": 27, "type": "beholder" },
+                            { "amount": 17, "type": "lurker" },
+                            { "amount": 20, "type": "beholder", "upgradeChance" : 90 },
+                            { "amount": 17, "type": "lurker" },
+                            { "amount": 27, "type": "beholder" },
+                            { "amount": 17, "type": "lurker" },
+                            { "amount": 20, "type": "beholder", "upgradeChance" : 90 }
+                        ],
+                        "resources": { "gold": 9000 },
+                        "artifacts" : [
+						{
+							"class" : "MINOR"
+						}
+						]
+                    },
+                    {
+                        "message": 34,
+                        "appearChance": { "min": 90, "max": 100 },
+                        "guards": [
+                         { "amount": 37, "type": "beholder" },
+                            { "amount": 25, "type": "lurker" },
+                            { "amount": 30, "type": "beholder", "upgradeChance" : 90 },
+                            { "amount": 25, "type": "lurker" },
+                            { "amount": 37, "type": "beholder" },
+                            { "amount": 25, "type": "lurker" },
+                            { "amount": 30, "type": "beholder", "upgradeChance" : 90 }
+                        ],
+                        "resources": { "gold": 12000 },
+						"artifacts" : [
+						{
+							"class" : "MINOR"
+						}
+						]
+                    }
+                ]
+            }
+        }
+    }
+}
