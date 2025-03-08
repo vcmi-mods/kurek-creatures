@@ -1,0 +1,41 @@
+{
+	"core:creatureGeneratorSpecial" : {
+		"types" : {
+			"chimerologistslab" : {
+				"name" : "Chimerologist's Lab",
+				"battleground" : "chimerologistlabbattlefield",
+				"onGuardedMessage" : "This laboratory is the birthplace for countless horrid experiments. Its remote location was chosen for both safety and secrecy.", 
+				"description": "This laboratory is the birthplace for countless horrid experiments. Its remote location was chosen for both safety and secrecy.", 
+				"guards" : true,
+				"guards" : [
+				{
+					"amount" : 15,
+					"type" : "agarspet"
+				},
+				{
+					"amount" : 10,
+					"type" : "terribleeye"
+				}
+							],
+				"creatures" : [
+				[
+					"agarspet"
+				],
+				[
+					"terribleeye"
+				]
+								],
+				  "sounds": {
+                    "ambient": ["agarsounds/chimerologistslabloop.wav"],
+					"visit": ["agarsounds/chimerologistslabenter.wav"]
+                },
+				"templates" : {
+					"default" : {
+						"animation" : "dwelling/chimerologistslab.def",
+						"mask" : [ "VVVVVVV", "VVVVBBV", "VVVBBBV", "VVVBABB", "VVVVVAB"]
+					}
+				}
+			}
+		}		
+	}
+}	

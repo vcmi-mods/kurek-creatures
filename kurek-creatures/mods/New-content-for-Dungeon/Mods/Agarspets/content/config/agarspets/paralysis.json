@@ -1,0 +1,131 @@
+{
+    "paralysis": {
+        "type": "combat",
+        "targetType": "CREATURE",
+        "name": "Paralysis",
+        "school": {"air": false, "earth": false, "fire": true, "water": false},
+        "level": 4,
+        "power": 15,
+        "defaultGainChance": 3,
+        "gainChance": {
+            "inferno": 5,
+            "necropolis": 5,
+            "dungeon": 10,
+            "castle": 8,
+			"rampart": 0,
+        },
+        "flags": { "negative" : true },
+       "animation" : {
+		 
+		"affect" : [
+			 
+			"SP10_"
+		]
+				},
+        "sounds": { 
+            "cast" : "PARALYZE" 
+        },
+"levels": {
+    "base": {
+        "description": "{Paralysis}\nParalyzes the target, reducing its attack power and preventing movement.",
+        "cost": 18,
+        "power": 15,
+        "aiValue": 15,
+        "range": "0",
+        "targetModifier": {
+            "smart": true
+        }
+    },
+    "none": {
+        "description": "{Paralysis}\nThe target's attack power is reduced by 50% and it remains inactive until attacked.",
+        "cost": 18,
+        "power": 15,
+        "aiValue": 15,
+        "effects": {
+            "generalAttackReduction": {
+                "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                "type": "GENERAL_ATTACK_REDUCTION",
+                "val": 50
+            },
+            "notActive": {
+                "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                "subtype": "spell.paralysis",
+                "type": "NOT_ACTIVE",
+                "val": 0
+            }
+        }
+    },
+    "basic": {
+        "description": "{Basic Paralysis}\nThe target's attack power is reduced by 60% and it remains inactive until attacked.",
+        "cost": 16,
+        "power": 18,
+        "aiValue": 20,
+        "effects": {
+            "generalAttackReduction": {
+                "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                "type": "GENERAL_ATTACK_REDUCTION",
+                "val": 60
+            },
+            "notActive": {
+                "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                "subtype": "spell.paralysis",
+                "type": "NOT_ACTIVE",
+                "val": 0
+            }
+        }
+    },
+    "advanced": {
+        "description": "{Advanced Paralysis}\nThe target's attack power is reduced by 75% and it remains inactive until attacked.",
+        "cost": 14,
+        "power": 22,
+        "aiValue": 30,
+        "effects": {
+            "generalAttackReduction": {
+                "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                "type": "GENERAL_ATTACK_REDUCTION",
+                "val": 75
+            },
+            "notActive": {
+                "duration": ["UNTIL_BEING_ATTACKED", "N_TURNS"],
+                "subtype": "spell.paralysis",
+                "type": "NOT_ACTIVE",
+                "val": 0
+            }
+        }
+    },
+    "expert": {
+        "description": "{Expert Paralysis}\nThe target's attack power is reduced by 75% and it remains inactive indefinitely, regardless of being attacked.",
+        "cost": 12,
+        "power": 25,
+        "aiValue": 40,
+        "effects": {
+            "generalAttackReduction": {
+                "duration": ["N_TURNS"],
+                "type": "GENERAL_ATTACK_REDUCTION",
+                "val": 75
+            },
+            "notActive": {
+                "duration": ["N_TURNS"],
+                "subtype": "spell.paralysis",
+                "type": "NOT_ACTIVE",
+                "val": 0
+            }
+        }
+    }
+},
+
+        "graphics": {
+            "iconBook": "Iconsbig/spellBookparalysisBlank.png",
+            "iconEffect": "Iconsbig/spellEffectparalysisBlank.png",
+            "iconImmune": "Iconsbig/imm_paralysisnew.bmp",
+            "iconScenarioBonus": "Iconsbig/charmspellScenarioBlank.png",
+            "iconScroll": "Iconsbig/spellScrollparalysisBlank.png"
+        },
+        "targetCondition": {
+            "noneOf": {
+                "core:bonus.SPELL_IMMUNITY": "normal",
+				"bonus.SIEGE_WEAPON" : "absolute"
+            }  
+        }
+	}
+}

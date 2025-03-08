@@ -1,0 +1,289 @@
+{
+	    "agarspet": {
+        "name": {
+            "plural": "Agar's Pets",
+            "singular": "Agar's Pet"
+        },
+        "description": "{#ff0000|Agar's Pet}\n\nAgar's Pets are grotesque, flightless vultures created by the twisted warlock Agar. They could be considered a failed experiment, that was supposed to create cockatrices. These two-meter-tall abominations have bloated bodies, bat-like violet wings, and piercing red eyes capable of paralyzing their prey with a single gaze. \n\n {gold|Special Abilities: Melee attack with beak and claws. Paralysis gaze with 10% chance to occur. 99% magic damage immunity.}\n\nThese annoying creatures are {#40bfff|99% immune to magic damage, but not immune to a good sword blow}. Though they cannot fly, they lurk in the darkness, waiting to strike with their sharp talons and terrifying beaks.",
+        "advMapAmount": {
+            "max": 18,
+            "min": 11
+        },
+        "hasDoubleWeek": false,
+        "faction": "dungeon",
+        "aiValue": 450,
+        "attack": 10,
+        "cost": {
+            "gold": 340
+        },
+        "damage": {
+            "max": 5,
+            "min": 3
+        },
+        "defense": 9,
+		"fightValue" : 430,
+		"graphics" :
+		{
+			"animation" : "battle/agarspet.def",
+			"map" : "map/agarspetmap.def",
+			"mapMask" : ["VVV",	"VAV"],
+			"iconSmall" : "iconssmall/agarspetsmall.png",
+			"iconLarge" : "iconsbig/agarspetlarge2.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			},
+			},
+		
+		"growth" : 6,
+		"doubleWide" : false,
+		"hitPoints" : 36,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "agarsounds/agarspetattack.wav",
+			"defend": "agarsounds/agarspetdefend.wav",
+			"killed": "agarsounds/agarspetkilled.wav",
+			"move": "agarsounds/agarspetmove.wav",
+			"wince": "agarsounds/agarspetwince.wav",
+			"startMoving" : "agarsounds/agarspetstartmoving.wav",
+            "endMoving" : "agarsounds/agarspetstopmoving.wav"
+		},
+		"speed" : 6,
+		"shots" : 0,
+		"abilities" :
+	{
+			 
+			"spellpower" : 
+			{
+				"type" : "CREATURE_SPELL_POWER",
+			 
+				"val" : 100
+			},
+		"castsParalysis" : {
+		
+				"addInfo" : [
+				
+				2,
+				
+				0
+					],
+			 
+			"subtype" : "spell.paralysis",
+			 
+			"type" : "SPELL_AFTER_ATTACK",
+			 
+			"val" : 10
+		},
+		 
+		"magicResistance" : {
+						 
+			"subtype" : "spellSchool.any",
+			 
+						 
+			"type" : "SPELL_DAMAGE_REDUCTION",
+			 
+			"val" : 99
+		},
+		  
+	},
+		"stackExperience" : [
+		{			
+			"bonus" : {
+				"subtype" : "primarySkill.attack",
+				"type" : "PRIMARY_SKILL"
+			},			
+			"values" : [
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"subtype" : "primarySkill.defence",
+
+				"type" : "PRIMARY_SKILL"
+			},
+			 
+			"values" : [
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"subtype" : "creatureDamageMax",
+
+				"type" : "CREATURE_DAMAGE"
+			},
+			 
+			"values" : [
+
+				0,
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"subtype" : "creatureDamageMin",
+
+				"type" : "CREATURE_DAMAGE"
+			},
+			 
+			"values" : [
+
+				0,
+
+				1,
+
+				1,
+
+				2,
+
+				2,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"type" : "STACK_HEALTH",
+
+				"valueType" : "PERCENT_TO_BASE"
+			},
+			 
+			"values" : [
+
+				5,
+
+				10,
+
+				15,
+
+				20,
+
+				25,
+
+				30,
+
+				35,
+
+				40,
+
+				45,
+
+				50
+			]
+		},
+		 
+		{
+			 
+			"bonus" : {
+
+				"type" : "STACKS_SPEED"
+			},
+			 
+			"values" : [
+
+				1,
+
+				2,
+
+				3,
+
+				3,
+
+				3,
+
+				3,
+
+				3,
+
+				4,
+
+				4,
+
+				5
+			]
+		},
+	],
+	}
+}
+
+

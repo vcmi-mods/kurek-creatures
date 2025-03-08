@@ -1,0 +1,35 @@
+{
+    "name": "Agar's Pets",
+    "description": "2 New units - Agar's Pet and Terrible Eye. 1 New hero- Agar the Warlock.",
+    "author": "Kurek",
+    "contact": "http://www.forum.acidcave.net/profile.php?UID=4121  or  https://discord.com/channels/298106089885401090/298110850420441094",
+    "version": "1.0",
+    "modType": "Creatures",
+    "changelog": {
+        "1.0": ["Initial release"]
+    },
+    "polish": {
+        "name": "Pupile Agara",
+        "description": "2 nowe jednostki - Zwierzak Agara i Straszliwe Oko. 1 nowy bohater - Agar Czarnoksiężnik."
+    },
+    "creatures": [
+        "config/agarspets/agarspet.json",
+		"config/agarspets/terribleeye.json"
+    ],
+	"heroes" :
+	[
+		"config/agarspets/youngAgar.json",
+	],
+    "objects": [
+        "config/agarspets/dwellings"
+    ],
+    "spells": [
+        "config/agarspets/terribleeyepowerbondspells.json",
+        "config/agarspets/charm.json",
+        "config/agarspets/paralysis.json",
+		"config/agarspets/fearnew.json",
+    ],
+    "battlefields": [
+        "config/agarspets/chimerologistlabbattlefield.json"
+    ]
+}

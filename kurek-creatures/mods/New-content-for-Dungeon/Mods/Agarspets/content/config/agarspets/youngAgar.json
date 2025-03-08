@@ -1,0 +1,71 @@
+{
+	"youngAgar" :
+	{
+		"class" : "warlock",
+		"female" : false,
+		
+		"texts" :
+		{
+			"name" : "Agar",
+			"biography" : "Agar is one of the most well-known Warlocks of Enroth. His laboratories in the underground of Kriegspire inspire fear even among the local inhabitants, even after the war with Archibald ended. To this day, new varieties of dreadful beholders, bred by the Warlock, are discovered near the castle and in its hidden passages.\n\nIt is said that Agar is now hiding from King Roland Ironfist's henchmen and preparing to perform the Ritual of Eternal Night, which will allow the mad scholar to conduct his terrifying experiments indefinitely, without worrying about future aging ailments or declining mental acuity.\n\nHis former apprentice, Xantor, now a historian and researcher of Enroth, wrote in his notes- Agar is becoming like the creators. In his mad desire to become a god, he creates the most dreadful forms of life that human eyes can witness. \n\nSpecialization – Terrible Eyes.",
+			"specialty" :
+			{
+				"description" : "{Terrible Eyes}\r\n\r\nUpgrades Evil Eyes to Terrible Eyes",
+				"tooltip" : "Creature Upgrade: Terrible Eyes",
+				"name" : "Terrible Eyes"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "Iconsbig/specialtySmallterribleeyes.png",
+			"specialtyLarge" : "Iconsbig/specialtyterribleeyes.png",
+			"large" : "Iconsbig/agaryounglarge.bmp",
+			"small" : "Iconsbig/agaryoungsmall.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "beholder",
+				"max" : 4,
+				"min" : 3
+			},
+            {
+				"creature" : "terribleeye",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "agarspet",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" : [
+		 
+		{
+			 
+			"level" : "advanced",
+			 
+			"skill" : "wisdom"
+		}
+	],
+		"spellbook" : [
+		 "viewEarth"
+	],
+		"specialty": 
+    {
+        "base": {
+            "addInfo": "creature.terribleeye",
+            "type": "SPECIAL_UPGRADE"
+        },
+        "bonuses": {
+            "evilEye2terribleeye": {
+                "subtype": "creature.evilEye"
+            }
+        }
+    }
+	}
+}

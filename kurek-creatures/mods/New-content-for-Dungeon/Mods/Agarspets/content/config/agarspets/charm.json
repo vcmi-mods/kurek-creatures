@@ -1,0 +1,129 @@
+{
+	"charm":
+	{
+		"type": "combat", 
+		"targetType": "LOCATION", 
+		"name": "Charm",
+		"school":
+		{
+			"air": true,
+			"earth": true,
+			"fire": true,
+			"water": true
+		},
+		"level": 3,
+		"power": 90,
+		
+		"defaultGainChance": 3, 
+		"gainChance":
+		{
+		"castle" : 4,
+		"inferno" : 1,
+		"necropolis" : 1,
+		"dungeon" : 7,
+		"tower" : 9,
+		"conflux" : 6,
+		"rampart" : 5
+		},
+
+ 
+		"animation":{
+			"affect":["battle/charmeffect.def", "battle/charm.def"],
+			"cast" : ["battle/charm.def"],
+			"hit": ["battle/charm.def"]
+		},
+ 
+		"flags" : { "negative": true },
+		"targetCondition" : {
+			"noneOf" : {
+				"bonus.MIND_IMMUNITY" : "normal",
+				"bonus.NON_LIVING" : "normal",
+				"bonus.SIEGE_WEAPON" : "absolute",
+				"bonus.UNDEAD" : "normal"
+			}
+		},
+		"counters" : {
+			"spell.hypnotize": true,
+			"spell.berserk": true
+		},
+ 		"graphics":
+		{
+			"iconBook": "Iconsbig/charmspellBookBlank.png",
+			"iconEffect": "Iconsbig/charmspellEffectBlank.png",
+			"iconScroll": "Iconsbig/charmspellScrollBlank.png",
+			"iconImmune": "Iconsbig/charmspellimmune.png",
+			"iconScenarioBonus": "Iconsbig/charmspellScenarioBlank.png"
+		},
+
+		"sounds": {
+			"cast": "agarsounds/charmnew.wav"
+		},
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 21,
+				"range": "0",
+				"power": 10,
+				"aiValue": 70,
+				"targetModifier":
+				{
+					"smart": false
+				},
+				
+				"effects":
+				{
+				"noRetaliation" : {
+					"type" : "NO_RETALIATION",
+						"duration" : ["N_TURNS"]
+					},
+				"noAttacks" : {
+						"type" : "ADDITIONAL_ATTACK",
+						"val" : -5,
+						"duration" : ["N_TURNS"]
+					},
+				"noShooting" : {
+						"type" : "FORGETFULL",
+						"val" : 3,
+						"duration" : ["N_TURNS"]
+					},
+				"charmed" : {
+					 
+						"duration" : [
+							 
+							"UNTIL_BEING_ATTACKED",
+							 
+							"N_TURNS"
+						],
+						 
+						"turns" : 1,
+						 
+						"type" : "HYPNOTIZED"
+					}
+				}
+			},
+			"none":
+			{
+				"description": "{Charm}\n\nUnit becomes unable to attack or retaliate for X turns. It is also hypnotized until being attacked, which lasts for 1 turn.",
+				"cost": 21
+			},
+			"basic":
+			{ 
+				"description": "{Basic Charm}\n\nUnit becomes unable to attack or retaliate for X turns. It is also hypnotized until being attacked, which lasts for 1 turn.",
+				"cost": 18
+			},
+			"advanced":
+			{
+				"description": "{Advanced Charm}\n\nUnit becomes unable to attack or retaliate for X turns. It is also hypnotized until being attacked, which lasts for 1 turn.",
+				"cost": 16
+			},
+			"expert":
+			{
+				"description": "{Expert Charm}\n\nUnits on a small area become unable to attack or retaliate for X turns. They are also hypnotized until being attacked, which lasts for 1 turn.",
+				"range" : "0-1",
+				"cost": 15
+			}
+		}
+	}
+}

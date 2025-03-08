@@ -1,0 +1,6 @@
+{
+	"chimerologistlabbattlefield": {
+		"graphics": "battle/chimerologistlabbattlefield.png",
+		"isSpecial" : true
+	}
+}
